@@ -26,11 +26,7 @@ jobs:
           uses: actions/checkout@v2
         - name: Install Dependencies
           run: | 
-            bundle install  --verbose
-            bundle exec pod install
-        - name: Running Jazzy 
-          run: |
-            bundle exec fastlane run jazzy
+            pod install 
         - name: Publish Jazzy Docs
           uses: Steven0351/publish-jazzy-docs@v1.1.2
           with:  
@@ -39,3 +35,8 @@ jobs:
             # Personal access token
             personal_access_token: ${{ secrets.GITHUB_TOKEN }}
             branch: docs
+        - name: Running Jazzy 
+          run: |
+            bundle install --verbose
+            bundle exec fastlane run jazzy
+       
