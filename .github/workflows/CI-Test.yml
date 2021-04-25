@@ -27,25 +27,10 @@ jobs:
     steps:
         - name: Checkout Branch
           uses: actions/checkout@v2
-        - name: Fetch base ref
-          run: git fetch --no-tags --prune --depth=1 origin ${{ github.base_ref }}
-        - name: SwiftLint Action
-          uses: henry2423/action-swiftlint@Fix-PR-Lint
-          with:
-            args: --force-exclude --strict --config .swiftlint.yml
-          env:
-             DIFF_BASE: ${{ github.base_ref }}
-             DIFF_HEAD: HEAD
-        - name: Swiftlint Checking
+        - name: Swiftlint Checker
           uses: norio-nomura/action-swiftlint@3.2.1
           with:
-            args: --force-exclude --strict --config .swiftlint.yml
-          env:
-             DIFF_BASE: ${{ github.base_ref }}
-             DIFF_HEAD: HEAD
-        - name: Pure Checking
-          run: |
-            swiftlint 
+            args: --force-exclude --config .swiftlint.yml
 
   Test:
     name: Run Unit Test
