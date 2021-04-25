@@ -23,7 +23,7 @@ on:
 jobs:
   Swiftlint:
     name: Swiftlint Checker
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
         - name: Checkout Branch
           uses: actions/checkout@v2
