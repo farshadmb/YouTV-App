@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
 
-  schema = "YouTVDemo"
+  scheme = "YouTVDemo"
 
   desc "Description of what the lane does"
   lane :custom_lane do
@@ -57,7 +57,7 @@ platform :ios do
         end
 
         scan(clean: clean, # clean project folder before test execution
-          schema: schema,    
+          scheme: scheme,    
           device: device, # Devices for testing     
           configuration: "Debug",
           open_report: open_report)

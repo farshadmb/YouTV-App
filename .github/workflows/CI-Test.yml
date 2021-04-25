@@ -34,6 +34,14 @@ jobs:
           env:
              DIFF_BASE: ${{ github.base_ref }}
              DIFF_HEAD: HEAD
+        - name: Swiftlint Checking
+          uses: norio-nomura/action-swiftlint@3.2.1
+           with:
+            args: --force-exclude --strict --config .swiftlint.yml
+          env:
+             DIFF_BASE: ${{ github.base_ref }}
+             DIFF_HEAD: HEAD
+
   Test:
     name: Run Unit Test
     runs-on: macOS-latest
