@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DE8B287EE1BFDF03A30BF17 /* Pods_YouTVDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF7B8E92AABED0D799711CB /* Pods_YouTVDemoTests.framework */; };
+		BACBC8E0D4E28E8B3157C392 /* Pods_YouTVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BADE92D376689D4C33B6142 /* Pods_YouTVDemo.framework */; };
 		F82765992635DCE200867E89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82765982635DCE200867E89 /* AppDelegate.swift */; };
 		F827659B2635DCE200867E89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827659A2635DCE200867E89 /* SceneDelegate.swift */; };
 		F827659D2635DCE200867E89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827659C2635DCE200867E89 /* ViewController.swift */; };
@@ -35,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BADE92D376689D4C33B6142 /* Pods_YouTVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C12365F66D8EBA3C38C4323 /* Pods-YouTVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemo.debug.xcconfig"; path = "Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		71B818BEA4739D883F6F9013 /* Pods-YouTVDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95474D19F7607F1EC74C7BF0 /* Pods-YouTVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemo.release.xcconfig"; path = "Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AEAA983F698A5A870975764F /* Pods-YouTVDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDF7B8E92AABED0D799711CB /* Pods_YouTVDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTVDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82765962635DCE200867E89 /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82765982635DCE200867E89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F827659A2635DCE200867E89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACBC8E0D4E28E8B3157C392 /* Pods_YouTVDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE8B287EE1BFDF03A30BF17 /* Pods_YouTVDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039BC83E7768111071D5DBBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C12365F66D8EBA3C38C4323 /* Pods-YouTVDemo.debug.xcconfig */,
+				95474D19F7607F1EC74C7BF0 /* Pods-YouTVDemo.release.xcconfig */,
+				71B818BEA4739D883F6F9013 /* Pods-YouTVDemoTests.debug.xcconfig */,
+				AEAA983F698A5A870975764F /* Pods-YouTVDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F39466AA0745300C38EF41F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BADE92D376689D4C33B6142 /* Pods_YouTVDemo.framework */,
+				EDF7B8E92AABED0D799711CB /* Pods_YouTVDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F82765972635DCE200867E89 /* YouTVDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +146,8 @@
 				F82765AE2635DCE500867E89 /* YouTVDemoTests */,
 				F82765B92635DCE500867E89 /* YouTVDemoUITests */,
 				F84C9ECF2635CF4E00114010 /* Products */,
+				039BC83E7768111071D5DBBB /* Pods */,
+				F39466AA0745300C38EF41F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82765BD2635DCE500867E89 /* Build configuration list for PBXNativeTarget "YouTVDemo" */;
 			buildPhases = (
+				6452BDAA6B6FBBB175CF6287 /* [CP] Check Pods Manifest.lock */,
 				F82765922635DCE200867E89 /* Sources */,
 				F82765932635DCE200867E89 /* Frameworks */,
 				F82765942635DCE200867E89 /* Resources */,
+				2B8572D6E39D631FD02D21A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82765C02635DCE500867E89 /* Build configuration list for PBXNativeTarget "YouTVDemoTests" */;
 			buildPhases = (
+				5CF4A2BF6542272C31832C6D /* [CP] Check Pods Manifest.lock */,
 				F82765A72635DCE500867E89 /* Sources */,
 				F82765A82635DCE500867E89 /* Frameworks */,
 				F82765A92635DCE500867E89 /* Resources */,
+				5976142CB4AB6076E1CAA40A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +290,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B8572D6E39D631FD02D21A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5976142CB4AB6076E1CAA40A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CF4A2BF6542272C31832C6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTVDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6452BDAA6B6FBBB175CF6287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTVDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F82765922635DCE200867E89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,6 +435,7 @@
 /* Begin XCBuildConfiguration section */
 		F82765BE2635DCE500867E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C12365F66D8EBA3C38C4323 /* Pods-YouTVDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +455,7 @@
 		};
 		F82765BF2635DCE500867E89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95474D19F7607F1EC74C7BF0 /* Pods-YouTVDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +475,7 @@
 		};
 		F82765C12635DCE500867E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B818BEA4739D883F6F9013 /* Pods-YouTVDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,6 +498,7 @@
 		};
 		F82765C22635DCE500867E89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEAA983F698A5A870975764F /* Pods-YouTVDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -10,7 +10,7 @@ supports_swift_versions '>= 4.0'
 # Comment the next line if you don't want to use dynamic frameworks
 use_frameworks!
 
-target 'YouTV-App' do
+target 'YouTVDemo' do
   
   inhibit_all_warnings!
   # Pods for DutchNews
@@ -35,7 +35,7 @@ target 'YouTV-App' do
   
 end
 
-target 'YouTV-AppTests' do
+target 'YouTVDemoTests' do
   inherit! :complete
   pod 'RxAlamofire'
   pod 'RxTest'
