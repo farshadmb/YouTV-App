@@ -36,7 +36,7 @@ jobs:
              DIFF_HEAD: HEAD
         - name: Swiftlint Checking
           uses: norio-nomura/action-swiftlint@3.2.1
-           with:
+          with:
             args: --force-exclude --strict --config .swiftlint.yml
           env:
              DIFF_BASE: ${{ github.base_ref }}
