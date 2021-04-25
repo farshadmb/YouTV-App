@@ -31,3 +31,11 @@ jobs:
         - name: Running Jazzy 
           run: |
             bundle exec fastlane run jazzy
+        - name: Publish Jazzy Docs
+          uses: Steven0351/publish-jazzy-docs@v1.1.2
+          with:  
+            # Arguments to pass to Jazzy
+            args: "--theme fullwidth --author Farshad Mousalou"
+            # Personal access token
+            personal_access_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: docs
