@@ -31,7 +31,7 @@ jobs:
           uses: Steven0351/publish-jazzy-docs@v1.1.2
           with:  
             # Arguments to pass to Jazzy
-            args: "--theme fullwidth --author Farshad Mousalou"
+            args: "--theme fullwidth --author 'Farshad Mousalou' --min-acl internal --build-tool-arguments -workspace,YouTV-App.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean"
             # Personal access token
             personal_access_token: ${{ secrets.GITHUB_TOKEN }}
             branch: docs

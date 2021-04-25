@@ -73,7 +73,8 @@ platform :ios do
         end
 
         scan(clean: clean, # clean project folder before test execution
-          scheme: scheme,    
+          scheme: scheme,
+          workspace: workspace,    
           device: device, # Devices for testing     
           configuration: "Debug",
           open_report: open_report)
