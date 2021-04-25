@@ -44,4 +44,4 @@ jobs:
             bundle exec pod install
         - name: Build and test on Device
           run: |
-            bundle exec fastlane scan --verbose
+            bundle exec fastlane run_ci_tests clean:true --verbose
