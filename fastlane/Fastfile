@@ -24,6 +24,14 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
   end
 
+  before_all do |lane| 
+
+    UI.message "prepare for builds"
+    xcversion(version: "12.2")
+    UI.message "prepared for build"
+    
+  end 
+
   after_all do |lane| 
     # clean_build_artifacts()
      notification(title:"Success",subtitle:"#{scheme} #{version}",message:lane.to_s,sound:"Default")
