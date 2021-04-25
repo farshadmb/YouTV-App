@@ -30,4 +30,4 @@ jobs:
             bundle exec pod install
         - name: Running Jazzy 
           run: |
-            bundle exec fastlane jazzy
+            bundle exec fastlane run jazzy
