@@ -1,14 +1,14 @@
 //
-//  YouTV_AppTests.swift
-//  YouTV-AppTests
+//  YouTVDemoTests.swift
+//  YouTVDemoTests
 //
 //  Created by Farshad M on 4/25/21.
 //
 
 import XCTest
-@testable import YouTV_App
+@testable import YouTVDemo
 
-class YouTV_AppTests: XCTestCase {
+class YouTVDemoTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
