@@ -27,6 +27,8 @@ jobs:
     steps:
         - name: Checkout Branch
           uses: actions/checkout@v2
+        - name: Fetch base ref
+          run: git fetch --no-tags --prune --depth=1 origin ${{ github.base_ref }}
         - name: SwiftLint Action
           uses: henry2423/action-swiftlint@Fix-PR-Lint
           with:
@@ -41,6 +43,9 @@ jobs:
           env:
              DIFF_BASE: ${{ github.base_ref }}
              DIFF_HEAD: HEAD
+        - name: Pure Checking
+          run: |
+            swiftlint 
 
   Test:
     name: Run Unit Test
