@@ -46,23 +46,23 @@ protocol ImageAssets {
  */
 extension ImageAssets {
 
-    //:nodoc:
+    // :nodoc:
     var isSymbol: Bool {
         false
     }
 
-    //:nodoc:
+    // :nodoc:
     var image: UIImage {
         UIImage.loadImage(named: self.rawValue, isSymbol: isSymbol)
     }
 
-    //:nodoc:
+    // :nodoc:
     var templateImage: UIImage {
         let image = UIImage.loadImage(named: self.rawValue, isSymbol: isSymbol)
         return image.withRenderingMode(.alwaysTemplate)
     }
 
-    //:nodoc:
+    // :nodoc:
     var originalImage: UIImage {
         let image = UIImage.loadImage(named: self.rawValue, isSymbol: isSymbol)
         return image.withRenderingMode(.alwaysOriginal)

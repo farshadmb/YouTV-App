@@ -170,7 +170,6 @@ extension UIImage {
         return img!
     }
 
-
     /**
      Returns resized image with height. Might return low quality
      - Parameter height: the height value that image should resize to.
