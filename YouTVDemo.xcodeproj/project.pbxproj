@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EF4A467E7E239758E1E6713 /* Pods_YouTVDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */; };
 		67CBED5B4E509E558A5D7B57 /* Pods_YouTVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68640120F1626DAEBABAE3CD /* Pods_YouTVDemo.framework */; };
+		F8106D872636D7C400653AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8106D852636D7C400653AF8 /* Main.storyboard */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -40,6 +41,7 @@
 		C10E31255956133E108A12C5 /* Pods-YouTVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemo.debug.xcconfig"; path = "Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTVDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70519D2E2018B25012634F8 /* Pods-YouTVDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8106D862636D7C400653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				F8106D762636D11500653AF8 /* Application */,
 				F8106D772636D12600653AF8 /* Features */,
+				F8106D8B2636D8C600653AF8 /* Domain */,
 				F8106D782636D13C00653AF8 /* DataLayer */,
 				F8106D792636D16000653AF8 /* Extensions */,
 				F8106D7A2636D16B00653AF8 /* Utilites */,
@@ -125,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+				F8106D852636D7C400653AF8 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -163,6 +167,13 @@
 			children = (
 			);
 			path = Utilites;
+			sourceTree = "<group>";
+		};
+		F8106D8B2636D8C600653AF8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -323,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8106D872636D7C400653AF8 /* Main.storyboard in Resources */,
 				F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */,
 				F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */,
 			);
@@ -484,6 +496,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F8106D852636D7C400653AF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106D862636D7C400653AF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
