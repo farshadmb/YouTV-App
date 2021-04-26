@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
+		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
+		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
+		F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F8726364052007A34CF /* YouTVDemoTests.swift */; };
+		F89D8F9326364053007A34CF /* YouTVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F89D8F8426364052007A34CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89D8F6A2636404E007A34CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F89D8F712636404E007A34CF;
+			remoteInfo = YouTVDemo;
+		};
+		F89D8F8F26364053007A34CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89D8F6A2636404E007A34CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F89D8F712636404E007A34CF;
+			remoteInfo = YouTVDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F89D8F7C26364052007A34CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F89D8F7E26364052007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89D8F8326364052007A34CF /* YouTVDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTVDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89D8F8726364052007A34CF /* YouTVDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTVDemoTests.swift; sourceTree = "<group>"; };
+		F89D8F8926364052007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89D8F8E26364052007A34CF /* YouTVDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTVDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTVDemoUITests.swift; sourceTree = "<group>"; };
+		F89D8F9426364053007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F89D8F6F2636404E007A34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F8026364052007A34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F8B26364052007A34CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F89D8F692636404E007A34CF = {
+			isa = PBXGroup;
+			children = (
+				F89D8F742636404E007A34CF /* YouTVDemo */,
+				F89D8F8626364052007A34CF /* YouTVDemoTests */,
+				F89D8F9126364053007A34CF /* YouTVDemoUITests */,
+				F89D8F732636404E007A34CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F89D8F732636404E007A34CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F722636404E007A34CF /* YouTVDemo.app */,
+				F89D8F8326364052007A34CF /* YouTVDemoTests.xctest */,
+				F89D8F8E26364052007A34CF /* YouTVDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89D8F742636404E007A34CF /* YouTVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F752636404E007A34CF /* AppDelegate.swift */,
+				F89D8F7926364052007A34CF /* Assets.xcassets */,
+				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+				F89D8F7E26364052007A34CF /* Info.plist */,
+			);
+			path = YouTVDemo;
+			sourceTree = "<group>";
+		};
+		F89D8F8626364052007A34CF /* YouTVDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F8726364052007A34CF /* YouTVDemoTests.swift */,
+				F89D8F8926364052007A34CF /* Info.plist */,
+			);
+			path = YouTVDemoTests;
+			sourceTree = "<group>";
+		};
+		F89D8F9126364053007A34CF /* YouTVDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */,
+				F89D8F9426364053007A34CF /* Info.plist */,
+			);
+			path = YouTVDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F89D8F712636404E007A34CF /* YouTVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89D8F9726364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemo" */;
+			buildPhases = (
+				F89D8F6E2636404E007A34CF /* Sources */,
+				F89D8F6F2636404E007A34CF /* Frameworks */,
+				F89D8F702636404E007A34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTVDemo;
+			productName = YouTVDemo;
+			productReference = F89D8F722636404E007A34CF /* YouTVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F89D8F8226364052007A34CF /* YouTVDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89D8F9A26364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemoTests" */;
+			buildPhases = (
+				F89D8F7F26364052007A34CF /* Sources */,
+				F89D8F8026364052007A34CF /* Frameworks */,
+				F89D8F8126364052007A34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F89D8F8526364052007A34CF /* PBXTargetDependency */,
+			);
+			name = YouTVDemoTests;
+			productName = YouTVDemoTests;
+			productReference = F89D8F8326364052007A34CF /* YouTVDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F89D8F8D26364052007A34CF /* YouTVDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89D8F9D26364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemoUITests" */;
+			buildPhases = (
+				F89D8F8A26364052007A34CF /* Sources */,
+				F89D8F8B26364052007A34CF /* Frameworks */,
+				F89D8F8C26364052007A34CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F89D8F9026364053007A34CF /* PBXTargetDependency */,
+			);
+			name = YouTVDemoUITests;
+			productName = YouTVDemoUITests;
+			productReference = F89D8F8E26364052007A34CF /* YouTVDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F89D8F6A2636404E007A34CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					F89D8F712636404E007A34CF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					F89D8F8226364052007A34CF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F89D8F712636404E007A34CF;
+					};
+					F89D8F8D26364052007A34CF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F89D8F712636404E007A34CF;
+					};
+				};
+			};
+			buildConfigurationList = F89D8F6D2636404E007A34CF /* Build configuration list for PBXProject "YouTVDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F89D8F692636404E007A34CF;
+			productRefGroup = F89D8F732636404E007A34CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F89D8F712636404E007A34CF /* YouTVDemo */,
+				F89D8F8226364052007A34CF /* YouTVDemoTests */,
+				F89D8F8D26364052007A34CF /* YouTVDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F89D8F702636404E007A34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */,
+				F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F8126364052007A34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F8C26364052007A34CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F89D8F6E2636404E007A34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F7F26364052007A34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D8F8A26364052007A34CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89D8F9326364053007A34CF /* YouTVDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F89D8F8526364052007A34CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F89D8F712636404E007A34CF /* YouTVDemo */;
+			targetProxy = F89D8F8426364052007A34CF /* PBXContainerItemProxy */;
+		};
+		F89D8F9026364053007A34CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F89D8F712636404E007A34CF /* YouTVDemo */;
+			targetProxy = F89D8F8F26364053007A34CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F89D8F7C26364052007A34CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F89D8F9526364053007A34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F89D8F9626364053007A34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F89D8F9826364053007A34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F89D8F9926364053007A34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F89D8F9B26364053007A34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTVDemo.app/YouTVDemo";
+			};
+			name = Debug;
+		};
+		F89D8F9C26364053007A34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTVDemo.app/YouTVDemo";
+			};
+			name = Release;
+		};
+		F89D8F9E26364053007A34CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTVDemo;
+			};
+			name = Debug;
+		};
+		F89D8F9F26364053007A34CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 638B4QA28J;
+				INFOPLIST_FILE = YouTVDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTVDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F89D8F6D2636404E007A34CF /* Build configuration list for PBXProject "YouTVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89D8F9526364053007A34CF /* Debug */,
+				F89D8F9626364053007A34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89D8F9726364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89D8F9826364053007A34CF /* Debug */,
+				F89D8F9926364053007A34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89D8F9A26364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89D8F9B26364053007A34CF /* Debug */,
+				F89D8F9C26364053007A34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89D8F9D26364053007A34CF /* Build configuration list for PBXNativeTarget "YouTVDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89D8F9E26364053007A34CF /* Debug */,
+				F89D8F9F26364053007A34CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F89D8F6A2636404E007A34CF /* Project object */;
+}
