@@ -19,6 +19,9 @@
 		F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106DE52637068600653AF8 /* String+EmptyChecker.swift */; };
 		F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E1326370CA900653AF8 /* Result+Extension.swift */; };
 		F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E1826370D1000653AF8 /* UIColor+Extensions.swift */; };
+		F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E1D26370E4D00653AF8 /* UITableView+Helper.swift */; };
+		F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E2226370E6800653AF8 /* UICollectionView+Helper.swift */; };
+		F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E2726370EB300653AF8 /* UIView+Nibs.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -64,6 +67,9 @@
 		F8106DE52637068600653AF8 /* String+EmptyChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyChecker.swift"; sourceTree = "<group>"; };
 		F8106E1326370CA900653AF8 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
 		F8106E1826370D1000653AF8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F8106E1D26370E4D00653AF8 /* UITableView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helper.swift"; sourceTree = "<group>"; };
+		F8106E2226370E6800653AF8 /* UICollectionView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helper.swift"; sourceTree = "<group>"; };
+		F8106E2726370EB300653AF8 /* UIView+Nibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nibs.swift"; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +223,9 @@
 			children = (
 				F8106DD72637026300653AF8 /* UIImage+Additionals.swift */,
 				F8106E1826370D1000653AF8 /* UIColor+Extensions.swift */,
+				F8106E1D26370E4D00653AF8 /* UITableView+Helper.swift */,
+				F8106E2226370E6800653AF8 /* UICollectionView+Helper.swift */,
+				F8106E2726370EB300653AF8 /* UIView+Nibs.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -521,8 +530,11 @@
 			files = (
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
+				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
+				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
+				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
 				F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */,
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,

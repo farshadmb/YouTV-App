@@ -5,7 +5,7 @@ platform :ios, '13.0'
 inhibit_all_warnings!
 
 # supportet swift versions
-supports_swift_versions '>= 4.0'
+supports_swift_versions '>= 5.0'
 
 # Comment the next line if you don't want to use dynamic frameworks
 use_frameworks!

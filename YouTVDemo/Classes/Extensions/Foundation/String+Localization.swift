@@ -25,8 +25,8 @@ extension String {
      Return the localized `String` value.
 
      - Parameters:
-      - withComment: the comment section in localization strings files.
-      - bundle: the `Bundle` value which the localization strings locate in.
+        - withComment: the comment section in localization strings files.
+        - bundle: the `Bundle` value which the localization strings locate in.
      - Returns: The localized `String` value.
      */
     func localized(withComment: String, bundle: Bundle = .main) -> String {

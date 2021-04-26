@@ -60,8 +60,8 @@ extension UIImage {
     /**
      Resize image to given size and contentMode
      - Parameters:
-      - toSize: the `Size` value
-      - contentMode: The `UIImageConentMode` value. default is `UIImageContentMode.scaleToFill`.
+        - toSize: the `Size` value
+        - contentMode: The `UIImageConentMode` value. default is `UIImageContentMode.scaleToFill`.
      - Returns: The optional resized `UIImage` instance.
      */
     func resize(toSize: CGSize, contentMode: UIImageContentMode = .scaleToFill) -> UIImage? {
@@ -145,8 +145,7 @@ extension UIImage {
         - h: the height size
      - Returns: return new `UIImage` instance that is scaled from source image
      */
-    // swiftlint:disable:next identifier_name
-    class func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
+    class func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {// swiftlint:disable:this identifier_name
         let newSize = CGSize(width: w, height: h)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
         image.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
