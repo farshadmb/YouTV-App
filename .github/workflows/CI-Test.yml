@@ -45,3 +45,17 @@ jobs:
         - name: Build and test on Device
           run: |
             bundle exec fastlane run_ci_tests clean:true --verbose
+        
+        - name: Archive Failed Tests artifacts
+          if: failure()
+          uses: actions/upload-artifact@v2
+          with:
+            name: FailureDiff
+            path: fastlane/test_output
+
+        - name: Archive Success Tests artifacts
+          if: success()
+          uses: actions/upload-artifact@v2
+          with:
+            name: SuccessDiff
+            path: fastlane/test_output
