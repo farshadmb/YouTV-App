@@ -10,14 +10,14 @@ import Foundation
 
 // swiftlint:disable empty_first_line
 
-// :nodoc:
+/// :nodoc:
 protocol OptionalString {}
 
-// :nodoc:
+/// :nodoc:
 extension String: OptionalString {}
 // swiftlint:enable empty_first_line
 
-// :nodoc:
+/// :nodoc:
 extension Optional where Wrapped: OptionalString {
 
     /**
@@ -31,12 +31,12 @@ extension Optional where Wrapped: OptionalString {
 
 extension String {
 
-    // :nodoc:
+    /// :nodoc:
     func toBool() -> Bool? {
         return NSString(string: self).boolValue
     }
 
-    // :nodoc:
+    /// :nodoc:
     static func isEmptyOrBlankString(_ aString: String?) -> Bool {
 
         guard let aString = aString else {

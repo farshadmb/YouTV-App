@@ -14,7 +14,7 @@ import Foundation
 extension String {
 
     /**
-     The Localized value.
+     The Localized value. this property wrap around `NSLocalizedString`.
      `String` represents as `Key` to look up in localization.
      */
     var localized: String {
