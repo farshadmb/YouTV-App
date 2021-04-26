@@ -10,7 +10,6 @@ import Foundation
 
 extension Bundle {
 
-
     /// The Release Version Value known as Marketing Versions. like 1.0
     var releaseVersionNumber: String? {
         return self.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
