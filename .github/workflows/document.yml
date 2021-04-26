@@ -29,14 +29,13 @@ jobs:
             pod install 
             bundle install --verbose
         - name: Generate Jazzy Docs
-          uses: farshadmb/publish-jazzy-docs@master
-          with:  
-            # Arguments to pass to Jazzy
-            args: "--author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/"
+          run: |
+            jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
+            git add ./Docs/* 
         - name: Publish Jazzy Docs
           uses: actions-js/push@master
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            message: 'Chore: Update Project Documetions ${date}'
+            message: '- Chore: Update Project Docs at ${date}.'
             branch: docs
 
