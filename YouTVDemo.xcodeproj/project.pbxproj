@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -97,8 +97,72 @@
 				A20C5FE47B93D367EF31F796 /* Pods-YouTVDemoTests.debug.xcconfig */,
 				F70519D2E2018B25012634F8 /* Pods-YouTVDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8106D6A2636D0E200653AF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8106D722636D0F700653AF8 /* Storyboards */,
+				F89D8F7926364052007A34CF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8106D6B2636D0E200653AF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8106D762636D11500653AF8 /* Application */,
+				F8106D772636D12600653AF8 /* Features */,
+				F8106D782636D13C00653AF8 /* DataLayer */,
+				F8106D792636D16000653AF8 /* Extensions */,
+				F8106D7A2636D16B00653AF8 /* Utilites */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8106D722636D0F700653AF8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8106D762636D11500653AF8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F752636404E007A34CF /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F8106D772636D12600653AF8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F8106D782636D13C00653AF8 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F8106D792636D16000653AF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8106D7A2636D16B00653AF8 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -126,9 +190,8 @@
 		F89D8F742636404E007A34CF /* YouTVDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F89D8F752636404E007A34CF /* AppDelegate.swift */,
-				F89D8F7926364052007A34CF /* Assets.xcassets */,
-				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+				F8106D6B2636D0E200653AF8 /* Classes */,
+				F8106D6A2636D0E200653AF8 /* Resources */,
 				F89D8F7E26364052007A34CF /* Info.plist */,
 			);
 			path = YouTVDemo;
@@ -164,6 +227,7 @@
 				F89D8F6F2636404E007A34CF /* Frameworks */,
 				F89D8F702636404E007A34CF /* Resources */,
 				25EA14C2558214F319AFFDD0 /* [CP] Embed Pods Frameworks */,
+				F8106D7B2636D28700653AF8 /* Swiftlint Runner */,
 			);
 			buildRules = (
 			);
@@ -358,6 +422,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F8106D7B2636D28700653AF8 /* Swiftlint Runner */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Runner";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint \nelif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    echo \"${PODS_ROOT}/SwiftLint/swiftlint autocorrect\"\n    echo \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
