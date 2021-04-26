@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0EF4A467E7E239758E1E6713 /* Pods_YouTVDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */; };
 		67CBED5B4E509E558A5D7B57 /* Pods_YouTVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68640120F1626DAEBABAE3CD /* Pods_YouTVDemo.framework */; };
+		F8106D872636D7C400653AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8106D852636D7C400653AF8 /* Main.storyboard */; };
+		F8106DB72636D9E700653AF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB32636D9E700653AF8 /* Localizable.strings */; };
+		F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB52636D9E700653AF8 /* InfoPlist.strings */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -40,6 +43,13 @@
 		C10E31255956133E108A12C5 /* Pods-YouTVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemo.debug.xcconfig"; path = "Target Support Files/Pods-YouTVDemo/Pods-YouTVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTVDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70519D2E2018B25012634F8 /* Pods-YouTVDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8106D862636D7C400653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8106DB42636D9E700653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8106DB62636D9E700653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8106DBC2636D9EA00653AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8106DBD2636D9EC00653AF8 /* da-DK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-DK"; path = "da-DK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F8106DBE2636D9F200653AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8106DBF2636D9F400653AF8 /* da-DK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-DK"; path = "da-DK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,8 +107,91 @@
 				A20C5FE47B93D367EF31F796 /* Pods-YouTVDemoTests.debug.xcconfig */,
 				F70519D2E2018B25012634F8 /* Pods-YouTVDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8106D6A2636D0E200653AF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8106D8C2636D92200653AF8 /* Localization */,
+				F8106D722636D0F700653AF8 /* Storyboards */,
+				F89D8F7926364052007A34CF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8106D6B2636D0E200653AF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8106D762636D11500653AF8 /* Application */,
+				F8106D772636D12600653AF8 /* Features */,
+				F8106D8B2636D8C600653AF8 /* Domain */,
+				F8106D782636D13C00653AF8 /* DataLayer */,
+				F8106D792636D16000653AF8 /* Extensions */,
+				F8106D7A2636D16B00653AF8 /* Utilites */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8106D722636D0F700653AF8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+				F8106D852636D7C400653AF8 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8106D762636D11500653AF8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F89D8F752636404E007A34CF /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F8106D772636D12600653AF8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F8106D782636D13C00653AF8 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F8106D792636D16000653AF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8106D7A2636D16B00653AF8 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		F8106D8B2636D8C600653AF8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F8106D8C2636D92200653AF8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F8106DB52636D9E700653AF8 /* InfoPlist.strings */,
+				F8106DB32636D9E700653AF8 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -126,9 +219,8 @@
 		F89D8F742636404E007A34CF /* YouTVDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F89D8F752636404E007A34CF /* AppDelegate.swift */,
-				F89D8F7926364052007A34CF /* Assets.xcassets */,
-				F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */,
+				F8106D6B2636D0E200653AF8 /* Classes */,
+				F8106D6A2636D0E200653AF8 /* Resources */,
 				F89D8F7E26364052007A34CF /* Info.plist */,
 			);
 			path = YouTVDemo;
@@ -164,6 +256,7 @@
 				F89D8F6F2636404E007A34CF /* Frameworks */,
 				F89D8F702636404E007A34CF /* Resources */,
 				25EA14C2558214F319AFFDD0 /* [CP] Embed Pods Frameworks */,
+				F8106D7B2636D28700653AF8 /* Swiftlint Runner */,
 			);
 			buildRules = (
 			);
@@ -220,6 +313,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = iFarshad;
 				TargetAttributes = {
 					F89D8F712636404E007A34CF = {
 						CreatedOnToolsVersion = 12.2;
@@ -241,6 +335,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"da-DK",
 			);
 			mainGroup = F89D8F692636404E007A34CF;
 			productRefGroup = F89D8F732636404E007A34CF /* Products */;
@@ -259,8 +354,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8106D872636D7C400653AF8 /* Main.storyboard in Resources */,
+				F8106DB72636D9E700653AF8 /* Localizable.strings in Resources */,
 				F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */,
 				F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */,
+				F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +457,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8106D7B2636D28700653AF8 /* Swiftlint Runner */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Runner";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint \nelif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    echo \"${PODS_ROOT}/SwiftLint/swiftlint autocorrect\"\n    echo \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,6 +518,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F8106D852636D7C400653AF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106D862636D7C400653AF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8106DB32636D9E700653AF8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106DB42636D9E700653AF8 /* Base */,
+				F8106DBE2636D9F200653AF8 /* en */,
+				F8106DBF2636D9F400653AF8 /* da-DK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F8106DB52636D9E700653AF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106DB62636D9E700653AF8 /* Base */,
+				F8106DBC2636D9EA00653AF8 /* en */,
+				F8106DBD2636D9EC00653AF8 /* da-DK */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -417,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -478,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
