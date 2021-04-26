@@ -68,6 +68,18 @@ extension DispatchQueue {
 
     /// Perform safe the given block code on the current queue
     ///
+    /// This method execute the block on the current queue synchronously if current queue equal to self. otherwise the block is executed asynchronously.
+    ///
+    /// ```
+    ///  private func unregisterRemoteNotification() {
+    ///   // ensure that method is executed on main thread.
+    ///   // whether the caller called this method on non-main thread or not.
+    ///   DispatchQueue.main.performSafe {
+    ///      let application = UIApplication.shared
+    ///      application.unregisterForRemoteNotifications()
+    ///     }
+    ///  }
+    /// ```
     /// - Parameter block: The program code block that you want to perform on current thread safely.
     func performSafe(_ block: @escaping () -> Void) {
         guard DispatchQueue.current != self else {
