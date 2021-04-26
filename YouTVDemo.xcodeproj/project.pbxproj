@@ -13,6 +13,8 @@
 		F8106DB72636D9E700653AF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB32636D9E700653AF8 /* Localizable.strings */; };
 		F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB52636D9E700653AF8 /* InfoPlist.strings */; };
 		F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106DCC2636E1CE00653AF8 /* Logger.swift */; };
+		F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106DD12636FFE200653AF8 /* ImageAsset.swift */; };
+		F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106DD72637026300653AF8 /* UIImage+Additionals.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		F8106DBE2636D9F200653AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8106DBF2636D9F400653AF8 /* da-DK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-DK"; path = "da-DK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F8106DCC2636E1CE00653AF8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F8106DD12636FFE200653AF8 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
+		F8106DD72637026300653AF8 /* UIImage+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additionals.swift"; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		F8106D792636D16000653AF8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F8106DD62637022300653AF8 /* UI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				F8106DCC2636E1CE00653AF8 /* Logger.swift */,
+				F8106DD12636FFE200653AF8 /* ImageAsset.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -195,6 +201,14 @@
 				F8106DB32636D9E700653AF8 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		F8106DD62637022300653AF8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8106DD72637026300653AF8 /* UIImage+Additionals.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -485,6 +499,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
 				F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */,
 			);
