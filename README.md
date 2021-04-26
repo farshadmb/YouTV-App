@@ -1,5 +1,12 @@
 # YouTV-App
-YouTV-App
+- [YouTV-App](#youtv-app)
+  - [Summery](#summery)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Technology use in this project](#technology-use-in-this-project)
+  - [Gitwokflow](#gitwokflow)
+
+## Summery
 The Application was written in a Swift 5.3. The App represent Headlines API and Authentication.
 Application contains the three layers which are the `Data Layer`, `Domain Layer` or `Business Layer` and `Presentation Layer` in MVVM. 
 
@@ -30,10 +37,10 @@ Application contains the three layers which are the `Data Layer`, `Domain Layer`
   then run ``` $ pods install ``` command.
   
 - Step 3: 
-   Open ```YouTV-App.xcworkspace``` file.
+   Open ```YouTVDemo.xcworkspace``` file.
    
 - Step 4: 
-    Run and enjoy the app.
+  Run and enjoy the app.
     
 ## Technology use in this project 
 * Reactive Functional Programming  
@@ -43,6 +50,8 @@ Application contains the three layers which are the `Data Layer`, `Domain Layer`
 * Modern MVVM  
 * Localization
 * CI Testing
-* CollectionView Custom Layout
+* Swiftlint
+* Jazzy for documentation. 
+* Github Actions workflow.
 
-## - Gitwokflow
+## Gitwokflow
