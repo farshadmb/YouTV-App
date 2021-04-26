@@ -27,6 +27,8 @@
 		F8106E6026371DE800653AF8 /* UIButton+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E5F26371DE800653AF8 /* UIButton+Localization.swift */; };
 		F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E6426371DF900653AF8 /* UITextField+Localization.swift */; };
 		F8106E6A26371F0500653AF8 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E6926371F0500653AF8 /* UIView+Animation.swift */; };
+		F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E6E263723E100653AF8 /* Bundle+Extension.swift */; };
+		F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E732637247100653AF8 /* Collection+Additionals.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -80,6 +82,8 @@
 		F8106E5F26371DE800653AF8 /* UIButton+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Localization.swift"; sourceTree = "<group>"; };
 		F8106E6426371DF900653AF8 /* UITextField+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Localization.swift"; sourceTree = "<group>"; };
 		F8106E6926371F0500653AF8 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		F8106E6E263723E100653AF8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F8106E732637247100653AF8 /* Collection+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Additionals.swift"; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				F8106DE02637062E00653AF8 /* String+Localization.swift */,
 				F8106DE52637068600653AF8 /* String+EmptyChecker.swift */,
 				F8106E1326370CA900653AF8 /* Result+Extension.swift */,
+				F8106E6E263723E100653AF8 /* Bundle+Extension.swift */,
+				F8106E732637247100653AF8 /* Collection+Additionals.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
@@ -566,6 +573,7 @@
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
+				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
