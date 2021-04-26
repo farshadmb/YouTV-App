@@ -27,6 +27,7 @@ jobs:
         - name: Install Dependencies
           run: | 
             pod install 
+            bundle install --verbose
         - name: Generate Jazzy Docs
           uses: farshadmb/publish-jazzy-docs@master
           with:  
@@ -38,4 +39,4 @@ jobs:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             message: 'Chore: Update Project Documetions ${date}'
             branch: docs
-            
+
