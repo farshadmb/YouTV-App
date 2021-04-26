@@ -27,12 +27,15 @@ jobs:
         - name: Install Dependencies
           run: | 
             pod install 
-        - name: Publish Jazzy Docs
-          uses: Steven0351/publish-jazzy-docs@v1
+        - name: Generate Jazzy Docs
+          uses: farshadmb/publish-jazzy-docs@master
           with:  
             # Arguments to pass to Jazzy
-            args: "--theme fullwidth --author 'Farshad Mousalou' --min-acl internal --build-tool-arguments -workspace,YouTV-App.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean"
-            # Personal access token
-            # personal_access_token: ${{ secrets.GITHUB_TOKEN }}
+            args: "--author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/"
+        - name: Publish Jazzy Docs
+          uses: actions-js/push@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            message: 'Chore: Update Project Documetions ${date}'
             branch: docs
-       
+            
