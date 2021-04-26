@@ -10,6 +10,8 @@
 		0EF4A467E7E239758E1E6713 /* Pods_YouTVDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */; };
 		67CBED5B4E509E558A5D7B57 /* Pods_YouTVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68640120F1626DAEBABAE3CD /* Pods_YouTVDemo.framework */; };
 		F8106D872636D7C400653AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8106D852636D7C400653AF8 /* Main.storyboard */; };
+		F8106DB72636D9E700653AF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB32636D9E700653AF8 /* Localizable.strings */; };
+		F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8106DB52636D9E700653AF8 /* InfoPlist.strings */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -42,6 +44,12 @@
 		D3EA5FAC7C12C8AADDF221C6 /* Pods_YouTVDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTVDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70519D2E2018B25012634F8 /* Pods-YouTVDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTVDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YouTVDemoTests/Pods-YouTVDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8106D862636D7C400653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8106DB42636D9E700653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8106DB62636D9E700653AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8106DBC2636D9EA00653AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8106DBD2636D9EC00653AF8 /* da-DK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-DK"; path = "da-DK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F8106DBE2636D9F200653AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8106DBF2636D9F400653AF8 /* da-DK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-DK"; path = "da-DK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 		F8106D6A2636D0E200653AF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8106D8C2636D92200653AF8 /* Localization */,
 				F8106D722636D0F700653AF8 /* Storyboards */,
 				F89D8F7926364052007A34CF /* Assets.xcassets */,
 			);
@@ -174,6 +183,15 @@
 			children = (
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		F8106D8C2636D92200653AF8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F8106DB52636D9E700653AF8 /* InfoPlist.strings */,
+				F8106DB32636D9E700653AF8 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -316,6 +334,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"da-DK",
 			);
 			mainGroup = F89D8F692636404E007A34CF;
 			productRefGroup = F89D8F732636404E007A34CF /* Products */;
@@ -335,8 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8106D872636D7C400653AF8 /* Main.storyboard in Resources */,
+				F8106DB72636D9E700653AF8 /* Localizable.strings in Resources */,
 				F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */,
 				F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */,
+				F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +525,26 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		F8106DB32636D9E700653AF8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106DB42636D9E700653AF8 /* Base */,
+				F8106DBE2636D9F200653AF8 /* en */,
+				F8106DBF2636D9F400653AF8 /* da-DK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F8106DB52636D9E700653AF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8106DB62636D9E700653AF8 /* Base */,
+				F8106DBC2636D9EA00653AF8 /* en */,
+				F8106DBD2636D9EC00653AF8 /* da-DK */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -580,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
