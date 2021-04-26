@@ -9,7 +9,6 @@ on:
     types: [document]
   push:
     branches:
-      - infrastracture/CI
       - develop
       - master
 
@@ -19,7 +18,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   document:
-    name: Generate Documentions
+    name: Generate Docs
     runs-on: macOS-latest
     steps:
         - name: Checkout Branch
@@ -29,13 +28,17 @@ jobs:
             pod install 
             bundle install --verbose
         - name: Generate Jazzy Docs
+          id: generate
           run: |
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git add ./Docs/* 
+            echo "::set-output name=date::$(date +'%Y-%m-%d')"
         - name: Publish Jazzy Docs
           uses: actions-js/push@master
+          env: 
+            date: 
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            message: '- Chore: Update Project Docs at ${date}.'
+            message: "- Chore: Update Project Docs at " ${{ steps.generate.outputs.date }}
             branch: docs
 
