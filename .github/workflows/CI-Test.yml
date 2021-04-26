@@ -1,0 +1,61 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI Testing
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  repository_dispatch:
+    types: [Swiftlint, Test]
+  pull_request:
+    branches:
+      - develop
+      - feature/*
+      - feature/*/*
+      - bugfix/*
+      - hotfix/*
+      - master
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Swiftlint:
+    name: Swiftlint Checker
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout Branch
+          uses: actions/checkout@v2
+        - name: Swiftlint Checker
+          uses: norio-nomura/action-swiftlint@3.2.1
+          with:
+            args: --force-exclude --config .swiftlint.yml
+
+  Test:
+    name: Run Unit Test
+    runs-on: macOS-latest
+    steps:
+        - name: Checkout Branch
+          uses: actions/checkout@v2
+        - name: Install Dependencies
+          run: | 
+            bundle install  --verbose
+            bundle exec pod install
+        - name: Build and test on Device
+          run: |
+            bundle exec fastlane run_ci_tests clean:true --verbose
+        
+        - name: Archive Failed Tests artifacts
+          if: failure()
+          uses: actions/upload-artifact@v2
+          with:
+            name: FailureDiff
+            path: fastlane/test_output
+
+        - name: Archive Success Tests artifacts
+          if: success()
+          uses: actions/upload-artifact@v2
+          with:
+            name: SuccessDiff
+            path: fastlane/test_output
