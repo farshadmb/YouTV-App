@@ -36,7 +36,7 @@
 		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
 		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
 		F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */; };
-		F89CB0AC263AD511009FA1AD /* APIJSONValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0AB263AD511009FA1AD /* APIJSONValidation.swift */; };
+		F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */; };
 		F89CB0B3263AD7C5009FA1AD /* NetworkRequestMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */; };
 		F89CB0BC263ADAC4009FA1AD /* MockNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */; };
 		F89CB0C4263ADBC4009FA1AD /* UnitTestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0C3263ADBC4009FA1AD /* UnitTestError.swift */; };
@@ -45,6 +45,9 @@
 		F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D2263AF017009FA1AD /* NetworkService.swift */; };
 		F89CB0D8263AF61B009FA1AD /* NetworkServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */; };
 		F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */; };
+		F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0F5263B0343009FA1AD /* APIClientService.swift */; };
+		F89CB0FB263B0631009FA1AD /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */; };
+		F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB102263B06C6009FA1AD /* MockBuilder.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -107,7 +110,7 @@
 		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
 		F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEncodableRequest.swift; sourceTree = "<group>"; };
-		F89CB0AB263AD511009FA1AD /* APIJSONValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIJSONValidation.swift; sourceTree = "<group>"; };
+		F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMockTests.swift; sourceTree = "<group>"; };
 		F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkHelper.swift; sourceTree = "<group>"; };
 		F89CB0C3263ADBC4009FA1AD /* UnitTestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestError.swift; sourceTree = "<group>"; };
@@ -116,6 +119,9 @@
 		F89CB0D2263AF017009FA1AD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMockTests.swift; sourceTree = "<group>"; };
 		F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWrapper.swift; sourceTree = "<group>"; };
+		F89CB0F5263B0343009FA1AD /* APIClientService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
+		F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		F89CB102263B06C6009FA1AD /* MockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBuilder.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -331,7 +337,7 @@
 			children = (
 				F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */,
 				F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */,
-				F89CB0AB263AD511009FA1AD /* APIJSONValidation.swift */,
+				F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */,
 				F89CB0C8263ADE56009FA1AD /* APINetworkRequestTests.swift */,
 				F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */,
+				F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -360,6 +367,7 @@
 			children = (
 				F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */,
 				F89CB0CD263AE790009FA1AD /* APIPostModel.swift */,
+				F89CB102263B06C6009FA1AD /* MockBuilder.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -367,6 +375,7 @@
 		F89CB0E4263B0294009FA1AD /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				F89CB0F5263B0343009FA1AD /* APIClientService.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -661,6 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */,
 				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
@@ -676,7 +686,7 @@
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
 				F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */,
 				F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */,
-				F89CB0AC263AD511009FA1AD /* APIJSONValidation.swift in Sources */,
+				F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */,
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
 				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
 				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
@@ -698,6 +708,8 @@
 			files = (
 				F89CB0D8263AF61B009FA1AD /* NetworkServiceMockTests.swift in Sources */,
 				F89CB0C4263ADBC4009FA1AD /* UnitTestError.swift in Sources */,
+				F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */,
+				F89CB0FB263B0631009FA1AD /* NetworkServiceTests.swift in Sources */,
 				F89CB0BC263ADAC4009FA1AD /* MockNetworkHelper.swift in Sources */,
 				F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */,
 				F89CB0C9263ADE56009FA1AD /* APINetworkRequestTests.swift in Sources */,
