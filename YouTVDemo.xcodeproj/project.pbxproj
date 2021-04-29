@@ -232,9 +232,7 @@
 		F8106D782636D13C00653AF8 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				F89CB092263AD1FC009FA1AD /* Abstract */,
-				F89CB0A0263AD458009FA1AD /* Request */,
-				F89CB0E4263B0294009FA1AD /* Implementation */,
+				F89CB10A263B1163009FA1AD /* Networking */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -378,6 +376,16 @@
 				F89CB0F5263B0343009FA1AD /* APIClientService.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F89CB10A263B1163009FA1AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB092263AD1FC009FA1AD /* Abstract */,
+				F89CB0A0263AD458009FA1AD /* Request */,
+				F89CB0E4263B0294009FA1AD /* Implementation */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
