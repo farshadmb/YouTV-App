@@ -48,6 +48,8 @@
 		F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0F5263B0343009FA1AD /* APIClientService.swift */; };
 		F89CB0FB263B0631009FA1AD /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */; };
 		F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB102263B06C6009FA1AD /* MockBuilder.swift */; };
+		F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */; };
+		F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -122,6 +124,8 @@
 		F89CB0F5263B0343009FA1AD /* APIClientService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
 		F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		F89CB102263B06C6009FA1AD /* MockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBuilder.swift; sourceTree = "<group>"; };
+		F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAuthenticatior.swift; sourceTree = "<group>"; };
+		F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticatorTests.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -343,6 +347,7 @@
 		F89CB0B0263AD767009FA1AD /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
+				F89CB118263B1236009FA1AD /* Authentictor */,
 				F89CB0B1263AD76F009FA1AD /* Networking */,
 			);
 			path = "Data Layer";
@@ -373,6 +378,7 @@
 		F89CB0E4263B0294009FA1AD /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */,
 				F89CB0F5263B0343009FA1AD /* APIClientService.swift */,
 			);
 			path = Implementation;
@@ -386,6 +392,14 @@
 				F89CB0E4263B0294009FA1AD /* Implementation */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		F89CB118263B1236009FA1AD /* Authentictor */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */,
+			);
+			path = Authentictor;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -706,6 +720,7 @@
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
+				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,6 +737,7 @@
 				F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */,
 				F89CB0C9263ADE56009FA1AD /* APINetworkRequestTests.swift in Sources */,
 				F89CB0B3263AD7C5009FA1AD /* NetworkRequestMockTests.swift in Sources */,
+				F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */,
 				F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
