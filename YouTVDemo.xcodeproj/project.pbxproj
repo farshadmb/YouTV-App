@@ -44,6 +44,7 @@
 		F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0CD263AE790009FA1AD /* APIPostModel.swift */; };
 		F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D2263AF017009FA1AD /* NetworkService.swift */; };
 		F89CB0D8263AF61B009FA1AD /* NetworkServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */; };
+		F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -114,6 +115,7 @@
 		F89CB0CD263AE790009FA1AD /* APIPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostModel.swift; sourceTree = "<group>"; };
 		F89CB0D2263AF017009FA1AD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMockTests.swift; sourceTree = "<group>"; };
+		F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWrapper.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				F89CB092263AD1FC009FA1AD /* Abstract */,
 				F89CB0A0263AD458009FA1AD /* Request */,
+				F89CB0E4263B0294009FA1AD /* Implementation */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				F8106E832637322600653AF8 /* NibWrapper.swift */,
+				F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */,
 			);
 			path = PropertyWrapper;
 			sourceTree = "<group>";
@@ -358,6 +362,13 @@
 				F89CB0CD263AE790009FA1AD /* APIPostModel.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		F89CB0E4263B0294009FA1AD /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -650,6 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
 				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
