@@ -105,6 +105,34 @@ class APIServerResponseTests: XCTestCase {
 
     func testIntegrationSuccessAPIResponse() throws {
 
+        let networkService = createRealNetworkService()
+        let expectations = self.expectation(description: "Integration-EmptyAPIKeyRequest")
+
+        let url = "https://api.themoviedb.org/3/list/1"
+        let statusCodes = Set((200...300).map({ $0}) + [401, 404])
+        let request = APIParametersRequest(url: url,
+                                           validResponse: HTTPResponseValidation(statusCodes: statusCodes, contentTypes:["application/json"]))
+
+        let authenticator = APIAuthenticator(token: AppConfig.APIKey)
+        networkService.apply(interceptor: authenticator)
+
+        _ = networkService.execute(request: request,
+                                   completion: { (result: Result<APIServerResponse<Empty>, Error>) in
+                                    switch result {
+                                    case .success(let value):
+                                        print(value)
+                                        XCTAssertNotNil(value.data, "The result has not a value.")
+                                    case .failure(let error):
+                                        XCTFail("Response Error => \(error), localized Info: \(error.localizedDescription)")
+                                    }
+
+                                    expectations.fulfill()
+        })
+
+        self.waitForExpectations(timeout: 30.0) { (error) in
+            // swiftlint:disable:next force_unwrapping
+            XCTAssertNil(error, "error occured \(error!)")
+        }
     }
 
     func testIntegrationFailureAPIResponse() throws {
