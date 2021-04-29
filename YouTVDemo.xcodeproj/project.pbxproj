@@ -51,6 +51,10 @@
 		F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */; };
 		F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */; };
 		F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1C4263B30E1009FA1AD /* AppConfig.swift */; };
+		F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */; };
+		F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */; };
+		F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */; };
+		F89CB1E8263B479B009FA1AD /* APIServerResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -128,6 +132,10 @@
 		F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAuthenticatior.swift; sourceTree = "<group>"; };
 		F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticatorTests.swift; sourceTree = "<group>"; };
 		F89CB1C4263B30E1009FA1AD /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponseStatus.swift; sourceTree = "<group>"; };
+		F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponseError.swift; sourceTree = "<group>"; };
+		F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponse.swift; sourceTree = "<group>"; };
+		F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServerResponseTests.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -364,6 +372,7 @@
 				F89CB0C8263ADE56009FA1AD /* APINetworkRequestTests.swift */,
 				F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */,
 				F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */,
+				F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -392,6 +401,7 @@
 			children = (
 				F89CB092263AD1FC009FA1AD /* Abstract */,
 				F89CB0A0263AD458009FA1AD /* Request */,
+				F89CB1C9263B3BFE009FA1AD /* Response */,
 				F89CB0E4263B0294009FA1AD /* Implementation */,
 			);
 			path = Networking;
@@ -403,6 +413,16 @@
 				F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */,
 			);
 			path = Authentictor;
+			sourceTree = "<group>";
+		};
+		F89CB1C9263B3BFE009FA1AD /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */,
+				F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */,
+				F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -699,6 +719,7 @@
 				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */,
 				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
@@ -710,6 +731,7 @@
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
 				F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */,
+				F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */,
 				F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */,
 				F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */,
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
@@ -723,6 +745,7 @@
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
+				F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */,
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
 				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
@@ -741,6 +764,7 @@
 				F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */,
 				F89CB0C9263ADE56009FA1AD /* APINetworkRequestTests.swift in Sources */,
 				F89CB0B3263AD7C5009FA1AD /* NetworkRequestMockTests.swift in Sources */,
+				F89CB1E8263B479B009FA1AD /* APIServerResponseTests.swift in Sources */,
 				F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */,
 				F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */,
 			);

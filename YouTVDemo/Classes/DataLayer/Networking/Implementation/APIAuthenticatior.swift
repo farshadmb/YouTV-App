@@ -11,12 +11,16 @@ import Alamofire
 
 struct APIAuthenticator: NetworkRequestInterceptor {
 
+    /// The `String` value to authenticate
     let token: String
 
+    /// Default initializer for `APIAuthenticator`
+    /// - Parameter token: the value to be used to authenticate api
     init(token: String) {
         self.token = token
     }
 
+    /// :nodoc:
     func adapt(_ urlRequest: URLRequest,
                for session: Session,
                completion: @escaping (Result<URLRequest, Error>) -> Void) {
