@@ -8,6 +8,7 @@
 
 import XCTest
 import Foundation
+import Alamofire
 
 @testable import YouTVDemo
 
@@ -89,4 +90,53 @@ class APIServerResponseTests: XCTestCase {
         }
     }
 
+
+    ////////////////////////////////////////////////////////////////
+    //MARK:-
+    //MARK:Integration Tests
+    //MARK:-
+    ////////////////////////////////////////////////////////////////
+
+    private func createRealNetworkService() -> NetworkServiceInterceptable {
+        let configuration = URLSessionConfiguration.af.default
+        let networkService = APIClientService(configuration: configuration)
+        return networkService
+    }
+
+    func testIntegrationSuccessAPIResponse() throws {
+
+    }
+
+    func testIntegrationFailureAPIResponse() throws {
+
+        let networkService = createRealNetworkService()
+        let expectations = self.expectation(description: "Integration-EmptyAPIKeyRequest")
+
+        let url = "https://api.themoviedb.org/3/list/1"
+        let statusCodes = Set((200...300).map({ $0}) + [401, 404])
+        let request = APIParametersRequest(url: url,
+                                           validResponse: HTTPResponseValidation(statusCodes: statusCodes, contentTypes:["application/json"]))
+
+        let authenticator = APIAuthenticator(token: "")
+        networkService.apply(interceptor: authenticator)
+
+        _ = networkService.execute(request: request,
+                                   completion: { (result: Result<APIServerResponse<Empty>, Error>) in
+                                    switch result {
+                                    case .success(let value):
+                                        print(value)
+                                        XCTFail("Server must return unauthorized error with status code 401")
+                                    case .failure(let error):
+                                        print("Response Error => ",error, "localized Info: ", error.localizedDescription)
+                                        XCTAssert(error is APIServerResponseError, "Expected APIServerResponseError Error")
+                                    }
+
+                                    expectations.fulfill()
+        })
+
+        self.waitForExpectations(timeout: 30.0) { (error) in
+            // swiftlint:disable:next force_unwrapping
+            XCTAssertNil(error, "error occured \(error!)")
+        }
+    }
 }

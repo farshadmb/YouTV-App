@@ -80,7 +80,9 @@ final class APIClientService: NetworkServiceInterceptable {
                 log.debug(response.debugDescription, tag: "\(Self.self)")
             })
             .responseData(queue: queue) { (response) in
-                completion(Result { try response.result.get() })
+                completion(response.result.flatMapError({ (aferror) -> Result<Data, Error> in
+                    return .failure(aferror.underlyingError ?? aferror)
+                }))
             }
     }
 
@@ -94,7 +96,7 @@ final class APIClientService: NetworkServiceInterceptable {
                 log.debug(response.debugDescription, tag: "\(Self.self)")
             })
             .responseDecodable(of: T.self, queue: queue, decoder: decoder ?? self.decoder) { (response) in
-                completion(Result { try response.result.get() })
+                completion(response.result.flatMapError({ .failure($0.underlyingError ?? $0) }))
             }
 
     }
