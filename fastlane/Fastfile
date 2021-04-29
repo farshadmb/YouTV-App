@@ -82,4 +82,8 @@ platform :ios do
           open_report: open_report)
   end
 
+  lane :testAPIKey do
+    UI.message("APIKey is #{apiKey}")
+    UI.message("look at prepartion")
+  end
 end
