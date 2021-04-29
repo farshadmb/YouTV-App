@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 @testable import YouTVDemo
 
 class MockNetworkRequest: NetworkRequest {
@@ -23,5 +24,36 @@ class MockNetworkRequest: NetworkRequest {
 }
 
 struct MockNetworkResponseValidation: NetworkResponseValidation {
+
+}
+
+class MockNetworkService: NetworkService {
+
+    var isCalledExecute: Bool = false
+
+    func execute(request: NetworkRequest, completion: @escaping CompletionCallback<Data>) -> DataRequest {
+        isCalledExecute = true
+        return AF.request("")
+    }
+
+}
+
+class MockInterceptableNetworkService: NetworkServiceInterceptable {
+
+    var isCalledExecute: Bool = false
+    var isCalledApply: Bool = false
+
+    func apply(interceptor: NetworkRequestInterceptor) {
+        isCalledApply = true
+    }
+
+    func execute(request: NetworkRequest, completion: @escaping CompletionCallback<Data>) -> DataRequest {
+        isCalledExecute = true
+        return AF.request("")
+    }
+
+}
+
+struct MockRequestInterceptor: NetworkRequestInterceptor {
 
 }
