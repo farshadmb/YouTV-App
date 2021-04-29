@@ -50,6 +50,7 @@
 		F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB102263B06C6009FA1AD /* MockBuilder.swift */; };
 		F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */; };
 		F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */; };
+		F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1C4263B30E1009FA1AD /* AppConfig.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -126,6 +127,7 @@
 		F89CB102263B06C6009FA1AD /* MockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBuilder.swift; sourceTree = "<group>"; };
 		F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAuthenticatior.swift; sourceTree = "<group>"; };
 		F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticatorTests.swift; sourceTree = "<group>"; };
+		F89CB1C4263B30E1009FA1AD /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				F89D8F752636404E007A34CF /* AppDelegate.swift */,
+				F89CB1C4263B30E1009FA1AD /* AppConfig.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */,
 				F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */,
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
+				F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */,
 				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
 				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
 				F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */,

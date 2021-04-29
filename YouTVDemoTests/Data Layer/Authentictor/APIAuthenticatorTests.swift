@@ -230,7 +230,7 @@ class APIAuthenticatorTests: XCTestCase {
 
         let request = APIParametersRequest(url: url,
                                            validResponse: MockNetworkResponseValidation())
-        let authenticator = APIAuthenticator(token: "a94e43b5c6d56c01ee5d471c7b60c629")
+        let authenticator = APIAuthenticator(token: AppConfig.APIKey)
         networkService.apply(interceptor: authenticator)
 
         _ = networkService.execute(request: request,
