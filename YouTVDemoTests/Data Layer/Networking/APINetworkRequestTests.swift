@@ -22,7 +22,7 @@ class APINetworkRequestTests: XCTestCase {
     // MARK: - APIEncodableRequest Tests
     func testAPIEncodableRequestGetMethod() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIEncodableRequest<String>(url: "https://jsonplaceholder.typicode.com/posts",
                                                   method: .get,
                                                   parameters: nil, validResponse: validResponse)
@@ -46,7 +46,7 @@ class APINetworkRequestTests: XCTestCase {
 
     func testAPIEncodableRequestPostMethod() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIEncodableRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                           method: .post,
                                           parameters: APIPostModel(title: "Title", body: "Body", userId: 1),
@@ -71,7 +71,7 @@ class APINetworkRequestTests: XCTestCase {
     }
 
     func testAPIEncodableRequestPutMethod() throws {
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIEncodableRequest(url: "https://jsonplaceholder.typicode.com/posts/1",
                                           method: .put,
                                           parameters: APIPostModel(title: "Title", body: "Body", userId: 1),
@@ -95,7 +95,7 @@ class APINetworkRequestTests: XCTestCase {
 
     func testAPIEncodableRequestValidResponse() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
         let request = APIEncodableRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                           method: .post,
                                           parameters: APIPostModel(title: "Title", body: "Body", userId: 1), validResponse: validResponse)
@@ -115,7 +115,7 @@ class APINetworkRequestTests: XCTestCase {
     }
 
     func testAPIEncodableRequestCustomHeaders() throws {
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
         let request = APIEncodableRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                           method: .post,
                                           parameters: APIPostModel(title: "Title", body: "Body", userId: 1),
@@ -140,7 +140,7 @@ class APINetworkRequestTests: XCTestCase {
     // MARK: - APIParametersRequest Tests
     func testAPIParametersRequestGetMethod() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                            method: .get,
                                            parameters: nil, validResponse: validResponse)
@@ -164,7 +164,7 @@ class APINetworkRequestTests: XCTestCase {
 
     func testAPIParametersRequestQuery() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/comments",
                                            method: .get,
                                            parameters: ["postId": 1],
@@ -202,7 +202,7 @@ class APINetworkRequestTests: XCTestCase {
 
     func testAPIParametersRequestPostMethod() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                            method: .post,
                                            parameters: ["title": "Title", "body": "Body", "userId": 1],
@@ -227,7 +227,7 @@ class APINetworkRequestTests: XCTestCase {
     }
 
     func testAPIParametersRequestPutMethod() throws {
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: [])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: [])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/posts/1",
                                            method: .put,
                                            parameters: ["title": "Title", "body": "Body", "userId": 1],
@@ -251,7 +251,7 @@ class APINetworkRequestTests: XCTestCase {
 
     func testAPIParametersRequestValidResponse() throws {
 
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                            method: .post,
                                            parameters: ["title": "Title", "body": "Body", "userId": 1],
@@ -272,7 +272,7 @@ class APINetworkRequestTests: XCTestCase {
     }
 
     func testAPIParametersRequestCustomHeaders() throws {
-        let validResponse = APIJSONValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
+        let validResponse = HTTPResponseValidation(statusCodes: Set(200...300), contentTypes: ["*/*", "application/json"])
         let request = APIParametersRequest(url: "https://jsonplaceholder.typicode.com/posts",
                                            method: .post,
                                            parameters: ["title": "Title", "body": "Body", "userId": 1],
