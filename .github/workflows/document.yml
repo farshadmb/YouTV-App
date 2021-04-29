@@ -37,7 +37,7 @@ jobs:
           uses: actions-js/push@master  
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            message: ${{ steps.generate.outputs.message }}
+            message: ${ steps.generate.outputs.message }
             branch: docs
             force: true
             directory: './Docs'

@@ -32,6 +32,29 @@
 		F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E782637263700653AF8 /* DispatchQueue+Additional.swift */; };
 		F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E7D26372C9900653AF8 /* Storyboard+Casting.swift */; };
 		F8106E842637322600653AF8 /* NibWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E832637322600653AF8 /* NibWrapper.swift */; };
+		F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB093263AD219009FA1AD /* NetworkRequest.swift */; };
+		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
+		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
+		F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */; };
+		F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */; };
+		F89CB0B3263AD7C5009FA1AD /* NetworkRequestMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */; };
+		F89CB0BC263ADAC4009FA1AD /* MockNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */; };
+		F89CB0C4263ADBC4009FA1AD /* UnitTestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0C3263ADBC4009FA1AD /* UnitTestError.swift */; };
+		F89CB0C9263ADE56009FA1AD /* APINetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0C8263ADE56009FA1AD /* APINetworkRequestTests.swift */; };
+		F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0CD263AE790009FA1AD /* APIPostModel.swift */; };
+		F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D2263AF017009FA1AD /* NetworkService.swift */; };
+		F89CB0D8263AF61B009FA1AD /* NetworkServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */; };
+		F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */; };
+		F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0F5263B0343009FA1AD /* APIClientService.swift */; };
+		F89CB0FB263B0631009FA1AD /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */; };
+		F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB102263B06C6009FA1AD /* MockBuilder.swift */; };
+		F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */; };
+		F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */; };
+		F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1C4263B30E1009FA1AD /* AppConfig.swift */; };
+		F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */; };
+		F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */; };
+		F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */; };
+		F89CB1E8263B479B009FA1AD /* APIServerResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */; };
 		F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F752636404E007A34CF /* AppDelegate.swift */; };
 		F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7926364052007A34CF /* Assets.xcassets */; };
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
@@ -90,6 +113,29 @@
 		F8106E782637263700653AF8 /* DispatchQueue+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Additional.swift"; sourceTree = "<group>"; };
 		F8106E7D26372C9900653AF8 /* Storyboard+Casting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Casting.swift"; sourceTree = "<group>"; };
 		F8106E832637322600653AF8 /* NibWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapper.swift; sourceTree = "<group>"; };
+		F89CB093263AD219009FA1AD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
+		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
+		F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEncodableRequest.swift; sourceTree = "<group>"; };
+		F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseValidation.swift; sourceTree = "<group>"; };
+		F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMockTests.swift; sourceTree = "<group>"; };
+		F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkHelper.swift; sourceTree = "<group>"; };
+		F89CB0C3263ADBC4009FA1AD /* UnitTestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestError.swift; sourceTree = "<group>"; };
+		F89CB0C8263ADE56009FA1AD /* APINetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkRequestTests.swift; sourceTree = "<group>"; };
+		F89CB0CD263AE790009FA1AD /* APIPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostModel.swift; sourceTree = "<group>"; };
+		F89CB0D2263AF017009FA1AD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMockTests.swift; sourceTree = "<group>"; };
+		F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWrapper.swift; sourceTree = "<group>"; };
+		F89CB0F5263B0343009FA1AD /* APIClientService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientService.swift; sourceTree = "<group>"; };
+		F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		F89CB102263B06C6009FA1AD /* MockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBuilder.swift; sourceTree = "<group>"; };
+		F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAuthenticatior.swift; sourceTree = "<group>"; };
+		F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAuthenticatorTests.swift; sourceTree = "<group>"; };
+		F89CB1C4263B30E1009FA1AD /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponseStatus.swift; sourceTree = "<group>"; };
+		F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponseError.swift; sourceTree = "<group>"; };
+		F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerResponse.swift; sourceTree = "<group>"; };
+		F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServerResponseTests.swift; sourceTree = "<group>"; };
 		F89D8F722636404E007A34CF /* YouTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F752636404E007A34CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89D8F7926364052007A34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				F89D8F752636404E007A34CF /* AppDelegate.swift */,
+				F89CB1C4263B30E1009FA1AD /* AppConfig.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -200,6 +247,7 @@
 		F8106D782636D13C00653AF8 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				F89CB10A263B1163009FA1AD /* Networking */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -282,8 +330,99 @@
 			isa = PBXGroup;
 			children = (
 				F8106E832637322600653AF8 /* NibWrapper.swift */,
+				F89CB0ED263B0313009FA1AD /* AtomicWrapper.swift */,
 			);
 			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		F89CB092263AD1FC009FA1AD /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB093263AD219009FA1AD /* NetworkRequest.swift */,
+				F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */,
+				F89CB0D2263AF017009FA1AD /* NetworkService.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F89CB0A0263AD458009FA1AD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */,
+				F89CB0A6263AD4AB009FA1AD /* APIEncodableRequest.swift */,
+				F89CB0AB263AD511009FA1AD /* HTTPResponseValidation.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F89CB0B0263AD767009FA1AD /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB118263B1236009FA1AD /* Authentictor */,
+				F89CB0B1263AD76F009FA1AD /* Networking */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		F89CB0B1263AD76F009FA1AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB0BA263ADAAB009FA1AD /* Helper */,
+				F89CB0B2263AD7C5009FA1AD /* NetworkRequestMockTests.swift */,
+				F89CB0C8263ADE56009FA1AD /* APINetworkRequestTests.swift */,
+				F89CB0D7263AF61B009FA1AD /* NetworkServiceMockTests.swift */,
+				F89CB0FA263B0630009FA1AD /* NetworkServiceTests.swift */,
+				F89CB1E7263B479A009FA1AD /* APIServerResponseTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F89CB0BA263ADAAB009FA1AD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB0BB263ADAC4009FA1AD /* MockNetworkHelper.swift */,
+				F89CB0CD263AE790009FA1AD /* APIPostModel.swift */,
+				F89CB102263B06C6009FA1AD /* MockBuilder.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F89CB0E4263B0294009FA1AD /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB113263B11FE009FA1AD /* APIAuthenticatior.swift */,
+				F89CB0F5263B0343009FA1AD /* APIClientService.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F89CB10A263B1163009FA1AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB092263AD1FC009FA1AD /* Abstract */,
+				F89CB0A0263AD458009FA1AD /* Request */,
+				F89CB1C9263B3BFE009FA1AD /* Response */,
+				F89CB0E4263B0294009FA1AD /* Implementation */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F89CB118263B1236009FA1AD /* Authentictor */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB119263B1250009FA1AD /* APIAuthenticatorTests.swift */,
+			);
+			path = Authentictor;
+			sourceTree = "<group>";
+		};
+		F89CB1C9263B3BFE009FA1AD /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F89CB1CA263B3C22009FA1AD /* APIServerResponseStatus.swift */,
+				F89CB1D2263B3C2B009FA1AD /* APIServerResponseError.swift */,
+				F89CB1D7263B3C37009FA1AD /* APIServerResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F89D8F692636404E007A34CF = {
@@ -321,8 +460,10 @@
 		F89D8F8626364052007A34CF /* YouTVDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F89CB0B0263AD767009FA1AD /* Data Layer */,
 				F89D8F8726364052007A34CF /* YouTVDemoTests.swift */,
 				F89D8F8926364052007A34CF /* Info.plist */,
+				F89CB0C3263ADBC4009FA1AD /* UnitTestError.swift */,
 			);
 			path = YouTVDemoTests;
 			sourceTree = "<group>";
@@ -574,18 +715,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */,
+				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */,
 				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
+				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
 				F8106E6A26371F0500653AF8 /* UIView+Animation.swift in Sources */,
+				F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */,
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
 				F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */,
+				F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */,
+				F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */,
+				F89CB0AC263AD511009FA1AD /* HTTPResponseValidation.swift in Sources */,
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
+				F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */,
+				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
+				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
 				F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */,
 				F8106E6026371DE800653AF8 /* UIButton+Localization.swift in Sources */,
 				F8106E842637322600653AF8 /* NibWrapper.swift in Sources */,
@@ -593,7 +745,9 @@
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
+				F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */,
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
+				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +756,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89CB0D8263AF61B009FA1AD /* NetworkServiceMockTests.swift in Sources */,
+				F89CB0C4263ADBC4009FA1AD /* UnitTestError.swift in Sources */,
+				F89CB103263B06C6009FA1AD /* MockBuilder.swift in Sources */,
+				F89CB0FB263B0631009FA1AD /* NetworkServiceTests.swift in Sources */,
+				F89CB0BC263ADAC4009FA1AD /* MockNetworkHelper.swift in Sources */,
+				F89CB0CE263AE790009FA1AD /* APIPostModel.swift in Sources */,
+				F89CB0C9263ADE56009FA1AD /* APINetworkRequestTests.swift in Sources */,
+				F89CB0B3263AD7C5009FA1AD /* NetworkRequestMockTests.swift in Sources */,
+				F89CB1E8263B479B009FA1AD /* APIServerResponseTests.swift in Sources */,
+				F89CB11A263B1250009FA1AD /* APIAuthenticatorTests.swift in Sources */,
 				F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

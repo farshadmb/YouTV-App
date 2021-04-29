@@ -25,6 +25,8 @@ platform :ios do
 
   output_folder = "./build" # to be filled by lanes
 
+  apiKey = ENV["MOVIEDB_API_TOKEN"]
+
   desc "Description of what the lane does"
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
@@ -33,6 +35,7 @@ platform :ios do
   before_all do |lane| 
 
     UI.message "prepare for builds"
+    sh("sed -i '' 's/YOUR-API-Key/#{apiKey}/g' ../YouTVDemo/Classes/Application/AppConfig.swift", log:false)
     xcversion(version: "12.2")
     version = get_version_number(xcodeproj:projectspace, target:scheme)
     UI.message "prepared for build"
@@ -79,4 +82,8 @@ platform :ios do
           open_report: open_report)
   end
 
+  lane :testAPIKey do
+    UI.message("APIKey is #{apiKey}")
+    UI.message("look at prepartion")
+  end
 end
