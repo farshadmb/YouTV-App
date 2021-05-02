@@ -14,7 +14,7 @@ import Alamofire
 final class MoviesRemoteRepository {
 
     let service: NetworkService
-    let decoder: DataDecoder
+    // let decoder: DataDecoder
 
     init(service: NetworkService) {
         self.service = service
