@@ -33,6 +33,8 @@
 		F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E7D26372C9900653AF8 /* Storyboard+Casting.swift */; };
 		F8106E842637322600653AF8 /* NibWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8106E832637322600653AF8 /* NibWrapper.swift */; };
 		F8108CF1263F011100AFD73A /* AnyPublisher+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108CF0263F011100AFD73A /* AnyPublisher+Helper.swift */; };
+		F8108D0C263F129F00AFD73A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D0B263F129F00AFD73A /* Pagination.swift */; };
+		F8108D11263F130500AFD73A /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D10263F130500AFD73A /* Dates.swift */; };
 		F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB093263AD219009FA1AD /* NetworkRequest.swift */; };
 		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
 		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
@@ -115,6 +117,8 @@
 		F8106E7D26372C9900653AF8 /* Storyboard+Casting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Casting.swift"; sourceTree = "<group>"; };
 		F8106E832637322600653AF8 /* NibWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapper.swift; sourceTree = "<group>"; };
 		F8108CF0263F011100AFD73A /* AnyPublisher+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Helper.swift"; sourceTree = "<group>"; };
+		F8108D0B263F129F00AFD73A /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		F8108D10263F130500AFD73A /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		F89CB093263AD219009FA1AD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
@@ -347,13 +351,15 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
-        F8108CF8263F05F700AFD73A /* Models */ = {
-            isa = PBXGroup;
-            children = (
-            );
-            path = Models;
-            sourceTree = "<group>";
-        };
+		F8108CF8263F05F700AFD73A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8108D0B263F129F00AFD73A /* Pagination.swift */,
+				F8108D10263F130500AFD73A /* Dates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F89CB092263AD1FC009FA1AD /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +752,7 @@
 				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
 				F8106E6A26371F0500653AF8 /* UIView+Animation.swift in Sources */,
+				F8108D11263F130500AFD73A /* Dates.swift in Sources */,
 				F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */,
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
@@ -767,6 +774,7 @@
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
 				F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */,
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
+				F8108D0C263F129F00AFD73A /* Pagination.swift in Sources */,
 				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
