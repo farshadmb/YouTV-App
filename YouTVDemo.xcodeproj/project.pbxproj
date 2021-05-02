@@ -45,6 +45,7 @@
 		F8108D43263F1D8A00AFD73A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D42263F1D8A00AFD73A /* Image.swift */; };
 		F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D48263F21CB00AFD73A /* TVSerialSummery.swift */; };
 		F8108D51263F220300AFD73A /* TVSerialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D50263F220300AFD73A /* TVSerialDetail.swift */; };
+		F8108D57263F2C1F00AFD73A /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D56263F2C1F00AFD73A /* APIConfigs.swift */; };
 		F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB093263AD219009FA1AD /* NetworkRequest.swift */; };
 		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
 		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
@@ -139,6 +140,7 @@
 		F8108D42263F1D8A00AFD73A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		F8108D48263F21CB00AFD73A /* TVSerialSummery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSerialSummery.swift; sourceTree = "<group>"; };
 		F8108D50263F220300AFD73A /* TVSerialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSerialDetail.swift; sourceTree = "<group>"; };
+		F8108D56263F2C1F00AFD73A /* APIConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigs.swift; sourceTree = "<group>"; };
 		F89CB093263AD219009FA1AD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 		F8108CF8263F05F700AFD73A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8108D55263F2C1400AFD73A /* Misc */,
 				F8108D47263F21B700AFD73A /* TV */,
 				F8108D24263F194700AFD73A /* Language */,
 				F8108D23263F194200AFD73A /* Production */,
@@ -420,6 +423,14 @@
 				F8108D50263F220300AFD73A /* TVSerialDetail.swift */,
 			);
 			path = TV;
+			sourceTree = "<group>";
+		};
+		F8108D55263F2C1400AFD73A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F8108D56263F2C1F00AFD73A /* APIConfigs.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		F89CB092263AD1FC009FA1AD /* Abstract */ = {
@@ -848,6 +859,7 @@
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
 				F8108D0C263F129F00AFD73A /* Pagination.swift in Sources */,
 				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
+				F8108D57263F2C1F00AFD73A /* APIConfigs.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
