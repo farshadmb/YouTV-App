@@ -13,7 +13,6 @@ import Foundation
  */
 struct Pagination <Result: Decodable>: Decodable {
 
-
     /// The `Int` value indicate the current page that fetched
     let page: Int
 
@@ -28,7 +27,6 @@ struct Pagination <Result: Decodable>: Decodable {
 
     /// The `Int` value indicate the total result count.
     let totalResults: Int
-
 
     /// Determind the `Pagination` has the next page or has not.
     var hasNext: Bool {
@@ -45,7 +43,6 @@ struct Pagination <Result: Decodable>: Decodable {
         return page == totalPages
     }
 
-
     /// Increase and return the page by one. if the `Pagination` value has next page, otherwise return the last page.
     /// - Returns: The increased `Int` page value
     func nextPage() -> Int {
@@ -58,5 +55,3 @@ struct Pagination <Result: Decodable>: Decodable {
     }
 
 }
-
-
