@@ -43,6 +43,8 @@
 		F8108D39263F1C1800AFD73A /* ProductionCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D38263F1C1800AFD73A /* ProductionCountry.swift */; };
 		F8108D3E263F1C6200AFD73A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D3D263F1C6200AFD73A /* Video.swift */; };
 		F8108D43263F1D8A00AFD73A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D42263F1D8A00AFD73A /* Image.swift */; };
+		F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D48263F21CB00AFD73A /* TVSerialSummery.swift */; };
+		F8108D51263F220300AFD73A /* TVSerialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D50263F220300AFD73A /* TVSerialDetail.swift */; };
 		F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB093263AD219009FA1AD /* NetworkRequest.swift */; };
 		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
 		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
@@ -135,6 +137,8 @@
 		F8108D38263F1C1800AFD73A /* ProductionCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCountry.swift; sourceTree = "<group>"; };
 		F8108D3D263F1C6200AFD73A /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		F8108D42263F1D8A00AFD73A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		F8108D48263F21CB00AFD73A /* TVSerialSummery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSerialSummery.swift; sourceTree = "<group>"; };
+		F8108D50263F220300AFD73A /* TVSerialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSerialDetail.swift; sourceTree = "<group>"; };
 		F89CB093263AD219009FA1AD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
@@ -370,6 +374,7 @@
 		F8108CF8263F05F700AFD73A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8108D47263F21B700AFD73A /* TV */,
 				F8108D24263F194700AFD73A /* Language */,
 				F8108D23263F194200AFD73A /* Production */,
 				F8108D1F263F190600AFD73A /* Movies */,
@@ -406,6 +411,15 @@
 				F8108D25263F195600AFD73A /* SpokenLanguage.swift */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		F8108D47263F21B700AFD73A /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				F8108D48263F21CB00AFD73A /* TVSerialSummery.swift */,
+				F8108D50263F220300AFD73A /* TVSerialDetail.swift */,
+			);
+			path = TV;
 			sourceTree = "<group>";
 		};
 		F89CB092263AD1FC009FA1AD /* Abstract */ = {
@@ -790,6 +804,7 @@
 			files = (
 				F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */,
 				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
+				F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
 				F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */,
@@ -826,6 +841,7 @@
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8108D2C263F1B9400AFD73A /* Genre.swift in Sources */,
+				F8108D51263F220300AFD73A /* TVSerialDetail.swift in Sources */,
 				F8106DE12637062E00653AF8 /* String+Localization.swift in Sources */,
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
 				F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */,

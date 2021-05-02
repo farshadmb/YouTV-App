@@ -47,6 +47,11 @@ extension Video {
         case featurette = "Featurette"
         case teaser = "Teaser"
         case trailer = "Trailer"
+        case clip = "Clip"
+        case openingCredits = "Opening Credits"
+        case behindetheScenes = "Behind the Scenes"
+        case recap = "Recap"
+        case bloopers = "Bloopers"
     }
 
 }

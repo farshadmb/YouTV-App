@@ -15,7 +15,7 @@ struct MovieSummery: Codable, Hashable {
     let posterPath: String?
     let adult: Bool?
     let overview: String?
-    let releaseDate: String?
+    let releaseDate: Date?
     let genreIds: [Int]?
     let originalTitle: String?
     let originalLanguage: String?

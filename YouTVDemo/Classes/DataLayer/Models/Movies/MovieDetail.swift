@@ -24,7 +24,7 @@ struct MovieDetail: Codable, Hashable {
     let posterPath: String?
     let productionCompanies: [ProductionCompany]?
     let productionCountries: [ProductionCountry]?
-    let releaseDate: String?
+    let releaseDate: Date?
     let revenue: Int?
     let runtime: Int?
     let spokenLanguages: [SpokenLanguage]?
