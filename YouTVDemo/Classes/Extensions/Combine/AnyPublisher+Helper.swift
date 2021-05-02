@@ -10,12 +10,14 @@ import Foundation
 import Combine
 
 struct AnyCombineObserver<Output, Failure: Error> {
+    
     let onNext: ((Output) -> Void)
     let onError: ((Failure) -> Void)
     let onCompleted: (() -> Void)
 }
 
 struct CombineDisposable {
+    
     let dispose: () -> Void
 }
 
