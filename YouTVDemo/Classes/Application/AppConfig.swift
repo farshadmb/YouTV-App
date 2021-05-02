@@ -8,10 +8,13 @@
 
 import Foundation
 
+/// The struct that hold the app configuration
+/// such as `APIKey` and `BaseURL`
 struct AppConfig {
 
     // put your api code here, this api key would be fulfilled by CI/CD
     static let APIKey = "YOUR-API-Key"
+
     // swiftlint:disable:next force_unwrapping
-    static let BaseURL = URL(string: "https://newsapi.org/v2/")!
+    static let baseURL = URL(string: "https://api.themoviedb.org/3")!
 }

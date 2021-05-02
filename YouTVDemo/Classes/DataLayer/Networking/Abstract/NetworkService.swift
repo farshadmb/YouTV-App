@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import RxSwift
+import Combine
 
 /**
   `NetworkService` Abstract to reduce coupling in project. The abstract help to use this as DI.
@@ -87,9 +88,9 @@ extension NetworkService {
 extension NetworkService {
 
     /**
-
-     - Parameter request: <#request description#>
-     - Returns: <#description#>
+     Starts performing the provided `Request`. `Observable` emit result since the `Request` has finished.
+     - Parameter request: The `NetworkRequest` to be perfromed.
+     - Returns: The `Observable<T>` instance that emit element whether the result would be success or failed.
      */
     func execute(request: NetworkRequest) -> Observable<Data> {
 
@@ -112,11 +113,12 @@ extension NetworkService {
     }
 
     /**
+     Starts performing the provided `Request`. `Observable<T>` emit result since the `Request` has finished.
 
      - Parameters:
-     - request: <#request description#>
-     - decoder: <#decoder description#>
-     - Returns: <#description#>
+      - request: The `NetworkRequest` to be executed.
+      - decoder: `DataDecoder` to be used to decode the response.
+     - Returns: The `Observable<T>` instance that emit element whether the result would be success or failed.
      */
     func execute<T: Decodable>(request: NetworkRequest, decoder: DataDecoder? = nil) -> Observable<T> {
         return Observable.create {[unowned base = self] observer in
@@ -136,4 +138,64 @@ extension NetworkService {
             }
         }
     }
+}
+
+/**
+ Reactive extension for `NetworkService`. it can be used whenever the `Combine` is defined or used.
+ */
+extension NetworkService {
+
+    /**
+     Starts performing the provided `Request`. `AnyPublisher` emit result since the `Request` has finished.
+
+     - Parameter request: The `NetworkRequest` to be performed.
+     - Returns: The `AnyPublisher<Data,Error>`
+     */
+    func execute(request: NetworkRequest) -> AnyPublisher<Data, Error> {
+
+        return .create { [unowned base = self] observer in
+
+            let dataRequest = base.execute(request: request) { (result) in
+                switch result {
+                case .success(let value):
+                    observer.onNext(value)
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+
+            return CombineDisposable {
+                dataRequest.cancel()
+            }
+        }
+    }
+
+    /**
+     Starts performing the provided `Request`. `AnyPublisher` emit result since the `Request` has finished.
+
+     - Parameters:
+       - request: The `NetworkRequest` to be executed.
+       - decoder: `DataDecoder` to be used to decode the response.
+     - Returns: The `AnyPublisher<T,Error>` where `T` is `Decodable`.
+     */
+    func execute<T: Decodable>(request: NetworkRequest, decoder: DataDecoder? = nil) -> AnyPublisher<T, Error> {
+        return .create {[unowned base = self] observer in
+
+            let dataRequest = base.execute(request: request, decoder: decoder) { (result: Result<T,Error>) in
+                switch result {
+                case .success(let value):
+                    observer.onNext(value)
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+
+            return CombineDisposable {
+                dataRequest.cancel()
+            }
+        }
+    }
+
 }
