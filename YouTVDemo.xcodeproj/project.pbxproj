@@ -249,6 +249,7 @@
 		F8106D782636D13C00653AF8 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				F8108CF8263F05F700AFD73A /* Models */,
 				F89CB10A263B1163009FA1AD /* Networking */,
 			);
 			path = DataLayer;
@@ -346,6 +347,13 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+        F8108CF8263F05F700AFD73A /* Models */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            path = Models;
+            sourceTree = "<group>";
+        };
 		F89CB092263AD1FC009FA1AD /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
