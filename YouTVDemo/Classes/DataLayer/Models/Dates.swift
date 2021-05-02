@@ -9,6 +9,7 @@
 import Foundation
 
 struct Dates: Codable {
+    
     let maximum: Date
     let minimum: Date
 }
