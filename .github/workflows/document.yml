@@ -31,13 +31,14 @@ jobs:
           id: generate
           run: |
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
+            git checkout docs
             git add ./Docs/* 
             echo "::set-output name=message::Updated Project Docs at $(date +'%Y-%m-%d')"
         - name: Publish Jazzy Docs
           uses: actions-js/push@master  
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            message: ${ steps.generate.outputs.message }
+            message: ${{ steps.generate.outputs.message }}
             branch: docs
             force: true
             directory: './Docs'
