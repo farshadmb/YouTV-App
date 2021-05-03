@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios run_ci_tests
 ```
 Run App Unit tests on given devices name
+### ios testAPIKey
+```
+fastlane ios testAPIKey
+```
+
 
 ----
 
