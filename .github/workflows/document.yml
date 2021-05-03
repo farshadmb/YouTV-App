@@ -31,7 +31,9 @@ jobs:
           id: generate
           run: |
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
+            git fetch -a -p
             git checkout docs
+            git pull origin --force
             git add ./Docs/* 
             echo "::set-output name=message::Updated Project Docs at $(date +'%Y-%m-%d')"
         - name: Publish Jazzy Docs
