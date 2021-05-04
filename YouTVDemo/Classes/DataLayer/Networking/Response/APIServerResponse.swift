@@ -96,6 +96,10 @@ extension APIServerResponse: CustomDebugStringConvertible {
     /// :nodoc:
     var debugDescription: String {
         let message = self.message ?? "no message"
-        return "[Server-Response] status = \(status) message= \(message) error = empty data = \(data)"
+        var dataValue = "No Data"
+        if let data = self.data {
+            dataValue = "\(data)"
+        }
+        return "[Server-Response] status = \(status) message= \(message) error = empty data = \(dataValue)"
     }
 }
