@@ -27,6 +27,7 @@ protocol MoviesRepository: class {
        - forId: <#forId description#>
        - page: <#page description#>
        - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchRecommandationMovies(forId: Int, at page: Int, withLanguage: String) -> Observable<Pagination<Movie>>
 
@@ -35,6 +36,7 @@ protocol MoviesRepository: class {
      - Parameters:
        - page: <#page description#>
        - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchNowPlayingMovies(at page: Int, withLanguage: String) -> Observable<Pagination<Movie>>
 
@@ -43,14 +45,16 @@ protocol MoviesRepository: class {
      - Parameters:
        - page: <#page description#>
        - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchTopRatedMovies(at page: Int, withLanguage: String) -> Observable<Pagination<Movie>>
 
     /**
      <# Property Summery Here#>
      - Parameters:
-     - page: <#page description#>
-     - withLanguage: <#withLanguage description#>
+       - page: <#page description#>
+       - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchPopularMovies(at page: Int, withLanguage: String) -> Observable<Pagination<Movie>>
 
@@ -59,6 +63,7 @@ protocol MoviesRepository: class {
      - Parameters:
        - movie: <#movie description#>
        - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchMovieDetail(for movie: Movie, withLanguage: String) -> Single<Detail>
 
@@ -67,6 +72,7 @@ protocol MoviesRepository: class {
      - Parameters:
        - forId: <#forId description#>
        - withLanguage: <#withLanguage description#>
+     - Returns:
      */
     func fetchMovieDetail(forId: Int, withLanguage: String) -> Single<Detail>
 }
