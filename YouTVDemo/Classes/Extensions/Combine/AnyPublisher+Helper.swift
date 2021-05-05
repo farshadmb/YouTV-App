@@ -24,7 +24,6 @@ struct AnyCombineObserver<Output, Failure: Error> {
     let onCompleted: (() -> Void)
 }
 
-
 /// <#Description#>
 struct CombineDisposable {
 
@@ -61,7 +60,7 @@ extension AnyPublisher {
     /// - Returns: The `Future` that produce only one element on stream.
     func asFuture() -> Future<Output, Failure> {
         return Future { promise in
-            var ticket: AnyCancellable? = nil
+            var ticket: AnyCancellable?
             ticket = self.sink(receiveCompletion: {
                 ticket?.cancel()
                 ticket = nil

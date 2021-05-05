@@ -31,7 +31,7 @@ extension XCTestCase {
         let mock = try NetworkMockBuilder(URL: url)
             .set(method: method)
             .set(statusCode: statusCode)
-            // swiftlint:disable:next force_unwrapping
+            // swiftlint:disable:next force_unwrapping superfluous_disable_command
             .set(data: [method: data])
             .set(contentType: contentType)
             .build()

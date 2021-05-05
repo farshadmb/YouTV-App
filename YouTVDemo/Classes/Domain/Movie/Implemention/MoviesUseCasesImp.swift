@@ -14,7 +14,6 @@ import Combine
 /// <#Description#>
 final class MoviesUseCasesImp: MoviesUseCases, PopularMoviesUseCases, TopRatedMoviesUseCases, NowPlayingMoviesUseCases {
 
-
     /// <#Description#>
     let repository: MoviesRepository
 
@@ -29,7 +28,6 @@ final class MoviesUseCasesImp: MoviesUseCases, PopularMoviesUseCases, TopRatedMo
 
     @Atomic
     private var nowPlayingPaginator: Pagination<MovieSummery>
-
 
     /// Default Initiliazer for `MoviesUseCasesImp`
     /// - Parameters:
