@@ -65,7 +65,7 @@ protocol TVRepository: class {
        - withLanguage: <#withLanguage description#>
      - Returns:
      */
-    func fetchTVSerialsDetail(forSerial serial: TVSerial, withLanguage: String) -> Single<Detail>
+    func fetchTVSerialDetail(forSerial serial: TVSerial, withLanguage: String) -> Single<Detail>
 
     /**
      <# Property Summery Here#>
@@ -132,7 +132,7 @@ extension TVRepository {
                 }
             }
 
-            let dispose = base.fetchTVSerialsDetail(forSerial: serial, withLanguage: lang)
+            let dispose = base.fetchTVSerialDetail(forSerial: serial, withLanguage: lang)
                 .asObservable()
                 .subscribe { (event) in
                     switch event {

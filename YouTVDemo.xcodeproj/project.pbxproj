@@ -55,6 +55,8 @@
 		F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98932642ED8700F89FF8 /* MoviesUseCases.swift */; };
 		F86E989A2642EF0D00F89FF8 /* MoviesUseCasesImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98992642EF0D00F89FF8 /* MoviesUseCasesImp.swift */; };
 		F86E98A52642F6A500F89FF8 /* TVRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98A42642F6A500F89FF8 /* TVRepository.swift */; };
+		F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98A92642FB6500F89FF8 /* TVUseCases.swift */; };
+		F86E98AF2642FC1100F89FF8 /* TVUseCasesImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */; };
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
@@ -164,6 +166,8 @@
 		F86E98932642ED8700F89FF8 /* MoviesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCases.swift; sourceTree = "<group>"; };
 		F86E98992642EF0D00F89FF8 /* MoviesUseCasesImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCasesImp.swift; sourceTree = "<group>"; };
 		F86E98A42642F6A500F89FF8 /* TVRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRepository.swift; sourceTree = "<group>"; };
+		F86E98A92642FB6500F89FF8 /* TVUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCases.swift; sourceTree = "<group>"; };
+		F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCasesImp.swift; sourceTree = "<group>"; };
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
@@ -528,6 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				F86E98A42642F6A500F89FF8 /* TVRepository.swift */,
+				F86E98A92642FB6500F89FF8 /* TVUseCases.swift */,
 			);
 			path = Abstracts;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 		F86E98A32642F67200F89FF8 /* Implemention */ = {
 			isa = PBXGroup;
 			children = (
+				F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */,
 			);
 			path = Implemention;
 			sourceTree = "<group>";
@@ -989,6 +995,7 @@
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
 				F8108D34263F1BE300AFD73A /* ProductionCompany.swift in Sources */,
+				F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F8108D63263F337100AFD73A /* MoviesRemoteRepository.swift in Sources */,
 				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
@@ -1012,6 +1019,7 @@
 				F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */,
 				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
 				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
+				F86E98AF2642FC1100F89FF8 /* TVUseCasesImp.swift in Sources */,
 				F8108CF1263F011100AFD73A /* AnyPublisher+Helper.swift in Sources */,
 				F8108D3E263F1C6200AFD73A /* Video.swift in Sources */,
 				F8108D26263F195600AFD73A /* SpokenLanguage.swift in Sources */,

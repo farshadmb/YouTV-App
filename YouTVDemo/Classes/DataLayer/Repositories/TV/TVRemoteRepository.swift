@@ -50,7 +50,7 @@ final class TVRemoteRepository: TVRepository {
             .map(map(response:))
     }
 
-    func fetchTVSerialsDetail(forSerial serial: TVSerial, withLanguage language: String) -> Single<Detail> {
+    func fetchTVSerialDetail(forSerial serial: TVSerial, withLanguage language: String) -> Single<Detail> {
         guard let id = serial.id else {
             return .error(NSError(domain: "TVRepositorDomain", code: -1, userInfo: [NSLocalizedDescriptionKey: "The Id is nil"]))
         }
