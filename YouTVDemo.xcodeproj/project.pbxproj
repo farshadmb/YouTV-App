@@ -605,12 +605,10 @@
 		F86E9955264340AB00F89FF8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F86E99922643488500F89FF8 /* TVShows */,
+				F86E99912643487F00F89FF8 /* Movies */,
 				F86E996C2643468700F89FF8 /* HomeViewModel.swift */,
 				F86E997E264346C400F89FF8 /* HomeSectionViewModel.swift */,
-				F86E99742643469C00F89FF8 /* HomeMoviesViewModel.swift */,
-				F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */,
-				F86E9983264346E300F89FF8 /* HomeMovieViewModel.swift */,
-				F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -651,6 +649,24 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F86E99912643487F00F89FF8 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				F86E99742643469C00F89FF8 /* HomeMoviesViewModel.swift */,
+				F86E9983264346E300F89FF8 /* HomeMovieViewModel.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		F86E99922643488500F89FF8 /* TVShows */ = {
+			isa = PBXGroup;
+			children = (
+				F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */,
+				F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */,
+			);
+			path = TVShows;
 			sourceTree = "<group>";
 		};
 		F876E9222641D83D00DCC255 /* Movie */ = {

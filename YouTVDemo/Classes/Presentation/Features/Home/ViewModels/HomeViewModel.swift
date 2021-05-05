@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
+
+class HomeViewModel {
+
+    let disposeBag = DisposeBag()
+    
+}
