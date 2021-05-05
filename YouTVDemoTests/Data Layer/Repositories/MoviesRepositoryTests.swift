@@ -19,18 +19,19 @@ class MoviesRepositoryTests: XCTestCase {
     let baseURL = AppConfig.baseURL.absoluteString
     var mockService: NetworkService!
     var networkService: NetworkServiceInterceptable!
-    // swiftlint:disable:next force_unwrapping
-    let language = Bundle.main.preferredLocalizations.first!
+    var validation: NetworkResponseValidation!
 
-    private let integrationTimeExpections = 30.0
-    private let timeExpections = 10.0
+    let integrationTimeExpections = 30.0
+    let timeExpections = 10.0
 
     let disposeBag = DisposeBag()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        mockService = createMockService()
-        networkService = createRealService()
+        mockService = RepositoryDependencyContainer.createMockService()
+        networkService = RepositoryDependencyContainer.createRealService()
+        validation = RepositoryDependencyContainer.validateResponse()
+
         try super.setUpWithError()
     }
 
@@ -49,7 +50,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         let expectations = self.expectation(description: "\(#function)")
         let data = try mockResponserFetcher(name: "MoviesList")
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let url = baseURL + "/movie/now_playing?language=\(language)&page=\(page)"
         try buildMockResponse(url: url,
@@ -89,7 +90,7 @@ class MoviesRepositoryTests: XCTestCase {
             throw UnitTestError(message: "Could not create a mock response data")
         }
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let url = baseURL + "/movie/now_playing?language=\(language)&page=\(page)"
 
@@ -125,7 +126,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         let expectations = self.expectation(description: "\(#function)")
         let data = try mockResponserFetcher(name: "MoviesList")
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let url = baseURL + "/movie/top_rated?language=\(language)&page=\(page)"
         try buildMockResponse(url: url,
@@ -165,7 +166,7 @@ class MoviesRepositoryTests: XCTestCase {
             throw UnitTestError(message: "Could not create a mock response data")
         }
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 0
         let url = baseURL + "/movie/top_rated?language=\(language)&page=\(page)"
 
@@ -201,7 +202,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         let expectations = self.expectation(description: "\(#function)")
         let data = try mockResponserFetcher(name: "MoviesList")
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let url = baseURL + "/movie/popular?language=\(language)&page=\(page)"
         try buildMockResponse(url: url,
@@ -242,7 +243,7 @@ class MoviesRepositoryTests: XCTestCase {
             throw UnitTestError(message: "Could not create a mock response data")
         }
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let url = baseURL + "/movie/popular?language=\(language)qwe&page=\(page)"
 
@@ -278,7 +279,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         let expectations = self.expectation(description: "\(#function)")
         let data = try mockResponserFetcher(name: "MoviesList")
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let movieId = 106_912
 
@@ -321,7 +322,7 @@ class MoviesRepositoryTests: XCTestCase {
             throw UnitTestError(message: "Could not create a mock response data")
         }
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
         let page = 1
         let movieId = 106_912
 
@@ -356,7 +357,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         try buildMockResponse(url: url, data: data)
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
 
         repo.fetchMovieDetail(forId: movieId, withLanguage: language)
             .subscribe(on: MainScheduler.instance)
@@ -395,7 +396,7 @@ class MoviesRepositoryTests: XCTestCase {
 
         try buildMockResponse(url: url, statusCode: 404, data: data)
 
-        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validateResponse())
+        let repo: MoviesRepository = MoviesRemoteRepository(service: mockService, baseURL: baseURL, validResponse: validation)
 
         repo.fetchMovieDetail(forId: movieId, withLanguage: language)
             .subscribe(on: MainScheduler.instance)
@@ -416,91 +417,4 @@ class MoviesRepositoryTests: XCTestCase {
         }
     }
 
-    ////////////////////////////////////////////////////////////////
-    // MARK: -
-    // MARK: Integration Test Caes
-    // MARK: -
-    ////////////////////////////////////////////////////////////////
-
-    func testSuccessFetchPopularMoviesIntegration() throws {
-        let expectations = self.expectation(description: "\(#function)")
-
-        self.wait(for: [expectations], timeout: integrationTimeExpections)
-        self.waitForExpectations(timeout: integrationTimeExpections) { (error) in
-            if let error = error {
-                XCTFail("\(#function) is not fulfulled in expections time with error \(error)")
-            }
-        }
-    }
-
-    func testFailureFetchPopularMoviesIntegration() throws {
-        let expectations = self.expectation(description: "\(#function)")
-
-        self.wait(for: [expectations], timeout: integrationTimeExpections)
-        self.waitForExpectations(timeout: integrationTimeExpections) { (error) in
-            if let error = error {
-                XCTFail("\(#function) is not fulfulled in expections time with error \(error)")
-            }
-        }
-    }
-
-    func testSuccessFetchMovieDetailIntegration() throws {
-        let expectations = self.expectation(description: "\(#function)")
-
-        self.wait(for: [expectations], timeout: integrationTimeExpections)
-        self.waitForExpectations(timeout: integrationTimeExpections) { (error) in
-            if let error = error {
-                XCTFail("\(#function) is not fulfulled in expections time with error \(error)")
-            }
-        }
-    }
-
-    func testFailureFetchMovieDetailIntegration() throws {
-        let expectations = self.expectation(description: "\(#function)")
-
-        self.wait(for: [expectations], timeout: integrationTimeExpections)
-        self.waitForExpectations(timeout: integrationTimeExpections) { (error) in
-            if let error = error {
-                XCTFail("\(#function) is not fulfulled in expections time with error \(error)")
-            }
-        }
-    }
-}
-
-fileprivate extension MoviesRepositoryTests {
-
-    func createMockService() -> NetworkService {
-        let configuration = URLSessionConfiguration.af.default
-        configuration.protocolClasses = [MockingURLProtocol.self]
-        let networkService = APIClientService(configuration: configuration,
-                                              decoder: dataDecoder())
-        return networkService
-    }
-
-    func createRealService() -> NetworkServiceInterceptable {
-        let configuration = URLSessionConfiguration.af.default
-        let networkService = APIClientService(configuration: configuration,
-                                              decoder: dataDecoder())
-        return networkService
-    }
-
-    func dataDecoder() -> Alamofire.DataDecoder {
-        let dataDecoder = JSONDecoder()
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: language)
-        dateFormatter.dateFormat = "YYYY-MM-dd"
-        dataDecoder.dateDecodingStrategy = .formatted(dateFormatter)
-        dataDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        return dataDecoder
-    }
-
-    func validateResponse() -> NetworkResponseValidation {
-        let acceptableStatusForError = [400, 401, 403, 404,
-                                        405, 406, 422, 429,
-                                        500, 501, 502, 503,
-                                        504]
-        return HTTPResponseValidation(statusCodes: Set((200..<300).map { $0 } + acceptableStatusForError),
-                                      contentTypes: ["application/json"])
-    }
-    
 }

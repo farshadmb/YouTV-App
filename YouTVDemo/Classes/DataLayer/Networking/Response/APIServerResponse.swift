@@ -29,8 +29,8 @@ struct APIServerResponse <T> where T: Decodable {
     /// The `CodingKey`s to be used in decoding process
     enum CodingKeys: String, CodingKey {
         case status = "success"
-        case code = "status_code"
-        case message = "status_message"
+        case code = "statusCode"
+        case message = "statusMessage"
     }
 
     /// Default initializer
