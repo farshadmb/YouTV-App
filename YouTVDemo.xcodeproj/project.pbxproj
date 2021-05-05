@@ -57,6 +57,7 @@
 		F86E98A52642F6A500F89FF8 /* TVRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98A42642F6A500F89FF8 /* TVRepository.swift */; };
 		F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98A92642FB6500F89FF8 /* TVUseCases.swift */; };
 		F86E98AF2642FC1100F89FF8 /* TVUseCasesImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */; };
+		F86E98C126430B8E00F89FF8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98C026430B8E00F89FF8 /* Storyboarded.swift */; };
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
@@ -168,6 +169,7 @@
 		F86E98A42642F6A500F89FF8 /* TVRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRepository.swift; sourceTree = "<group>"; };
 		F86E98A92642FB6500F89FF8 /* TVUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCases.swift; sourceTree = "<group>"; };
 		F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCasesImp.swift; sourceTree = "<group>"; };
+		F86E98C026430B8E00F89FF8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
@@ -269,8 +271,8 @@
 		F8106D6B2636D0E200653AF8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F86E98B92643053200F89FF8 /* Presentation */,
 				F8106D762636D11500653AF8 /* Application */,
-				F8106D772636D12600653AF8 /* Features */,
 				F8106D8B2636D8C600653AF8 /* Domain */,
 				F8106D782636D13C00653AF8 /* DataLayer */,
 				F8106D792636D16000653AF8 /* Extensions */,
@@ -327,6 +329,7 @@
 		F8106D7A2636D16B00653AF8 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				F86E98C026430B8E00F89FF8 /* Storyboarded.swift */,
 				F8106E822637321600653AF8 /* PropertyWrapper */,
 				F8106DCC2636E1CE00653AF8 /* Logger.swift */,
 				F8106DD12636FFE200653AF8 /* ImageAsset.swift */,
@@ -543,6 +546,22 @@
 				F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */,
 			);
 			path = Implemention;
+			sourceTree = "<group>";
+		};
+		F86E98B92643053200F89FF8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F86E98BA2643057C00F89FF8 /* Coordinator */,
+				F8106D772636D12600653AF8 /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F86E98BA2643057C00F89FF8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		F876E9222641D83D00DCC255 /* Movie */ = {
@@ -1029,6 +1048,7 @@
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
 				F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */,
 				F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */,
+				F86E98C126430B8E00F89FF8 /* Storyboarded.swift in Sources */,
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8108D2C263F1B9400AFD73A /* Genre.swift in Sources */,
 				F8108D51263F220300AFD73A /* TVSerialDetail.swift in Sources */,
