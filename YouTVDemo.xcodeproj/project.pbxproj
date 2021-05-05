@@ -58,6 +58,9 @@
 		F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98A92642FB6500F89FF8 /* TVUseCases.swift */; };
 		F86E98AF2642FC1100F89FF8 /* TVUseCasesImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */; };
 		F86E98C126430B8E00F89FF8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98C026430B8E00F89FF8 /* Storyboarded.swift */; };
+		F86E993E2643235D00F89FF8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E993D2643235D00F89FF8 /* AppCoordinator.swift */; };
+		F86E99432643243A00F89FF8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E99422643243A00F89FF8 /* MainCoordinator.swift */; };
+		F86E99502643254800F89FF8 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E994F2643254800F89FF8 /* HomeCoordinator.swift */; };
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
@@ -170,6 +173,9 @@
 		F86E98A92642FB6500F89FF8 /* TVUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCases.swift; sourceTree = "<group>"; };
 		F86E98AE2642FC1100F89FF8 /* TVUseCasesImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVUseCasesImp.swift; sourceTree = "<group>"; };
 		F86E98C026430B8E00F89FF8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F86E993D2643235D00F89FF8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F86E99422643243A00F89FF8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F86E994F2643254800F89FF8 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
@@ -560,6 +566,9 @@
 		F86E98BA2643057C00F89FF8 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				F86E993D2643235D00F89FF8 /* AppCoordinator.swift */,
+				F86E99422643243A00F89FF8 /* MainCoordinator.swift */,
+				F86E994F2643254800F89FF8 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -1014,6 +1023,7 @@
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
 				F8108D34263F1BE300AFD73A /* ProductionCompany.swift in Sources */,
+				F86E993E2643235D00F89FF8 /* AppCoordinator.swift in Sources */,
 				F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F8108D63263F337100AFD73A /* MoviesRemoteRepository.swift in Sources */,
@@ -1028,6 +1038,7 @@
 				F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */,
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
+				F86E99502643254800F89FF8 /* HomeCoordinator.swift in Sources */,
 				F8108D43263F1D8A00AFD73A /* Image.swift in Sources */,
 				F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */,
 				F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */,
@@ -1037,6 +1048,7 @@
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
 				F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */,
 				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
+				F86E99432643243A00F89FF8 /* MainCoordinator.swift in Sources */,
 				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
 				F86E98AF2642FC1100F89FF8 /* TVUseCasesImp.swift in Sources */,
 				F8108CF1263F011100AFD73A /* AnyPublisher+Helper.swift in Sources */,
