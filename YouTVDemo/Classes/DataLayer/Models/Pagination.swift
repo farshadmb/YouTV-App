@@ -20,7 +20,7 @@ struct Pagination <Result: Decodable>: Decodable {
     let results: [Result]?
 
     /// The `Dates` determined the duration period for the current page.
-    let dates: Dates
+    let dates: Dates?
 
     /// The `Int` value indicate the total page count.
     let totalPages: Int

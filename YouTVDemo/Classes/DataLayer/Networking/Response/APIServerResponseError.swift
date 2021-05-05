@@ -9,8 +9,8 @@
 import Foundation
 
 enum APIServerResponseError: Error {
-    case code(String)
-    case message(code: String, message: String)
+    case code(Int)
+    case message(code: Int, message: String)
     case unknown
 }
 
@@ -31,7 +31,7 @@ extension APIServerResponseError {
         switch self {
         case .code(let type),
              .message(let type, _):
-            return type
+            return "\(type)"
         case .unknown :
             return "UNKNOWN_ERROR"
         }
@@ -41,7 +41,7 @@ extension APIServerResponseError {
 
         switch self {
         case .code(let value):
-            return "Code: " + value
+            return "Code: \(value)"
         case .message(let code , let msg):
             return "Code: \(code)\nmessage:\(msg)"
         case .unknown :
