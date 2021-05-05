@@ -28,7 +28,7 @@ extension XCTestCase {
             .set(method: method)
             .set(statusCode: statusCode)
             // swiftlint:disable:next force_unwrapping
-            .set(data: [method: "".data(using: .utf8)!])
+            .set(data: [method: data])
             .set(contentType: contentType)
             .build()
 

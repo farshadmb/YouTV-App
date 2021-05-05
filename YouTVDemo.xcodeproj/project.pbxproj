@@ -50,6 +50,7 @@
 		F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */; };
 		F8108D77263F33AE00AFD73A /* DiscoverRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */; };
 		F8108D7C263F33BD00AFD73A /* SearchRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */; };
+		F86E98842642DC7D00F89FF8 /* FightClubMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = F86E98832642DC7D00F89FF8 /* FightClubMovie.json */; };
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
@@ -154,6 +155,7 @@
 		F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteRepository.swift; sourceTree = "<group>"; };
+		F86E98832642DC7D00F89FF8 /* FightClubMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FightClubMovie.json; sourceTree = "<group>"; };
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E7EE672641FBA0008781E4 /* MoviesList.json */,
+				F86E98832642DC7D00F89FF8 /* FightClubMovie.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86E98842642DC7D00F89FF8 /* FightClubMovie.json in Resources */,
 				F8E7EE682641FBA0008781E4 /* MoviesList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

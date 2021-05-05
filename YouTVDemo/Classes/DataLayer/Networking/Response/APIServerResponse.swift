@@ -66,9 +66,9 @@ extension APIServerResponse: Decodable {
 
                     if let message = try? valuesContainer.decodeIfPresent(String.self, forKey: .message) {
                         self.message = message
-                        throw APIServerResponseError.message(code: "\(errorType)",message: message)
+                        throw APIServerResponseError.message(code: errorType, message: message)
                     }else {
-                        throw APIServerResponseError.code("\(errorType)")
+                        throw APIServerResponseError.code(errorType)
                     }
 
                 } else {
@@ -84,7 +84,7 @@ extension APIServerResponse: Decodable {
             self.data = try T(from: decoder)
         }catch {
             self.data = nil
-            throw APIServerResponseError.message(code: "Decoding", message: "\(error.localizedDescription)")
+            throw APIServerResponseError.message(code: -1, message: "\(error.localizedDescription)")
         }
 
     }
