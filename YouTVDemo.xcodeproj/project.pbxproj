@@ -61,6 +61,14 @@
 		F86E993E2643235D00F89FF8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E993D2643235D00F89FF8 /* AppCoordinator.swift */; };
 		F86E99432643243A00F89FF8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E99422643243A00F89FF8 /* MainCoordinator.swift */; };
 		F86E99502643254800F89FF8 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E994F2643254800F89FF8 /* HomeCoordinator.swift */; };
+		F86E995A264341B600F89FF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9959264341B600F89FF8 /* HomeViewController.swift */; };
+		F86E9962264344D500F89FF8 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9961264344D500F89FF8 /* Bindable.swift */; };
+		F86E996D2643468700F89FF8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E996C2643468700F89FF8 /* HomeViewModel.swift */; };
+		F86E99752643469C00F89FF8 /* HomeMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E99742643469C00F89FF8 /* HomeMoviesViewModel.swift */; };
+		F86E997A264346B400F89FF8 /* HomeShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */; };
+		F86E997F264346C400F89FF8 /* HomeSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E997E264346C400F89FF8 /* HomeSectionViewModel.swift */; };
+		F86E9984264346E400F89FF8 /* HomeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E9983264346E300F89FF8 /* HomeMovieViewModel.swift */; };
+		F86E998D264347F600F89FF8 /* HomeShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */; };
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
@@ -176,6 +184,14 @@
 		F86E993D2643235D00F89FF8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F86E99422643243A00F89FF8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F86E994F2643254800F89FF8 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F86E9959264341B600F89FF8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F86E9961264344D500F89FF8 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		F86E996C2643468700F89FF8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F86E99742643469C00F89FF8 /* HomeMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMoviesViewModel.swift; sourceTree = "<group>"; };
+		F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShowsViewModel.swift; sourceTree = "<group>"; };
+		F86E997E264346C400F89FF8 /* HomeSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionViewModel.swift; sourceTree = "<group>"; };
+		F86E9983264346E300F89FF8 /* HomeMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieViewModel.swift; sourceTree = "<group>"; };
+		F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShowViewModel.swift; sourceTree = "<group>"; };
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
@@ -308,6 +324,7 @@
 		F8106D772636D12600653AF8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F86E9954264340A300F89FF8 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -335,6 +352,7 @@
 		F8106D7A2636D16B00653AF8 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				F86E9961264344D500F89FF8 /* Bindable.swift */,
 				F86E98C026430B8E00F89FF8 /* Storyboarded.swift */,
 				F8106E822637321600653AF8 /* PropertyWrapper */,
 				F8106DCC2636E1CE00653AF8 /* Logger.swift */,
@@ -557,6 +575,7 @@
 		F86E98B92643053200F89FF8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F86E99692643457900F89FF8 /* Commons */,
 				F86E98BA2643057C00F89FF8 /* Coordinator */,
 				F8106D772636D12600653AF8 /* Features */,
 			);
@@ -571,6 +590,67 @@
 				F86E994F2643254800F89FF8 /* HomeCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F86E9954264340A300F89FF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F86E9958264340D100F89FF8 /* ViewControllers */,
+				F86E9957264340C300F89FF8 /* Views */,
+				F86E9955264340AB00F89FF8 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F86E9955264340AB00F89FF8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F86E996C2643468700F89FF8 /* HomeViewModel.swift */,
+				F86E997E264346C400F89FF8 /* HomeSectionViewModel.swift */,
+				F86E99742643469C00F89FF8 /* HomeMoviesViewModel.swift */,
+				F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */,
+				F86E9983264346E300F89FF8 /* HomeMovieViewModel.swift */,
+				F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F86E9957264340C300F89FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F86E9958264340D100F89FF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F86E9959264341B600F89FF8 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F86E99692643457900F89FF8 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F86E996B2643458500F89FF8 /* ViewModels */,
+				F86E996A2643458100F89FF8 /* Views */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		F86E996A2643458100F89FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F86E996B2643458500F89FF8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F876E9222641D83D00DCC255 /* Movie */ = {
@@ -1016,18 +1096,22 @@
 				F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F86E995A264341B600F89FF8 /* HomeViewController.swift in Sources */,
 				F8108D7C263F33BD00AFD73A /* SearchRemoteRepository.swift in Sources */,
 				F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */,
+				F86E996D2643468700F89FF8 /* HomeViewModel.swift in Sources */,
 				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
 				F8108D77263F33AE00AFD73A /* DiscoverRemoteRepository.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
 				F8108D34263F1BE300AFD73A /* ProductionCompany.swift in Sources */,
 				F86E993E2643235D00F89FF8 /* AppCoordinator.swift in Sources */,
+				F86E997F264346C400F89FF8 /* HomeSectionViewModel.swift in Sources */,
 				F86E98AA2642FB6500F89FF8 /* TVUseCases.swift in Sources */,
 				F8106DD22636FFE200653AF8 /* ImageAsset.swift in Sources */,
 				F8108D63263F337100AFD73A /* MoviesRemoteRepository.swift in Sources */,
 				F8106E2326370E6800653AF8 /* UICollectionView+Helper.swift in Sources */,
+				F86E9984264346E400F89FF8 /* HomeMovieViewModel.swift in Sources */,
 				F86E98A52642F6A500F89FF8 /* TVRepository.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
 				F8108D16263F17AC00AFD73A /* MovieSummery.swift in Sources */,
@@ -1040,6 +1124,8 @@
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
 				F86E99502643254800F89FF8 /* HomeCoordinator.swift in Sources */,
 				F8108D43263F1D8A00AFD73A /* Image.swift in Sources */,
+				F86E997A264346B400F89FF8 /* HomeShowsViewModel.swift in Sources */,
+				F86E998D264347F600F89FF8 /* HomeShowViewModel.swift in Sources */,
 				F8106E792637263700653AF8 /* DispatchQueue+Additional.swift in Sources */,
 				F89CB1D3263B3C2B009FA1AD /* APIServerResponseError.swift in Sources */,
 				F89CB0D3263AF017009FA1AD /* NetworkService.swift in Sources */,
@@ -1068,8 +1154,10 @@
 				F8106E1426370CA900653AF8 /* Result+Extension.swift in Sources */,
 				F89CB1CB263B3C22009FA1AD /* APIServerResponseStatus.swift in Sources */,
 				F8106E742637247100653AF8 /* Collection+Additionals.swift in Sources */,
+				F86E9962264344D500F89FF8 /* Bindable.swift in Sources */,
 				F8108D0C263F129F00AFD73A /* Pagination.swift in Sources */,
 				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
+				F86E99752643469C00F89FF8 /* HomeMoviesViewModel.swift in Sources */,
 				F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */,
 				F8108D57263F2C1F00AFD73A /* APIConfigs.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
