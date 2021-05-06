@@ -102,6 +102,10 @@
 		F89D8F9326364053007A34CF /* YouTVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */; };
 		F8E7EE682641FBA0008781E4 /* MoviesList.json in Resources */ = {isa = PBXBuildFile; fileRef = F8E7EE672641FBA0008781E4 /* MoviesList.json */; };
 		F8E7EE892641FD1E008781E4 /* RepositoriesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E7EE882641FD1E008781E4 /* RepositoriesHelper.swift */; };
+		F8F1544F264479AB005A26A0 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F1544D264479AB005A26A0 /* MovieCollectionViewCell.swift */; };
+		F8F15450264479AB005A26A0 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F1544E264479AB005A26A0 /* MovieCollectionViewCell.xib */; };
+		F8F15456264479BE005A26A0 /* ShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F15454264479BE005A26A0 /* ShowCollectionViewCell.swift */; };
+		F8F15457264479BE005A26A0 /* ShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F15455264479BE005A26A0 /* ShowCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +235,10 @@
 		F89D8F9426364053007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8E7EE672641FBA0008781E4 /* MoviesList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MoviesList.json; sourceTree = "<group>"; };
 		F8E7EE882641FD1E008781E4 /* RepositoriesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesHelper.swift; sourceTree = "<group>"; };
+		F8F1544D264479AB005A26A0 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8F1544E264479AB005A26A0 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		F8F15454264479BE005A26A0 /* ShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8F15455264479BE005A26A0 /* ShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +648,8 @@
 		F86E996A2643458100F89FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8F1544C2644797D005A26A0 /* Shows */,
+				F8F1544B26447977005A26A0 /* Movies */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -867,6 +877,24 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		F8F1544B26447977005A26A0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				F8F1544D264479AB005A26A0 /* MovieCollectionViewCell.swift */,
+				F8F1544E264479AB005A26A0 /* MovieCollectionViewCell.xib */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		F8F1544C2644797D005A26A0 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				F8F15454264479BE005A26A0 /* ShowCollectionViewCell.swift */,
+				F8F15455264479BE005A26A0 /* ShowCollectionViewCell.xib */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -982,6 +1010,8 @@
 				F89D8F7A26364052007A34CF /* Assets.xcassets in Resources */,
 				F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */,
 				F8106DB82636D9E700653AF8 /* InfoPlist.strings in Resources */,
+				F8F15450264479AB005A26A0 /* MovieCollectionViewCell.xib in Resources */,
+				F8F15457264479BE005A26A0 /* ShowCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,7 +1192,9 @@
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
 				F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */,
 				F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */,
+				F8F15456264479BE005A26A0 /* ShowCollectionViewCell.swift in Sources */,
 				F86E98C126430B8E00F89FF8 /* Storyboarded.swift in Sources */,
+				F8F1544F264479AB005A26A0 /* MovieCollectionViewCell.swift in Sources */,
 				F8106E5A26371DAA00653AF8 /* UINavigationBarItem+Localization.swift in Sources */,
 				F8108D2C263F1B9400AFD73A /* Genre.swift in Sources */,
 				F8108D51263F220300AFD73A /* TVSerialDetail.swift in Sources */,
