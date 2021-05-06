@@ -7,3 +7,21 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+final class HomeShowViewModel: HomeSectionItemViewModel {
+
+    let model: TVSerialSummery
+
+    override var type: ItemType {
+        return .show
+    }
+
+    required init(model: TVSerialSummery) {
+        self.model = model
+        super.init(title: model.name ?? "No Title", rating: model.voteAverage ?? 0.0, image: URL(string: model.posterPath ?? ""))
+    }
+
+}

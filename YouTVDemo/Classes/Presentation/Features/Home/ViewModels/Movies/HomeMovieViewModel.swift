@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+final class HomeMovieViewModel: HomeSectionItemViewModel {
+
+    let model: MovieSummery
+
+    override var type: ItemType {
+        return .movie
+    }
+
+    required init(model: MovieSummery) {
+        self.model = model
+        super.init(title: model.title ?? "No Title", rating: model.voteAverage ?? 0.0, image: URL(string: model.posterPath ?? ""))
+    }
+}
