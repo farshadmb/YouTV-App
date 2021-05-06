@@ -35,7 +35,7 @@ class HomeSectionBaseViewModel {
         self.isLoading = .init(value: false)
     }
 
-    func fetchDataIfNeeded() -> Single<Bool> {
+    func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
         fatalError("Override this method.")
     }
 

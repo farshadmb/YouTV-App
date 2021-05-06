@@ -25,7 +25,7 @@ final class HomeShowsViewModel: HomeSectionBaseViewModel {
         super.init(title: type.rawValue.localized, order: order)
     }
 
-    override func fetchDataIfNeeded() -> Single<Bool> {
+    override func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
         return .just(false)
     }
 
