@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import Foundation
+import RxSwift
+import RxCocoa
 
 class MovieCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+
+    @IBOutlet weak var popularityLabel: UILabel?
+    @IBOutlet weak var posterImageView: UIImageView!
+
+    @IBOutlet weak var shadowImageView: UIImageView?
+    @IBOutlet weak var releaseDateLabel: UILabel?
+
+    private(set) var disposeBag = DisposeBag()
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
     }
 
 }
