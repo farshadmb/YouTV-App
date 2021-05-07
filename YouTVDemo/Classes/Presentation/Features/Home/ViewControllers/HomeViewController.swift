@@ -28,7 +28,7 @@ class HomeViewController: UIViewController, BindableType {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupLayouts()
         // Do any additional setup after loading the view.
     }
 
@@ -45,6 +45,25 @@ class HomeViewController: UIViewController, BindableType {
         // Pass the selected object to the new view controller.
     }
     */
+
+    // MARK: - UI layout methods
+
+    private func setupLayouts() {
+        setupCollectionView()
+    }
+
+    private func setupCollectionView() {
+        collectionView.refreshControl = refreshControl
+        collectionView.registerCell(type: HomeShowCollectionCell.self)
+        collectionView.registerCell(type: HomeMovieCollectionCell.self)
+        collectionView.registerSupplementaryView(type: HomeSectionHeaderView.self,
+                                                 Ofkind: UICollectionView.elementKindSectionHeader)
+
+    }
+
+    private func setupLayout() -> UICollectionViewLayout {
+        fatalError()
+    }
 
     func createDataSource() -> RxCollectionViewSectionedReloadDataSource<SectionModel<String,String>> {
         return .init { (_, _, _, _) -> UICollectionViewCell in
