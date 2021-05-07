@@ -105,8 +105,10 @@
             <connections>
                 <outlet property="gradientView" destination="IzW-re-Wri" id="jZW-ML-ZQh"/>
                 <outlet property="popularityLabel" destination="bkQ-Vg-gds" id="yGB-xt-hSN"/>
+                <outlet property="popularityStackView" destination="IKU-8a-kg2" id="pB5-GO-EM1"/>
                 <outlet property="posterImageView" destination="k8K-cx-QfQ" id="GLS-dl-3ug"/>
                 <outlet property="ratingLabel" destination="9Pb-fg-3Z4" id="TQf-nT-YFg"/>
+                <outlet property="ratingStackView" destination="mMB-AC-xMm" id="TXA-eV-zJv"/>
                 <outlet property="releaseDateLabel" destination="lrG-3o-hq6" id="FFt-zu-Zoa"/>
                 <outlet property="titleLabel" destination="KIP-qz-Hzt" id="AkZ-US-FIs"/>
             </connections>

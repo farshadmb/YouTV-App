@@ -8,11 +8,16 @@
 
 import UIKit
 import MaterialComponents
+import RxCocoa
+import RxSwift
+import SDWebImage
 
 class HomeMovieCollectionCell: MovieCollectionViewCell, BindableType {
 
     @IBOutlet weak var gradientView: UIView!
-
+    @IBOutlet weak var ratingStackView: UIStackView!
+    @IBOutlet weak var popularityStackView: UIStackView!
+    
     var viewModel: HomeMovieViewModel?
 
     override func awakeFromNib() {
