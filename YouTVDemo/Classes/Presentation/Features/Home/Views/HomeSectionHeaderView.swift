@@ -20,7 +20,7 @@ class HomeSectionHeaderView: UICollectionReusableView, BindableType {
     @IBOutlet weak var seeMoreButton: UIButton!
 
     var disposeBag = DisposeBag()
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
