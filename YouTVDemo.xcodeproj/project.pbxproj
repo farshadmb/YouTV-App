@@ -50,6 +50,7 @@
 		F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */; };
 		F8108D77263F33AE00AFD73A /* DiscoverRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */; };
 		F8108D7C263F33BD00AFD73A /* SearchRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */; };
+		F8532F1E26460B27000FB4A8 /* HomeSectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8532F1D26460B27000FB4A8 /* HomeSectionLayout.swift */; };
 		F86E98842642DC7D00F89FF8 /* FightClubMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = F86E98832642DC7D00F89FF8 /* FightClubMovie.json */; };
 		F86E988C2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E988B2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift */; };
 		F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E98932642ED8700F89FF8 /* MoviesUseCases.swift */; };
@@ -183,6 +184,7 @@
 		F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteRepository.swift; sourceTree = "<group>"; };
+		F8532F1D26460B27000FB4A8 /* HomeSectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionLayout.swift; sourceTree = "<group>"; };
 		F86E98832642DC7D00F89FF8 /* FightClubMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FightClubMovie.json; sourceTree = "<group>"; };
 		F86E988B2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 		F86E98932642ED8700F89FF8 /* MoviesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUseCases.swift; sourceTree = "<group>"; };
@@ -558,6 +560,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		F8532F1C26460AED000FB4A8 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F8532F1D26460B27000FB4A8 /* HomeSectionLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		F86E98982642EEE600F89FF8 /* Implemention */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,6 +646,7 @@
 		F86E9957264340C300F89FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8532F1C26460AED000FB4A8 /* Layout */,
 				F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */,
 				F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */,
 				F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */,
@@ -1188,6 +1199,7 @@
 				F8108D39263F1C1800AFD73A /* ProductionCountry.swift in Sources */,
 				F86E989A2642EF0D00F89FF8 /* MoviesUseCasesImp.swift in Sources */,
 				F8108D11263F130500AFD73A /* Dates.swift in Sources */,
+				F8532F1E26460B27000FB4A8 /* HomeSectionLayout.swift in Sources */,
 				F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */,
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
@@ -1456,7 +1468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1477,7 +1489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.ifarshad.YouTVDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
