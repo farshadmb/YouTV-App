@@ -73,6 +73,8 @@
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
+		F8893F8126462ECA00EC72FD /* Single+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8893F8026462ECA00EC72FD /* Single+Additionals.swift */; };
+		F8893F8626462EF500EC72FD /* RxSwift+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8893F8526462EF500EC72FD /* RxSwift+Unwrap.swift */; };
 		F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB093263AD219009FA1AD /* NetworkRequest.swift */; };
 		F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */; };
 		F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */; };
@@ -207,6 +209,8 @@
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
+		F8893F8026462ECA00EC72FD /* Single+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Additionals.swift"; sourceTree = "<group>"; };
+		F8893F8526462EF500EC72FD /* RxSwift+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Unwrap.swift"; sourceTree = "<group>"; };
 		F89CB093263AD219009FA1AD /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		F89CB098263AD2D5009FA1AD /* NetworkResponseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseValidation.swift; sourceTree = "<group>"; };
 		F89CB0A1263AD499009FA1AD /* APIParametersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersRequest.swift; sourceTree = "<group>"; };
@@ -364,6 +368,7 @@
 		F8106D792636D16000653AF8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F8893F7F26462EA500EC72FD /* RxSwift */,
 				F8108CEF263F010300AFD73A /* Combine */,
 				F8106DDF263705EF00653AF8 /* Foundation */,
 				F8106DD62637022300653AF8 /* UI */,
@@ -740,6 +745,15 @@
 				F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		F8893F7F26462EA500EC72FD /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F8893F8026462ECA00EC72FD /* Single+Additionals.swift */,
+				F8893F8526462EF500EC72FD /* RxSwift+Unwrap.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		F89CB092263AD1FC009FA1AD /* Abstract */ = {
@@ -1215,6 +1229,7 @@
 				F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */,
 				F8106E2826370EB300653AF8 /* UIView+Nibs.swift in Sources */,
 				F89CB1C5263B30E1009FA1AD /* AppConfig.swift in Sources */,
+				F8893F8626462EF500EC72FD /* RxSwift+Unwrap.swift in Sources */,
 				F89CB099263AD2D5009FA1AD /* NetworkResponseValidation.swift in Sources */,
 				F86E99432643243A00F89FF8 /* MainCoordinator.swift in Sources */,
 				F89CB0A7263AD4AB009FA1AD /* APIEncodableRequest.swift in Sources */,
@@ -1244,6 +1259,7 @@
 				F86E99752643469C00F89FF8 /* HomeMoviesViewModel.swift in Sources */,
 				F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */,
 				F8108D57263F2C1F00AFD73A /* APIConfigs.swift in Sources */,
+				F8893F8126462ECA00EC72FD /* Single+Additionals.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
