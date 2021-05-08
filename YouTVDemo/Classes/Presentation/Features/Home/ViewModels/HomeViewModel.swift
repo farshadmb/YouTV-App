@@ -18,14 +18,20 @@ class HomeViewModel {
     let didAppear = PublishRelay<Void>()
     let refreshTriggle = PublishRelay<Void>()
 
+    var count: Int {
+        return items.value.count
+    }
+    
     // output
     let items = BehaviorRelay<[HomeSectionBaseViewModel]>(value: [])
 
     init() {
 
-        didAppear.asObservable()
-            .asSingle()
+        didAppear
             .asObservable()
+            .compactFirst()
+            .asObservable()
+            .debug()
             .bind {[unowned self] _ in
                 buildSections()
                 fetchContents()
@@ -64,5 +70,9 @@ class HomeViewModel {
                 .subscribe().disposed(by: disposeBag)
         }
     }
-
+    
+    subscript(section: Int) -> HomeSectionBaseViewModel? {
+        return items.value[safe:section]
+    }
+    
 }

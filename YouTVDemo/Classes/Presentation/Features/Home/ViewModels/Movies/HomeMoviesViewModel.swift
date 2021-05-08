@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-final class HomeMoviesViewModel: HomeSectionBaseViewModel {
+class HomeMoviesViewModel: HomeSectionBaseViewModel {
 
     let type: SectionType
 
@@ -26,6 +26,9 @@ final class HomeMoviesViewModel: HomeSectionBaseViewModel {
     }
 
     override func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
+        if isRefresh {
+            items.accept([.init(title: "Movie Title", rating: 0.5)])
+        }
         return .just(false)
     }
     
@@ -39,4 +42,35 @@ extension HomeMoviesViewModel {
         case topRated
     }
 
+}
+
+extension HomeMoviesViewModel: HomeSectionLayout {
+    
+    open func sectionLayout() -> NSCollectionLayoutSection {
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.85),
+                                              heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .fractionalHeight(1.0))
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let section = NSCollectionLayoutSection(group: group)
+        
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                                heightDimension: .estimated(44))
+        
+        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize,
+                                                                        elementKind: UICollectionView.elementKindSectionHeader,
+                                                                        alignment: .topLeading)
+        headerElement.extendsBoundary = false
+        
+        headerElement.pinToVisibleBounds = true
+        section.boundarySupplementaryItems = [headerElement]
+        section.orthogonalScrollingBehavior = .groupPaging
+        
+        return section
+    }
+    
 }
