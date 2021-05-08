@@ -31,6 +31,7 @@ class HomeSectionHeaderView: UICollectionReusableView, BindableType {
         disposeBag = DisposeBag()
         titleLabel.text = nil
         loadingView.stopAnimating()
+        loadingView.isHidden = true
     }
     
     func bindViewModel() {
@@ -58,6 +59,7 @@ extension Reactive where Base: HomeSectionHeaderView {
 
     var isLoading: Binder<Bool> {
         return Binder(base) { base, value in
+            base.loadingView.isHidden = !value
             if value {
                 base.loadingView.startAnimating()
             } else {
