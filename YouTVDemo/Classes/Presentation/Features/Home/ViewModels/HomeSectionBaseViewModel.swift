@@ -18,6 +18,10 @@ class HomeSectionBaseViewModel {
 
     typealias Item = HomeSectionItemViewModel
 
+    var itemCount: Int {
+        return items.value.count
+    }
+    
     let tapSeeMore: PublishRelay<Void>
 
     let items: BehaviorRelay<[Item]>
@@ -37,6 +41,10 @@ class HomeSectionBaseViewModel {
 
     func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
         fatalError("Override this method.")
+    }
+    
+    subscript(index: Int) -> HomeSectionItemViewModel? {
+        return items.value[safe:index]
     }
 
 }
