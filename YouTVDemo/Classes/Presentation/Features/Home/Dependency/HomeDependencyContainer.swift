@@ -15,7 +15,7 @@ final class HomeDependencyContainer {
     let tvRepository: TVRepository
     let language: String
 
-    init(appDependecyContainer: AppDependecyContainer) {
+    init(appDependecyContainer: AppDependencyContainer) {
         movieRepository = appDependecyContainer.sharedMovieRepository
         tvRepository = appDependecyContainer.sharedShowRepository
         language = appDependecyContainer.language

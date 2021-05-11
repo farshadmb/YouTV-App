@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-final class AppDependecyContainer {
+final class AppDependencyContainer {
 
     lazy var networkService: NetworkService = {
         let APIClient = APIClientService(configuration: .default,
@@ -64,9 +64,13 @@ final class AppDependecyContainer {
         return value
     }
 
+    init() {
+        
+    }
+
 }
 
-extension AppDependecyContainer: TVUseCaseFactory {
+extension AppDependencyContainer: TVUseCaseFactory {
 
     func makePopularShowUseCase() -> PopularTVUseCases {
         return TVUseCasesImp(repository: sharedShowRepository, language: language)
@@ -82,7 +86,7 @@ extension AppDependecyContainer: TVUseCaseFactory {
 
 }
 
-extension AppDependecyContainer: MovieUseCaseFactory {
+extension AppDependencyContainer: MovieUseCaseFactory {
 
     func makePopularMovieUseCase() -> PopularMoviesUseCases {
         return MoviesUseCasesImp(repository: sharedMovieRepository, language: language)
@@ -94,6 +98,24 @@ extension AppDependecyContainer: MovieUseCaseFactory {
 
     func makeNowPlayingUseCase() -> NowPlayingMoviesUseCases {
         return MoviesUseCasesImp(repository: sharedMovieRepository, language: language)
+    }
+
+}
+
+extension AppDependencyContainer: CoordinatorFactory {
+
+    func makeAppCoordinator() -> AppCoordinator {
+        let coordinator = AppCoordinator(factory: self)
+        return coordinator
+    }
+
+    func makeMainCoordinator() -> MainCoordinator {
+        return MainCoordinator(factory: self, initialRoute: .home)
+    }
+
+    func makeHomeCoordinator() -> HomeCoordinator {
+        let dependecy = HomeDependencyContainer(appDependecyContainer: self)
+        return HomeCoordinator(factory: dependecy)
     }
 
 }
