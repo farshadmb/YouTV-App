@@ -13,32 +13,44 @@ final class HomeDependencyContainer {
 
     let movieRepository: MoviesRepository
     let tvRepository: TVRepository
+    let language: String
 
-    init(movieRepository: MoviesRepository, tvRepository: TVRepository) {
-        self.tvRepository = tvRepository
-        self.movieRepository = movieRepository
-    }
-
-    init(appDependecyContainer: Any) {
-        fatalError("Not Implemente Yet")
+    init(appDependecyContainer: AppDependecyContainer) {
+        movieRepository = appDependecyContainer.sharedMovieRepository
+        tvRepository = appDependecyContainer.sharedShowRepository
+        language = appDependecyContainer.language
     }
 
     // MARK: - HomeViewModelsFactory
 
     func makeHomeViewModel() -> HomeViewModel {
-        fatalError("Not Implemente Yet")
+        return HomeViewModel(factory: self)
     }
 
     func makeHomeMoviesViewModel(for type: HomeMoviesViewModel.SectionType) -> HomeMoviesViewModel {
-        fatalError("Not Implemente Yet")
+        switch type {
+        case .nowPlaying:
+            return HomeNowPlayingMoviesViewModel(order: 0, useCase: makeNowPlayingUseCase(), factory: self)
+        case .popular:
+            return HomePopularMoviesViewModel(order: 0, useCase: makePopularMovieUseCase(), factory: self)
+        case .topRated:
+            return HomeTopRatedMoviesViewModel(order: 0, useCase: makeTopRatedMovieUseCase(), factory: self)
+        }
     }
 
     func makeHomeShowsViewModel(for type: HomeShowsViewModel.SectionType) -> HomeShowsViewModel {
-        fatalError("Not Implemente Yet")
+        switch type {
+        case .onTheAir:
+            return HomeOnTheAirShowsViewModel(order: 0, useCase: makeOnTheAirUseCase(), factory: self)
+        case .popular:
+            return HomePopularShowsViewModel(order: 0, useCase: makePopularShowUseCase(), factory: self)
+        case .topRated:
+            fatalError("Not Implemente yet")
+        }
     }
 
     func makeHomeShowViewModel(with model: TVSerialSummery) -> HomeShowViewModel {
-        return .init(model: model)
+        return HomeShowViewModel(model: model)
     }
 
     func makeHomeMovieViewModel(with model: MovieSummery) -> HomeMovieViewModel {
@@ -48,7 +60,7 @@ final class HomeDependencyContainer {
     // MARK: - SectionHomeViewControllerFactory
     
     func makeHomeViewController() -> HomeViewController {
-        let viewController : HomeViewController = instantiateViewController()
+        let viewController: HomeViewController = instantiateViewController()
         let viewModel = makeHomeViewModel()
         viewController.bind(to: viewModel)
 
@@ -66,3 +78,35 @@ final class HomeDependencyContainer {
 }
 
 extension HomeDependencyContainer: HomeViewModelsFactory, HomeViewControllerFactory {}
+
+extension HomeDependencyContainer: TVUseCaseFactory {
+
+    func makePopularShowUseCase() -> PopularTVUseCases {
+        return TVUseCasesImp(repository: tvRepository, language: language)
+    }
+
+    func makeTopRatedShowUseCase() -> TopRatedTVUseCases {
+        return TVUseCasesImp(repository: tvRepository, language: language)
+    }
+
+    func makeOnTheAirUseCase() -> OnAirTVUseCases {
+        return TVUseCasesImp(repository: tvRepository, language: language)
+    }
+
+}
+
+extension HomeDependencyContainer: MovieUseCaseFactory {
+
+    func makePopularMovieUseCase() -> PopularMoviesUseCases {
+        return MoviesUseCasesImp(repository: movieRepository, language: language)
+    }
+
+    func makeTopRatedMovieUseCase() -> TopRatedMoviesUseCases {
+        return MoviesUseCasesImp(repository: movieRepository, language: language)
+    }
+
+    func makeNowPlayingUseCase() -> NowPlayingMoviesUseCases {
+        return MoviesUseCasesImp(repository: movieRepository, language: language)
+    }
+
+}
