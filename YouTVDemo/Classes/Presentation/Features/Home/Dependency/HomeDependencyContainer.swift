@@ -38,18 +38,31 @@ final class HomeDependencyContainer {
     }
 
     func makeHomeShowViewModel(with model: TVSerialSummery) -> HomeShowViewModel {
-        fatalError("Not Implemente Yet")
+        return .init(model: model)
     }
 
     func makeHomeMovieViewModel(with model: MovieSummery) -> HomeMovieViewModel {
-        fatalError("Not Implemente Yet")
+        return HomeMovieViewModel(model: model)
     }
 
     // MARK: - SectionHomeViewControllerFactory
     
     func makeHomeViewController() -> HomeViewController {
-        fatalError("Not Implemente Yet")
+        let viewController : HomeViewController = instantiateViewController()
+        let viewModel = makeHomeViewModel()
+        viewController.bind(to: viewModel)
+
+        return viewController
     }
+
+    private func instantiateViewController<T: UIViewController & Storyboarded & BindableType>() -> T {
+        guard let value = try? T.instantiate() else {
+            preconditionFailure("Failed to make \(T.self)")
+        }
+
+        return value
+    }
+
 }
 
 extension HomeDependencyContainer: HomeViewModelsFactory, HomeViewControllerFactory {}
