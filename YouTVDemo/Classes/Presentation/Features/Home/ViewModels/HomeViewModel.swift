@@ -48,16 +48,41 @@ class HomeViewModel {
     func buildSections() {
 
         var sections = [HomeSectionBaseViewModel]()
-
-        sections.append(HomeMoviesViewModel(type: .nowPlaying, order: 0))
-        sections.append(HomeMoviesViewModel(type: .popular, order: 1))
-        sections.append(HomeMoviesViewModel(type: .topRated, order: 2))
+        
+        let dataDecoder = JSONDecoder()
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.locale = Locale(identifier: "en-US")
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        dataDecoder.dateDecodingStrategy = .formatted(dateFormatter)
+        dataDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        let acceptableStatusForError = [400, 401, 403, 404,
+                                        405, 406, 422, 429,
+                                        500, 501, 502, 503,
+                                        504]
+        
+        let validation = HTTPResponseValidation(statusCodes: Set((200..<300).map { $0 } + acceptableStatusForError),
+                                                contentTypes: ["application/json"])
+        let service = APIClientService(configuration: .default, decoder: dataDecoder)
+        let auth = APIAuthenticator(token: AppConfig.APIKey)
+        service.apply(interceptor: auth)
+        let repository = MoviesRemoteRepository(service: service,
+                                                baseURL: AppConfig.baseURL.absoluteString,
+                                                validResponse: validation)
+        
+        let useCase = MoviesUseCasesImp(repository: repository ,
+                                         language: "en")
+        
+        sections.append(HomePopularMoviesViewModel(order: 1, useCase: useCase))
+        sections.append(HomeNowPlayingMoviesViewModel(order: 0, useCase: useCase))
+        sections.append(HomeTopRatedMoviesViewModel(order: 2, useCase: useCase))
 
         sections.append(HomeShowsViewModel(type: .onTheAir, order: 3))
         sections.append(HomeShowsViewModel(type: .popular, order: 4))
         sections.append(HomeShowsViewModel(type: .topRated, order: 5))
-
-        items.accept(sections)
+        
+        items.accept(sections.sorted(by: { $0.order < $1.order }))
     }
 
     func refreshContents() {

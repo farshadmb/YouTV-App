@@ -31,6 +31,8 @@ class HomeSectionBaseViewModel {
         return tapSeeMore.asDriver(onErrorDriveWith: .never())
     }
 
+    let disposeBag = DisposeBag()
+    
     init(title: String, order: Int, items: [Item] = []) {
         self.title = title
         self.order = order
