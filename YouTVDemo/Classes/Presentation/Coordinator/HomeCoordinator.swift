@@ -21,11 +21,21 @@ enum HomeRoute: Route {
 
 class HomeCoordinator: NavigationCoordinator<HomeRoute> {
 
+    typealias FactoryType = HomeViewModelsFactory & HomeViewControllerFactory
+
+    let factory: FactoryType
+
+    required init(factory: FactoryType) {
+        self.factory = factory
+        super.init(rootViewController: .init(), initialRoute: .initial)
+    }
+
     override func prepareTransition(for route: RouteType) -> TransitionType {
 
         switch route {
         case .initial:
-            return .none()
+            let viewController = factory.makeHomeViewController()
+            return .set([viewController])
         case .movieDetail:
             return .none()
         case .serialDetail:

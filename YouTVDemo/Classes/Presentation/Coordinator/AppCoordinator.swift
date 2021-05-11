@@ -16,7 +16,17 @@ enum AppRoot: Route {
     case main
 }
 
-final class AppCoordinator: NavigationCoordinator<AppRoot> {
+final class AppCoordinator: ViewCoordinator<AppRoot> {
+
+    let coordinatorFactory: CoordinatorFactory
+
+    @LateInit
+    var window: UIWindow
+
+    required init(factory: CoordinatorFactory) {
+        self.coordinatorFactory = factory
+        super.init(rootViewController: .init())
+    }
 
     override func prepareTransition(for route: AppRoot) -> TransitionType {
 
@@ -26,11 +36,15 @@ final class AppCoordinator: NavigationCoordinator<AppRoot> {
 
         switch route {
         case .loading:
+            setRoot(for: window)
             return .none()
         case .main:
+            let mainCoordiantor = coordinatorFactory.makeMainCoordinator()
+            addChild(mainCoordiantor)
+            mainCoordiantor.setRoot(for: window)
             return .none()
         }
 
-        return .none()
     }
+
 }

@@ -12,13 +12,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let container = AppDependencyContainer()
+
+    @LateInit
+    var coordinator: AppCoordinator
+
     /// :nodoc:
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        window = UIWindow()
-        window?.backgroundColor = UIColor.lightGray
-        window?.rootViewController = UIViewController()
-        window?.makeKeyAndVisible()
+
+        let window = UIWindow()
+        self.window? = window
+        coordinator = container.makeAppCoordinator()
+        coordinator.window = window
+        coordinator.trigger(.loading)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.coordinator.trigger(.main)
+        }
 
         return true
     }

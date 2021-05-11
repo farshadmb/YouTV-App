@@ -19,6 +19,15 @@ enum MainRoute: Route {
 
 final class MainCoordinator: TabBarCoordinator<MainRoute> {
 
+    let factory: CoordinatorFactory
+    let homeCoordiantor: HomeCoordinator
+
+    required init(factory: CoordinatorFactory, initialRoute: RouteType) {
+        self.factory = factory
+        homeCoordiantor = factory.makeHomeCoordinator()
+        super.init(tabs: [homeCoordiantor, UIViewController.init()])
+    }
+
     override func prepareTransition(for route: RouteType) -> TransitionType {
 
         self.children.forEach {
@@ -27,7 +36,7 @@ final class MainCoordinator: TabBarCoordinator<MainRoute> {
 
         switch route {
         case .home:
-            return .none()
+            return .select(homeCoordiantor)
         case .discover:
             return .none()
         case .search:
