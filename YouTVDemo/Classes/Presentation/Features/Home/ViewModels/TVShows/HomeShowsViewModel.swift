@@ -29,6 +29,29 @@ class HomeShowsViewModel: HomeSectionBaseViewModel {
         return .just(false)
     }
 
+    open func sectionLayout() -> NSCollectionLayoutSection {
+
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25),
+                                              heightDimension: .fractionalHeight(1.5))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .fractionalHeight(0.5))
+
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let section = NSCollectionLayoutSection(group: group)
+
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
+        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader,
+                                                                        alignment: .topLeading)
+        headerElement.pinToVisibleBounds = true
+
+        section.boundarySupplementaryItems = [headerElement]
+        section.orthogonalScrollingBehavior = .groupPagingCentered
+
+        return section
+    }
+
 }
 
 extension HomeShowsViewModel {
@@ -41,28 +64,4 @@ extension HomeShowsViewModel {
 
 }
 
-extension HomeShowsViewModel: HomeSectionLayout {
-    
-    open func sectionLayout() -> NSCollectionLayoutSection {
-        
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25),
-                                              heightDimension: .fractionalHeight(1.5))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .fractionalHeight(0.5))
-        
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        let section = NSCollectionLayoutSection(group: group)
-        
-        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader,
-                                                                        alignment: .topLeading)
-        headerElement.pinToVisibleBounds = true
-        
-        section.boundarySupplementaryItems = [headerElement]
-        section.orthogonalScrollingBehavior = .groupPagingCentered
-        
-        return section
-    }
-}
+extension HomeShowsViewModel: HomeSectionLayout {}
