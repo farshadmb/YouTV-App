@@ -23,6 +23,8 @@ final class HomeDependencyContainer {
         fatalError("Not Implemente Yet")
     }
 
+    // MARK: - HomeViewModelsFactory
+
     func makeHomeViewModel() -> HomeViewModel {
         fatalError("Not Implemente Yet")
     }
@@ -43,6 +45,11 @@ final class HomeDependencyContainer {
         fatalError("Not Implemente Yet")
     }
 
+    // MARK: - SectionHomeViewControllerFactory
+    
+    func makeHomeViewController() -> HomeViewController {
+        fatalError("Not Implemente Yet")
+    }
 }
 
-extension HomeDependencyContainer: HomeViewModelsFactory {}
+extension HomeDependencyContainer: HomeViewModelsFactory, HomeViewControllerFactory {}
