@@ -23,30 +23,17 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
 
     override func sectionLayout() -> NSCollectionLayoutSection {
         
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalWidth(1.77))
-
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
-
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(150),
-                                               heightDimension: .estimated(266.666_666_666_7))
+        let item = movieItem()
+        let groupSize = self.groupSize(width: .absolute(movieWidthSize),
+                                       height: .estimated(movieWidthSize * 1.77))
 
         let subGroup = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
-
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [subGroup, subGroup])
 
         let section = NSCollectionLayoutSection(group: group)
 
-        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                heightDimension: .absolute(44))
-
-        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize,
-                                                                        elementKind: UICollectionView.elementKindSectionHeader,
-                                                                        alignment: .topLeading)
-        headerElement.extendsBoundary = true
-
-        headerElement.pinToVisibleBounds = true
+        let headerElement = self.headerElement()
+        
         section.boundarySupplementaryItems = [headerElement]
         section.orthogonalScrollingBehavior = .groupPaging
 
