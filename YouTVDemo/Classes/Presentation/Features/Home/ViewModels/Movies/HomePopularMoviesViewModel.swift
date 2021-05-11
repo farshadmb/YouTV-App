@@ -15,10 +15,14 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
     
     @AtomicLateInit
     var useCase: PopularMoviesUseCases
-    
-    convenience init(order: Int, useCase: PopularMoviesUseCases) {
-        self.init(type: .popular, order: order)
+
+    @AtomicLateInit
+    var factory: HomeViewModelsFactory
+
+    convenience init(order: Int, useCase: PopularMoviesUseCases, factory: HomeViewModelsFactory) {
+        self.init(type: .nowPlaying, order: order)
         self.useCase = useCase
+        self.factory = factory
     }
 
     override func sectionLayout() -> NSCollectionLayoutSection {
@@ -59,8 +63,8 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
         
         source.catch { (_) -> Observable<[MovieSummery]> in
             .just([])
-        }.map {
-            return $0.compactMap { HomeMovieViewModel(model: $0) }
+        }.map {[unowned self] in
+            return $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
         }
         .bind(to: items)
         .disposed(by: disposeBag)

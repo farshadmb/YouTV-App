@@ -15,10 +15,15 @@ final class HomeTopRatedMoviesViewModel: HomeMoviesViewModel {
     
     @AtomicLateInit
     var useCase: TopRatedMoviesUseCases
-    
-    convenience init(order: Int, useCase: TopRatedMoviesUseCases) {
-        self.init(type: .topRated, order: order)
+
+    @AtomicLateInit
+    var factory: HomeViewModelsFactory
+
+    convenience init(order: Int, useCase: TopRatedMoviesUseCases,
+                     factory: HomeViewModelsFactory) {
+        self.init(type: .nowPlaying, order: order)
         self.useCase = useCase
+        self.factory = factory
     }
     
     override func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
@@ -40,8 +45,8 @@ final class HomeTopRatedMoviesViewModel: HomeMoviesViewModel {
         
         source.catch { (_) -> Observable<[MovieSummery]> in
             .just([])
-        }.map {
-            return $0.compactMap { HomeMovieViewModel(model: $0) }
+        }.map {[unowned self] in
+            return $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
         }
         .bind(to: items)
         .disposed(by: disposeBag)

@@ -27,7 +27,7 @@ class HomeViewController: UIViewController, BindableType,
     // MARK: - Logic Properties
     let disposeBag = DisposeBag()
     
-    var viewModel: HomeViewModel? = .init()
+    var viewModel: HomeViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()

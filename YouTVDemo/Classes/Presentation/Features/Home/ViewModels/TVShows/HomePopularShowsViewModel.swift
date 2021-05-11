@@ -16,9 +16,13 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
     @AtomicLateInit
     var useCase: PopularTVUseCases
 
-    convenience init(order: Int, useCase: PopularTVUseCases) {
+    @AtomicLateInit
+    var factory: HomeViewModelsFactory
+
+    convenience init(order: Int, useCase: PopularTVUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .popular, order: order)
         self.useCase = useCase
+        self.factory = factory
     }
 
     override func sectionLayout() -> NSCollectionLayoutSection {
@@ -56,8 +60,8 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
 
         source.catch { (_) in
             .just([])
-        }.map {
-            return Array($0.compactMap { HomeShowViewModel(model: $0) }.prefix(5))
+        }.map {[unowned self] in
+            return Array($0.compactMap { factory.makeHomeShowViewModel(with: $0) }.prefix(5))
         }
         .bind(to: items)
         .disposed(by: disposeBag)
