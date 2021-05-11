@@ -157,9 +157,10 @@ class HomeViewController: UIViewController, BindableType,
             headerView.bind(to: sectionViewModel)
             sectionViewModel.items.asDriver()
                 .asObservable()
+                .distinctUntilChanged(at: \.count)
                 .bind {[weak collectionView] _ in
                     collectionView?.reloadSections([indexPath.section],
-                                                   animationStyle: .automatic)
+                                                   animationStyle: .none)
                 }
                 .disposed(by: headerView.disposeBag)
             

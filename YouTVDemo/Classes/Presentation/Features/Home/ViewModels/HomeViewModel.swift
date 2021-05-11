@@ -73,14 +73,16 @@ class HomeViewModel {
         
         let useCase = MoviesUseCasesImp(repository: repository ,
                                          language: "en")
+
+        let tvRepository = TVRemoteRepository(service: service, baseURL: AppConfig.baseURL.absoluteString, validResponse: validation)
+        let tvUseCases = TVUseCasesImp(repository: tvRepository, language: "en")
         
         sections.append(HomePopularMoviesViewModel(order: 1, useCase: useCase))
         sections.append(HomeNowPlayingMoviesViewModel(order: 0, useCase: useCase))
         sections.append(HomeTopRatedMoviesViewModel(order: 2, useCase: useCase))
 
-        sections.append(HomeShowsViewModel(type: .onTheAir, order: 3))
-        sections.append(HomeShowsViewModel(type: .popular, order: 4))
-        sections.append(HomeShowsViewModel(type: .topRated, order: 5))
+        sections.append(HomeOnTheAirShowsViewModel(order: 3, useCase: tvUseCases))
+        sections.append(HomePopularShowsViewModel(order: 4, useCase: tvUseCases))
         
         items.accept(sections.sorted(by: { $0.order < $1.order }))
     }

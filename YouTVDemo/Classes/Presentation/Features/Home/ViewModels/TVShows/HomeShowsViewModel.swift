@@ -44,7 +44,6 @@ class HomeShowsViewModel: HomeSectionBaseViewModel {
         let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
         let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader,
                                                                         alignment: .topLeading)
-        headerElement.pinToVisibleBounds = true
 
         section.boundarySupplementaryItems = [headerElement]
         section.orthogonalScrollingBehavior = .groupPagingCentered
