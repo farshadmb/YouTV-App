@@ -55,5 +55,45 @@ final class AppDependecyContainer {
         return TVRemoteRepository(service: networkService, baseURL: AppConfig.baseURL.absoluteString, validResponse: validation)
     }()
 
+    var language: String {
+
+        guard let value = Bundle.main.preferredLocalizations.first else {
+            return "en-US"
+        }
+
+        return value
+    }
+
+}
+
+extension AppDependecyContainer: TVUseCaseFactory {
+
+    func makePopularShowUseCase() -> PopularTVUseCases {
+        return TVUseCasesImp(repository: sharedShowRepository, language: language)
+    }
+
+    func makeTopRatedShowUseCase() -> TopRatedTVUseCases {
+        return TVUseCasesImp(repository: sharedShowRepository, language: language)
+    }
+
+    func makeOnTheAirUseCase() -> OnAirTVUseCases {
+        return TVUseCasesImp(repository: sharedShowRepository, language: language)
+    }
+
+}
+
+extension AppDependecyContainer: MovieUseCaseFactory {
+
+    func makePopularMovieUseCase() -> PopularMoviesUseCases {
+        return MoviesUseCasesImp(repository: sharedMovieRepository, language: language)
+    }
+
+    func makeTopRatedMovieUseCase() -> TopRatedMoviesUseCases {
+        return MoviesUseCasesImp(repository: sharedMovieRepository, language: language)
+    }
+
+    func makeNowPlayingUseCase() -> NowPlayingMoviesUseCases {
+        return MoviesUseCasesImp(repository: sharedMovieRepository, language: language)
+    }
 
 }
