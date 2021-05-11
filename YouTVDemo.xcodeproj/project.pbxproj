@@ -73,6 +73,10 @@
 		F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9242641D87F00DCC255 /* MoviesRepository.swift */; };
 		F876E93A2641EC1400DCC255 /* MoviesRepositoryMockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */; };
 		F876E93F2641F57E00DCC255 /* MoviesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */; };
+		F87D9B93264AE60C0075DD47 /* HomePopularShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D9B92264AE60C0075DD47 /* HomePopularShowsViewModel.swift */; };
+		F87D9B98264AE6240075DD47 /* HomeOnTheAirShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D9B97264AE6240075DD47 /* HomeOnTheAirShowsViewModel.swift */; };
+		F87D9BBC264AFF3A0075DD47 /* HomeViewModelsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D9BBB264AFF3A0075DD47 /* HomeViewModelsFactory.swift */; };
+		F87D9BC7264AFFFE0075DD47 /* HomeDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D9BC6264AFFFE0075DD47 /* HomeDependencyContainer.swift */; };
 		F8893F8126462ECA00EC72FD /* Single+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8893F8026462ECA00EC72FD /* Single+Additionals.swift */; };
 		F8893F8626462EF500EC72FD /* RxSwift+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8893F8526462EF500EC72FD /* RxSwift+Unwrap.swift */; };
 		F8893F8B2646474100EC72FD /* HomePopularMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8893F8A2646474100EC72FD /* HomePopularMoviesViewModel.swift */; };
@@ -213,6 +217,10 @@
 		F876E9242641D87F00DCC255 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryMockTest.swift; sourceTree = "<group>"; };
 		F876E93E2641F57E00DCC255 /* MoviesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryTests.swift; sourceTree = "<group>"; };
+		F87D9B92264AE60C0075DD47 /* HomePopularShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopularShowsViewModel.swift; sourceTree = "<group>"; };
+		F87D9B97264AE6240075DD47 /* HomeOnTheAirShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOnTheAirShowsViewModel.swift; sourceTree = "<group>"; };
+		F87D9BBB264AFF3A0075DD47 /* HomeViewModelsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelsFactory.swift; sourceTree = "<group>"; };
+		F87D9BC6264AFFFE0075DD47 /* HomeDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDependencyContainer.swift; sourceTree = "<group>"; };
 		F8893F8026462ECA00EC72FD /* Single+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Additionals.swift"; sourceTree = "<group>"; };
 		F8893F8526462EF500EC72FD /* RxSwift+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Unwrap.swift"; sourceTree = "<group>"; };
 		F8893F8A2646474100EC72FD /* HomePopularMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopularMoviesViewModel.swift; sourceTree = "<group>"; };
@@ -639,6 +647,8 @@
 		F86E9954264340A300F89FF8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F87D9BBA264AFF2D0075DD47 /* Factory */,
+				F87D9BB9264AFF230075DD47 /* Dependency */,
 				F86E9958264340D100F89FF8 /* ViewControllers */,
 				F86E9957264340C300F89FF8 /* Views */,
 				F86E9955264340AB00F89FF8 /* ViewModels */,
@@ -721,6 +731,8 @@
 			children = (
 				F86E9979264346B400F89FF8 /* HomeShowsViewModel.swift */,
 				F86E998C264347F600F89FF8 /* HomeShowViewModel.swift */,
+				F87D9B92264AE60C0075DD47 /* HomePopularShowsViewModel.swift */,
+				F87D9B97264AE6240075DD47 /* HomeOnTheAirShowsViewModel.swift */,
 			);
 			path = TVShows;
 			sourceTree = "<group>";
@@ -757,6 +769,22 @@
 				F876E9392641EC1400DCC255 /* MoviesRepositoryMockTest.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		F87D9BB9264AFF230075DD47 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				F87D9BC6264AFFFE0075DD47 /* HomeDependencyContainer.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		F87D9BBA264AFF2D0075DD47 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F87D9BBB264AFF3A0075DD47 /* HomeViewModelsFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		F8893F7F26462EA500EC72FD /* RxSwift */ = {
@@ -1200,7 +1228,9 @@
 				F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F87D9BBC264AFF3A0075DD47 /* HomeViewModelsFactory.swift in Sources */,
 				F86E995A264341B600F89FF8 /* HomeViewController.swift in Sources */,
+				F87D9BC7264AFFFE0075DD47 /* HomeDependencyContainer.swift in Sources */,
 				F8108D7C263F33BD00AFD73A /* SearchRemoteRepository.swift in Sources */,
 				F89CB1D8263B3C37009FA1AD /* APIServerResponse.swift in Sources */,
 				F86E996D2643468700F89FF8 /* HomeViewModel.swift in Sources */,
@@ -1255,6 +1285,7 @@
 				F8106E6026371DE800653AF8 /* UIButton+Localization.swift in Sources */,
 				F8106E842637322600653AF8 /* NibWrapper.swift in Sources */,
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
+				F87D9B93264AE60C0075DD47 /* HomePopularShowsViewModel.swift in Sources */,
 				F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */,
 				F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */,
 				F8F15456264479BE005A26A0 /* ShowCollectionViewCell.swift in Sources */,
@@ -1274,6 +1305,7 @@
 				F89CB114263B11FE009FA1AD /* APIAuthenticatior.swift in Sources */,
 				F86E99752643469C00F89FF8 /* HomeMoviesViewModel.swift in Sources */,
 				F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */,
+				F87D9B98264AE6240075DD47 /* HomeOnTheAirShowsViewModel.swift in Sources */,
 				F8108D57263F2C1F00AFD73A /* APIConfigs.swift in Sources */,
 				F8893F8126462ECA00EC72FD /* Single+Additionals.swift in Sources */,
 				F8106E5526371CE200653AF8 /* UILabel+Localization.swift in Sources */,
