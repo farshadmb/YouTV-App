@@ -21,6 +21,7 @@ final class HomeNowPlayingMoviesViewModel: HomeMoviesViewModel {
 
     convenience init(order: Int, useCase: NowPlayingMoviesUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .nowPlaying, order: order)
+        self.title = "Playing Now Movies"
         self.useCase = useCase
         self.factory = factory
     }

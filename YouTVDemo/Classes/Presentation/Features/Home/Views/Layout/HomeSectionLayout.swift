@@ -13,7 +13,7 @@ import UIKit
 private let defaultWidthSize: CGFloat = 140.0
 
 /// <#Description#>
-private let defaultAspectRatio: CGFloat = 1.77
+let defaultAspectRatio: CGFloat = 1.571_428_571_4
 
 /// <#Description#>
 let movieWidthSize: CGFloat = 150.0
@@ -51,10 +51,9 @@ extension HomeSectionLayout {
      */
     func movieItem() -> NSCollectionLayoutItem {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalWidth(1.77))
+                                              heightDimension: .fractionalWidth(defaultAspectRatio))
 
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
 
         return item
     }

@@ -21,6 +21,7 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
 
     convenience init(order: Int, useCase: PopularMoviesUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .nowPlaying, order: order)
+        self.title = "Popular Movies"
         self.useCase = useCase
         self.factory = factory
     }
@@ -29,17 +30,22 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
         
         let item = movieItem()
         let groupSize = self.groupSize(width: .absolute(movieWidthSize),
-                                       height: .estimated(movieWidthSize * 1.77))
+                                       height: .estimated(movieWidthSize * defaultAspectRatio))
 
-        let subGroup = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
+        let subGroup = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        subGroup.interItemSpacing = .some(.fixed(8.0))
+
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [subGroup, subGroup])
+        group.interItemSpacing = .some(.fixed(8.0))
 
         let section = NSCollectionLayoutSection(group: group)
-
+        section.interGroupSpacing = 8.0
+        section.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
+        
         let headerElement = self.headerElement()
         
         section.boundarySupplementaryItems = [headerElement]
-        section.orthogonalScrollingBehavior = .groupPaging
+        section.orthogonalScrollingBehavior = .continuous
 
         return section
     }

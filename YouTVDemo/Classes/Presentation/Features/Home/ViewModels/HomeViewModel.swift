@@ -60,7 +60,7 @@ class HomeViewModel {
         sections.append(factory.makeHomeShowsViewModel(for: .onTheAir))
         sections.append(factory.makeHomeShowsViewModel(for: .popular))
         
-        items.accept(sections.sorted(by: { $0.order < $1.order }))
+        items.accept(sections)
     }
 
     func refreshContents() {

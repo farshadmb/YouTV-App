@@ -13,6 +13,10 @@ import RxDataSources
 
 final class HomeMovieViewModel: HomeSectionItemViewModel {
 
+    lazy var releaseDate: String? = {
+        formatDate()
+    }()
+
     let model: MovieSummery
 
     override var type: ItemType {
@@ -22,11 +26,25 @@ final class HomeMovieViewModel: HomeSectionItemViewModel {
     required init(model: MovieSummery, remoteImageBuilder: RemoteImageAssetBuilder) {
         self.model = model
         let imageURL = remoteImageBuilder
-            .set(size: .w342, forType: \.posterSizes)
-            .build(imageName: model.posterPath ?? "")
+            .set(size: .w780, forType: \.backdropSizes)
+            .build(imageName: model.backdropPath ?? "")
 
         super.init(title: model.title ?? "No Title",
                    rating: model.voteAverage ?? 0.0,
                    image: imageURL)
+    }
+
+    private func formatDate() -> String? {
+        guard let date = model.releaseDate else {
+            return nil
+        }
+
+        let formatter = DateFormatter.currentZoneFormatter
+        formatter.amSymbol = .none
+        formatter.timeStyle = .none
+        formatter.dateStyle = .none
+        formatter.dateFormat = "YYYY"
+
+        return formatter.string(from: date)
     }
 }

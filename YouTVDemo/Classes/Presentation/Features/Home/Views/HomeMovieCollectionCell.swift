@@ -14,7 +14,8 @@ import SDWebImage
 
 class HomeMovieCollectionCell: MovieCollectionViewCell, BindableType {
 
-    @IBOutlet weak var gradientView: UIView!
+    @IBOutlet weak var gradientView: LinearGradientView!
+
     @IBOutlet weak var ratingStackView: UIStackView!
     @IBOutlet weak var popularityStackView: UIStackView!
     
@@ -22,7 +23,16 @@ class HomeMovieCollectionCell: MovieCollectionViewCell, BindableType {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        gradientView.backgroundColor = .clear
+
+        gradientView.colors = [UIColor.black,
+                               .clear].reversed()
+        gradientView.direction = .custom(start: CGPoint(x: 0.5, y: 0.0), end: CGPoint(x: 0.5, y: 1.0))
+        posterImageView.layer.cornerRadius = 9
+        posterImageView.clipsToBounds = true
+        gradientView.layer.cornerRadius = 9
+        gradientView.clipsToBounds = true
+
         // Initialization code
     }
 
@@ -38,7 +48,7 @@ class HomeMovieCollectionCell: MovieCollectionViewCell, BindableType {
         self.titleLabel.text = viewModel?.title
         self.ratingLabel.text = String(viewModel?.rating ?? 0)
         self.popularityLabel?.text = String(viewModel?.model.popularity ?? 0.0)
-        self.releaseDateLabel?.text = viewModel?.model.releaseDate?.description
+        self.releaseDateLabel?.text = viewModel?.releaseDate
         self.posterImageView.setImage(url: viewModel?.image)
     }
 

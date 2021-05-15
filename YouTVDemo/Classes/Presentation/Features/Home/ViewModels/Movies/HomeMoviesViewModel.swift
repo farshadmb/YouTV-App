@@ -35,15 +35,20 @@ class HomeMoviesViewModel: HomeSectionBaseViewModel {
     func sectionLayout() -> NSCollectionLayoutSection {
         
         let item = movieItem()
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(movieWidthSize),
-                                               heightDimension: .estimated(movieWidthSize * 1.7))
+        let groupSize = self.groupSize(width: .absolute(movieWidthSize),
+                                       height: .estimated(movieWidthSize * defaultAspectRatio))
+
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .some(.fixed(8.0))
+
         let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 8.0
+        section.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
 
         let headerElement = self.headerElement()
 
         section.boundarySupplementaryItems = [headerElement]
-        section.orthogonalScrollingBehavior = .groupPaging
+        section.orthogonalScrollingBehavior = .continuous
         
         return section
     }
