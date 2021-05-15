@@ -55,6 +55,7 @@ final class AppDependencyContainer {
         return TVRemoteRepository(service: networkService, baseURL: AppConfig.baseURL.absoluteString, validResponse: validation)
     }()
 
+    // MARK: - Misc
     var language: String {
 
         guard let value = Bundle.main.preferredLocalizations.first else {
@@ -63,6 +64,10 @@ final class AppDependencyContainer {
 
         return value
     }
+
+    lazy var remoteImageBuilder: RemoteImageAssetBuilder = {
+        return DefaultImageAssetBuilder(imageConfig: AppConfig.defaultImageConfig)
+    }()
 
     init() {
         

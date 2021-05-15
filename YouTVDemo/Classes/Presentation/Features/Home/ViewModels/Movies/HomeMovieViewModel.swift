@@ -19,8 +19,14 @@ final class HomeMovieViewModel: HomeSectionItemViewModel {
         return .movie
     }
 
-    required init(model: MovieSummery) {
+    required init(model: MovieSummery, remoteImageBuilder: RemoteImageAssetBuilder) {
         self.model = model
-        super.init(title: model.title ?? "No Title", rating: model.voteAverage ?? 0.0, image: URL(string: model.posterPath ?? ""))
+        let imageURL = remoteImageBuilder
+            .set(size: .w342, forType: \.posterSizes)
+            .build(imageName: model.posterPath ?? "")
+
+        super.init(title: model.title ?? "No Title",
+                   rating: model.voteAverage ?? 0.0,
+                   image: imageURL)
     }
 }

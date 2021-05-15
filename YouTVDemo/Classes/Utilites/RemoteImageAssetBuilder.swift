@@ -15,7 +15,7 @@ protocol RemoteImageAssetBuilder {
 
     func set(size: Size, forType type: KeyPath<APIConfigs.Images, [Size]?>) -> Self
 
-    func build(imageName: String) throws -> URL?
+    func build(imageName: String) -> URL?
 
 }
 
@@ -45,11 +45,12 @@ struct DefaultImageAssetBuilder: RemoteImageAssetBuilder {
             return nil
         }
 
-        guard lookupArray.contains(where:{ $0 == size }) else {
+        guard lookupArray.contains(where: { $0 == size }) else {
             return nil
         }
 
         guard let baseURL = imageConfig.secureBaseUrl,
+              !imageName.isEmptyOrBlank,
               let components = URLComponents(string: "\(size.rawValue)/\(imageName)") else {
             return nil
         }

@@ -13,12 +13,14 @@ final class HomeDependencyContainer {
 
     let movieRepository: MoviesRepository
     let tvRepository: TVRepository
+    let remoteImageBuilder: RemoteImageAssetBuilder
     let language: String
 
     init(appDependecyContainer: AppDependencyContainer) {
         movieRepository = appDependecyContainer.sharedMovieRepository
         tvRepository = appDependecyContainer.sharedShowRepository
         language = appDependecyContainer.language
+        remoteImageBuilder = appDependecyContainer.remoteImageBuilder
     }
 
     // MARK: - HomeViewModelsFactory
@@ -50,11 +52,11 @@ final class HomeDependencyContainer {
     }
 
     func makeHomeShowViewModel(with model: TVSerialSummery) -> HomeShowViewModel {
-        return HomeShowViewModel(model: model)
+        return HomeShowViewModel(model: model, remoteImageBuilder: remoteImageBuilder)
     }
 
     func makeHomeMovieViewModel(with model: MovieSummery) -> HomeMovieViewModel {
-        return HomeMovieViewModel(model: model)
+        return HomeMovieViewModel(model: model, remoteImageBuilder: remoteImageBuilder)
     }
 
     // MARK: - SectionHomeViewControllerFactory
