@@ -50,6 +50,8 @@
 		F8108D6F263F339E00AFD73A /* TVRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */; };
 		F8108D77263F33AE00AFD73A /* DiscoverRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */; };
 		F8108D7C263F33BD00AFD73A /* SearchRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */; };
+		F846EB9B26506F71003CEB03 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846EB9A26506F71003CEB03 /* LinearGradientView.swift */; };
+		F846EBA02650756F003CEB03 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846EB9F2650756F003CEB03 /* DateFormatter+Extension.swift */; };
 		F8532F1E26460B27000FB4A8 /* HomeSectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8532F1D26460B27000FB4A8 /* HomeSectionLayout.swift */; };
 		F86E98842642DC7D00F89FF8 /* FightClubMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = F86E98832642DC7D00F89FF8 /* FightClubMovie.json */; };
 		F86E988C2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E988B2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift */; };
@@ -201,6 +203,8 @@
 		F8108D6E263F339E00AFD73A /* TVRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D76263F33AE00AFD73A /* DiscoverRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRemoteRepository.swift; sourceTree = "<group>"; };
 		F8108D7B263F33BD00AFD73A /* SearchRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteRepository.swift; sourceTree = "<group>"; };
+		F846EB9A26506F71003CEB03 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		F846EB9F2650756F003CEB03 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		F8532F1D26460B27000FB4A8 /* HomeSectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionLayout.swift; sourceTree = "<group>"; };
 		F86E98832642DC7D00F89FF8 /* FightClubMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FightClubMovie.json; sourceTree = "<group>"; };
 		F86E988B2642E00D00F89FF8 /* MoviesRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
@@ -463,6 +467,7 @@
 				F8106E6E263723E100653AF8 /* Bundle+Extension.swift */,
 				F8106E732637247100653AF8 /* Collection+Additionals.swift */,
 				F8106E782637263700653AF8 /* DispatchQueue+Additional.swift */,
+				F846EB9F2650756F003CEB03 /* DateFormatter+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 			children = (
 				F8F1544C2644797D005A26A0 /* Shows */,
 				F8F1544B26447977005A26A0 /* Movies */,
+				F846EB9A26506F71003CEB03 /* LinearGradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1285,8 +1291,10 @@
 				F86E989A2642EF0D00F89FF8 /* MoviesUseCasesImp.swift in Sources */,
 				F8108D11263F130500AFD73A /* Dates.swift in Sources */,
 				F8532F1E26460B27000FB4A8 /* HomeSectionLayout.swift in Sources */,
+				F846EBA02650756F003CEB03 /* DateFormatter+Extension.swift in Sources */,
 				F89CB094263AD219009FA1AD /* NetworkRequest.swift in Sources */,
 				F8893F9826464AD700EC72FD /* LateInitWrapper.swift in Sources */,
+				F846EB9B26506F71003CEB03 /* LinearGradientView.swift in Sources */,
 				F8106E1E26370E4D00653AF8 /* UITableView+Helper.swift in Sources */,
 				F8106E1926370D1000653AF8 /* UIColor+Extensions.swift in Sources */,
 				F86E99502643254800F89FF8 /* HomeCoordinator.swift in Sources */,
