@@ -19,7 +19,7 @@ struct AppConfig {
     // swiftlint:disable:next force_unwrapping
     static let baseURL = URL(string: "https://api.themoviedb.org/3")!
 
-    // swiftlint:disable:next force_unwrapping
+    // swiftlint:disable:next force_try
     static var imageBaseURL = try! "https://image.tmdb.org/t/p/".asURL()
 
     static let defaultImageConfig = APIConfigs.Images(baseUrl: nil,
