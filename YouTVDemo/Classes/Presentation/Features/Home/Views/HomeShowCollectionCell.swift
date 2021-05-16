@@ -15,6 +15,8 @@ class HomeShowCollectionCell: ShowCollectionViewCell, BindableType {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        posterImageView.layer.cornerRadius = 9
+        posterImageView.clipsToBounds = true
     }
 
     override func prepareForReuse() {
@@ -27,9 +29,10 @@ class HomeShowCollectionCell: ShowCollectionViewCell, BindableType {
 
     override func bindViewModel() {
         self.titleLabel.text = viewModel?.title
+
         self.ratingLabel.text = "\(viewModel?.rating ?? 0.0)"
         self.popularityLabel?.text = String(viewModel?.model.popularity ?? 0.0)
-        self.posterImageView.setImage(url: viewModel?.image)
+        self.posterImageView.setImage(url: viewModel?.image, contentMode: .scaleAspectFill)
     }
 
 }

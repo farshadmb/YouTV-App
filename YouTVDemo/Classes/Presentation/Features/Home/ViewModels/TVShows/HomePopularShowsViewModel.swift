@@ -21,6 +21,7 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
 
     convenience init(order: Int, useCase: PopularTVUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .popular, order: order)
+        self.title = "Popular TV Shows"
         self.useCase = useCase
         self.factory = factory
     }
@@ -33,6 +34,8 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
 
         let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 8.0
+        section.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
 
         let headerElement = self.headerElement()
 
@@ -61,7 +64,13 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
         source.catch { (_) in
             .just([])
         }.map {[unowned self] in
-            return Array($0.compactMap { factory.makeHomeShowViewModel(with: $0) }.prefix(5))
+            let array = Array($0.compactMap { factory.makeHomeShowViewModel(with: $0) }.prefix(5))
+            array.forEach {
+                $0.image = $0.remoteBuilder.set(size: .w780, forType: \.posterSizes)
+                    .build(imageName: $0.model.posterPath ?? "")
+                $0.title = $0.title + " (\($0.firstAirDate ?? "-"))"
+            }
+            return array
         }
         .bind(to: items)
         .disposed(by: disposeBag)

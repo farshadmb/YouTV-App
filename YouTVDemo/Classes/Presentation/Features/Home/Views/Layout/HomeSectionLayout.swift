@@ -66,7 +66,6 @@ extension HomeSectionLayout {
                                               heightDimension: .fractionalWidth(1.77))
 
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
 
         return item
     }
@@ -79,7 +78,6 @@ extension HomeSectionLayout {
                                               heightDimension: .fractionalWidth(0.576_119_403))
 
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
 
         return item
     }

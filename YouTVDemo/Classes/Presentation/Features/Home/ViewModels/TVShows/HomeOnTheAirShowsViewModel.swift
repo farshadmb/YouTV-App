@@ -21,6 +21,7 @@ final class HomeOnTheAirShowsViewModel: HomeShowsViewModel {
 
     convenience init(order: Int, useCase: OnAirTVUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .onTheAir, order: order)
+        self.title = "On The Air TV Shows"
         self.useCase = useCase
         self.factory = factory
     }
@@ -29,11 +30,14 @@ final class HomeOnTheAirShowsViewModel: HomeShowsViewModel {
 
         let item = self.showItem()
 
-        let groupSize = self.groupSize()
+        let groupSize = self.groupSize(height: .estimated(238))
 
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+//        group.interItemSpacing = .some(.fixed(8.0))
 
         let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 8.0
+        section.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
 
         let headerElement = self.headerElement()
 
