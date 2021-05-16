@@ -34,7 +34,6 @@ struct AlertableViewConfiguration {
 
     private static let alertAppearance = MDCSnackbarMessageView.appearance()
 
-    // swiftlint:disable force_unwrapping
     /**
      The Default Configuration for `AlertView`
 
@@ -51,7 +50,6 @@ struct AlertableViewConfiguration {
                                                       shadowColor: alertAppearance.snackbarMessageViewShadowColor ?? .black,
                                                       buttonColor: alertAppearance.buttonTitleColor(for: .normal) ?? .white,
                                                       buttonFont: alertAppearance.buttonFont ?? .systemFont(ofSize: 14.0, weight: .semibold))
-    // swiftlint:enable force_unwrapping
 
     /**
      The Error Configuration for `AlertView`
@@ -113,8 +111,9 @@ extension AlertableView {
             view.setButtonTitleColor(config.buttonColor, for: .highlighted)
             view.setButtonTitleColor(config.buttonColor, for: .selected)
         }
-
+        
         MDCSnackbarManager.default.show(alert)
+        MDCSnackbarManager.default.uppercaseButtonTitle = false
 
     }
 }

@@ -157,26 +157,6 @@ class HomeViewController: UIViewController, BindableType,
                 .elementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryView(type: HomeSectionHeaderView.self, kind: kind, forIndexPath: indexPath)
             headerView.bind(to: sectionViewModel)
-
-            sectionViewModel.fetchDataIfNeeded()
-                .asDriver {[weak self] (error) -> Driver<Bool> in
-                    self?.presentAlert(message: "Opps \(sectionViewModel.title) \n " + error.localizedDescription,
-                                       actionTitle: "Retry",
-                                       config: .error, actionHandler: {
-
-                                       })
-                    return .just(false)
-                }.drive()
-                .disposed(by: headerView.disposeBag)
-            
-            sectionViewModel.items.asDriver()
-                .asObservable()
-                .distinctUntilChanged(at: \.count)
-                .bind {[weak collectionView] _ in
-                    collectionView?.reloadSections([indexPath.section],
-                                                   animationStyle: .none)
-                }
-                .disposed(by: headerView.disposeBag)
             
             return headerView
         default:
@@ -208,19 +188,28 @@ class HomeViewController: UIViewController, BindableType,
         
         viewModel.items
             .bind {[weak collectionView] _ in
-                
                 collectionView?.reloadData()
                 collectionView?.collectionViewLayout.invalidateLayout()
             }
             .disposed(by: disposeBag)
 
+        viewModel.items.asDriver()
+            .delay(.milliseconds(500))
+            .asObservable()
+            .bind {[weak self] sections in
+                sections.enumerated().forEach {
+                    self?.fetchItems(forSection: $0.element)
+                    self?.observeItems(forSection: $0.element, atIndex: $0.offset)
+                }
+            }
+            .disposed(by: disposeBag)
+        
         viewModel.isRefreshing.asDriver()
             .drive(refreshControl.rx.isRefreshing)
             .disposed(by: disposeBag)
 
         viewModel.error.asDriver(onErrorDriveWith: .never())
             .asObservable()
-            .debug()
             .bind {[weak self] error in
                 self?.presentAlert(withError: error, actionTitle: "Retry", actionHandler: {
                     self?.viewModel?.fetchContents()
@@ -229,6 +218,35 @@ class HomeViewController: UIViewController, BindableType,
             .disposed(by: disposeBag)
 
     }
+    
+    private func fetchItems<T: HomeSectionBaseViewModel>(forSection sectionViewModel: T?) {
+        guard let viewModel = sectionViewModel else {
+            return
+        }
+        
+        viewModel.fetchDataIfNeeded()
+            .asDriver {[weak self] (error) -> Driver<Bool> in
+                self?.presentAlert(message: "Opps \(viewModel.title) \n " + error.localizedDescription,
+                                   actionTitle: "Retry",
+                                   config: .error, actionHandler: {[weak self, weak sectionViewModel] in
+                                    self?.fetchItems(forSection: sectionViewModel)
+                                   })
+                return .just(false)
+            }.drive()
+            .disposed(by: disposeBag)
+    }
+    
+    private func observeItems<T: HomeSectionBaseViewModel>(forSection sectionViewModel: T?,
+                                                           atIndex section: Int) {
+        sectionViewModel?.items.asDriver()
+            .asObservable()
+            .bind {[weak collectionView] _ in
+                collectionView?.reloadSections([section],
+                                               animationStyle: .none)
+            }
+            .disposed(by: disposeBag)
+    }
+    
 }
 
 extension HomeViewController: AlertableView {}

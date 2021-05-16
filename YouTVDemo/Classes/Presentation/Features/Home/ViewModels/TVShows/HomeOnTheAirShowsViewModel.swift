@@ -29,8 +29,7 @@ final class HomeOnTheAirShowsViewModel: HomeShowsViewModel {
     override func sectionLayout() -> NSCollectionLayoutSection {
 
         let item = self.showItem()
-        let size = (itemCount > 0 ? defaultWidthSize : 1)
-
+        
         let groupSize = self.groupSize(height: .estimated(238))
 
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])

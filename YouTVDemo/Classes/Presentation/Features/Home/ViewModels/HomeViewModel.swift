@@ -73,7 +73,7 @@ class HomeViewModel {
     func fetchContents(shouldRefresh flag: Bool = false) {
         isRefreshing.accept(flag)
 
-        let fetchObserver = Observable.merge(items.value.compactMap {
+        let fetchObserver = Observable<Result<Bool,Error>>.merge(items.value.compactMap {
             $0.fetchDataIfNeeded(isRefresh: flag)
                 .map {
                     return Result(value: $0, error: nil)
@@ -88,11 +88,11 @@ class HomeViewModel {
             .asObservable()
             .subscribe {[unowned self] _ in
                 isRefreshing.accept(false)
-                items.accept(items.value)
             }.disposed(by: disposeBag)
 
         fetchObserver
             .compactMap({ $0.failure })
+            .takeLast(1)
             .bind(to: error).disposed(by: disposeBag)
     }
     
