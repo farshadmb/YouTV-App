@@ -12,7 +12,11 @@ import Alamofire
 final class AppDependencyContainer {
 
     lazy var networkService: NetworkService = {
-        let APIClient = APIClientService(configuration: .default,
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .reloadIgnoringCacheData
+        configuration.timeoutIntervalForRequest = 30.0
+
+        let APIClient = APIClientService(configuration: configuration,
                                          decoder: dataDecoder,
                                          interceptor: authenticator)
         return APIClient
