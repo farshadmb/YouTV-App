@@ -55,6 +55,8 @@ class HomeViewController: UIViewController, BindableType,
 
     private func setupLayouts() {
         setupCollectionView()
+        self.tabBarItem = .init(title: "Home", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        self.title = "Home"
     }
 
     private func setupCollectionView() {
@@ -105,10 +107,10 @@ class HomeViewController: UIViewController, BindableType,
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let section = viewModel?[section] else {
-            return 1
+            return 0
         }
         
-        return section.itemCount + 1
+        return section.itemCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -155,6 +157,18 @@ class HomeViewController: UIViewController, BindableType,
                 .elementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryView(type: HomeSectionHeaderView.self, kind: kind, forIndexPath: indexPath)
             headerView.bind(to: sectionViewModel)
+
+            sectionViewModel.fetchDataIfNeeded()
+                .asDriver {[weak self] (error) -> Driver<Bool> in
+                    self?.presentAlert(message: "Opps \(sectionViewModel.title) \n " + error.localizedDescription,
+                                       actionTitle: "Retry",
+                                       config: .error, actionHandler: {
+
+                                       })
+                    return .just(false)
+                }.drive()
+                .disposed(by: headerView.disposeBag)
+            
             sectionViewModel.items.asDriver()
                 .asObservable()
                 .distinctUntilChanged(at: \.count)
@@ -194,10 +208,27 @@ class HomeViewController: UIViewController, BindableType,
         
         viewModel.items
             .bind {[weak collectionView] _ in
+                
                 collectionView?.reloadData()
                 collectionView?.collectionViewLayout.invalidateLayout()
             }
             .disposed(by: disposeBag)
 
+        viewModel.isRefreshing.asDriver()
+            .drive(refreshControl.rx.isRefreshing)
+            .disposed(by: disposeBag)
+
+        viewModel.error.asDriver(onErrorDriveWith: .never())
+            .asObservable()
+            .debug()
+            .bind {[weak self] error in
+                self?.presentAlert(withError: error, actionTitle: "Retry", actionHandler: {
+                    self?.viewModel?.fetchContents()
+                })
+            }
+            .disposed(by: disposeBag)
+
     }
 }
+
+extension HomeViewController: AlertableView {}

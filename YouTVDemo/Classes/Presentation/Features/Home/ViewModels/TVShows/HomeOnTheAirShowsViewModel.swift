@@ -29,11 +29,11 @@ final class HomeOnTheAirShowsViewModel: HomeShowsViewModel {
     override func sectionLayout() -> NSCollectionLayoutSection {
 
         let item = self.showItem()
+        let size = (itemCount > 0 ? defaultWidthSize : 1)
 
         let groupSize = self.groupSize(height: .estimated(238))
 
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-//        group.interItemSpacing = .some(.fixed(8.0))
 
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 8.0
@@ -57,20 +57,22 @@ final class HomeOnTheAirShowsViewModel: HomeShowsViewModel {
             return .just(true)
         }
 
-        isLoading.accept(true)
+        isLoading.accept(!isRefresh)
         let completion = {[weak isLoading] (_: Any?) -> Void in
             isLoading?.accept(false)
         }
 
         let source = useCase.fetchOnAirTVSerials().asObservable().share()
+        let prevItems = self.items.value
+            .compactMap({ $0 as? HomeShowViewModel })
+            .compactMap { $0.model }
 
-        source.catch { (_) in
-            .just([])
-        }.map {[unowned self] in
-            return $0.compactMap { factory.makeHomeShowViewModel(with: $0) }
-        }
-        .bind(to: items)
-        .disposed(by: disposeBag)
+        source.catchAndReturn(prevItems)
+            .map {[unowned self] in
+                return $0.compactMap { factory.makeHomeShowViewModel(with: $0) }
+            }
+            .bind(to: items)
+            .disposed(by: disposeBag)
 
         return source.map { _ in true }.asSingle()
             .do(onSuccess: completion, onError: completion)

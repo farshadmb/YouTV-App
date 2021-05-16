@@ -25,6 +25,10 @@ class HomeViewModel {
     // output
     let items = BehaviorRelay<[HomeSectionBaseViewModel]>(value: [])
 
+    let isRefreshing = BehaviorRelay<Bool>(value: false)
+
+    let error = PublishRelay<Error>()
+
     let factory: HomeViewModelsFactory
 
     init(factory: HomeViewModelsFactory) {
@@ -38,7 +42,6 @@ class HomeViewModel {
             .debug()
             .bind {[unowned self] _ in
                 buildSections()
-                fetchContents()
             }
             .disposed(by: disposeBag)
 
@@ -68,10 +71,29 @@ class HomeViewModel {
     }
 
     func fetchContents(shouldRefresh flag: Bool = false) {
-        for section in items.value {
-            section.fetchDataIfNeeded(isRefresh: false)
-                .subscribe().disposed(by: disposeBag)
-        }
+        isRefreshing.accept(flag)
+
+        let fetchObserver = Observable.merge(items.value.compactMap {
+            $0.fetchDataIfNeeded(isRefresh: flag)
+                .map {
+                    return Result(value: $0, error: nil)
+                }
+                .catch { (error) in
+                    return .just(Result(catching: { throw error }))
+                }
+                .asObservable()
+        }).share(replay: 1, scope: .whileConnected)
+
+        fetchObserver.asDriver(onErrorDriveWith: .never())
+            .asObservable()
+            .subscribe {[unowned self] _ in
+                isRefreshing.accept(false)
+                items.accept(items.value)
+            }.disposed(by: disposeBag)
+
+        fetchObserver
+            .compactMap({ $0.failure })
+            .bind(to: error).disposed(by: disposeBag)
     }
     
     subscript(section: Int) -> HomeSectionBaseViewModel? {

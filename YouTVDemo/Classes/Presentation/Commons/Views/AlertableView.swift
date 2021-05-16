@@ -45,12 +45,12 @@ struct AlertableViewConfiguration {
      * `shadowColor` is `.black`
      * `buttonColor` is `.white.withAlphaComponent(0.6)`
      */
-    static let `default` = AlertableViewConfiguration(messageFont: alertAppearance.messageFont!,
-                                                      messageColor: alertAppearance.messageTextColor!,
-                                                      backgroundColor: alertAppearance.snackbarMessageViewBackgroundColor!,
-                                                      shadowColor: alertAppearance.snackbarMessageViewShadowColor!,
-                                                      buttonColor: alertAppearance.buttonTitleColor(for: .normal)!,
-                                                      buttonFont: alertAppearance.buttonFont!)
+    static let `default` = AlertableViewConfiguration(messageFont: alertAppearance.messageFont ?? .systemFont(ofSize: 72.0, weight: .medium),
+                                                      messageColor: alertAppearance.messageTextColor ?? .white,
+                                                      backgroundColor: alertAppearance.snackbarMessageViewBackgroundColor ?? .gray,
+                                                      shadowColor: alertAppearance.snackbarMessageViewShadowColor ?? .black,
+                                                      buttonColor: alertAppearance.buttonTitleColor(for: .normal) ?? .white,
+                                                      buttonFont: alertAppearance.buttonFont ?? .systemFont(ofSize: 14.0, weight: .semibold))
     // swiftlint:enable force_unwrapping
 
     /**
@@ -66,8 +66,7 @@ struct AlertableViewConfiguration {
     static let error: AlertableViewConfiguration = {
         var error = AlertableViewConfiguration.default
         error.messageColor = .red
-        error.buttonColor = .orange
-        error.backgroundColor = error.backgroundColor.withAlphaComponent(0.8)
+        error.buttonColor = .white
         return error
     }()
 }

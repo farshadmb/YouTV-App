@@ -43,12 +43,15 @@ final class HomeNowPlayingMoviesViewModel: HomeMoviesViewModel {
         
         let source = useCase.fetchNowPlayingMovies()
             .asObservable().share(replay: 1, scope: .whileConnected)
-        
-        source.catch { (_) -> Observable<[MovieSummery]> in
-            .just([])
-        }.map {[unowned self] in
-            return $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
-        }
+
+        let prevItems = self.items.value
+            .compactMap({ $0 as? HomeMovieViewModel })
+            .compactMap { $0.model }
+
+        source.catchAndReturn(prevItems)
+            .map {[unowned self] in
+            $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
+            }
         .bind(to: items)
         .disposed(by: disposeBag)
         

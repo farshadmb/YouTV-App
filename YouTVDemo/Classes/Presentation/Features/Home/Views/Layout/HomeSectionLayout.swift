@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// <#Description#>
-private let defaultWidthSize: CGFloat = 140.0
+let defaultWidthSize: CGFloat = 140.0
 
 /// <#Description#>
 let defaultAspectRatio: CGFloat = 1.571_428_571_4

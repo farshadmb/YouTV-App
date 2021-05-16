@@ -13,7 +13,7 @@ import UIKit
 extension UIImageView {
 
     /// <#Description#>
-    static let defaultSDWebImageOptions: SDWebImageOptions = [.lowPriority,.scaleDownLargeImages,.retryFailed,.refreshCached]
+    static let defaultSDWebImageOptions: SDWebImageOptions = [.lowPriority,.scaleDownLargeImages,.retryFailed,.transformAnimatedImage]
 
     /// <#Description#>
     static let cacheSDWebImageOptions: SDWebImageOptions = [.lowPriority,.scaleDownLargeImages,.queryMemoryData,.refreshCached]

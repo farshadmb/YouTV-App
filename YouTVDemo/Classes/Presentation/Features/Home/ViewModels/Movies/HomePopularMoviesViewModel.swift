@@ -66,14 +66,16 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
         }
         
         let source = useCase.fetchPopularMovies().asObservable().share()
-        
-        source.catch { (_) -> Observable<[MovieSummery]> in
-            .just([])
-        }.map {[unowned self] in
-            return $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
-        }
-        .bind(to: items)
-        .disposed(by: disposeBag)
+        let prevItems = self.items.value
+            .compactMap({ $0 as? HomeMovieViewModel })
+            .compactMap { $0.model }
+
+        source.catchAndReturn(prevItems)
+            .map {[unowned self] in
+                return $0.compactMap { factory.makeHomeMovieViewModel(with: $0) }
+            }
+            .bind(to: items)
+            .disposed(by: disposeBag)
         
         return source.map { _ in true }.asSingle()
             .do(onSuccess: completion, onError: completion)

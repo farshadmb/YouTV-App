@@ -54,26 +54,29 @@ final class HomePopularShowsViewModel: HomeShowsViewModel {
             return .just(false)
         }
 
-        isLoading.accept(true)
+        isLoading.accept(!isRefresh)
         let completion = {[weak isLoading] (_: Any?) -> Void in
             isLoading?.accept(false)
         }
 
         let source = useCase.fetchPopularTVSerials().asObservable().share()
 
-        source.catch { (_) in
-            .just([])
-        }.map {[unowned self] in
-            let array = Array($0.compactMap { factory.makeHomeShowViewModel(with: $0) }.prefix(5))
-            array.forEach {
-                $0.image = $0.remoteBuilder.set(size: .w780, forType: \.posterSizes)
-                    .build(imageName: $0.model.posterPath ?? "")
-                $0.title = $0.title + " (\($0.firstAirDate ?? "-"))"
+        let prevItems = self.items.value
+            .compactMap({ $0 as? HomeShowViewModel })
+            .compactMap { $0.model }
+
+        source.catchAndReturn(prevItems)
+            .map {[unowned self] in
+                let array = Array($0.compactMap { factory.makeHomeShowViewModel(with: $0) }.prefix(5))
+                array.forEach {
+                    $0.image = $0.remoteBuilder.set(size: .w780, forType: \.posterSizes)
+                        .build(imageName: $0.model.posterPath ?? "")
+                    $0.title = $0.title + " (\($0.firstAirDate ?? "-"))"
+                }
+                return array
             }
-            return array
-        }
-        .bind(to: items)
-        .disposed(by: disposeBag)
+            .bind(to: items)
+            .disposed(by: disposeBag)
 
         return source.map { _ in true }.asSingle()
             .do(onSuccess: completion, onError: completion)

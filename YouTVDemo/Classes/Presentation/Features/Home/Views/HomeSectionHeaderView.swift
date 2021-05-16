@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 class HomeSectionHeaderView: UICollectionReusableView, BindableType {
-    
+
     var viewModel: HomeSectionBaseViewModel?
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -23,6 +23,7 @@ class HomeSectionHeaderView: UICollectionReusableView, BindableType {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        loadingView.cycleColors = [.blue]
         // Initialization code
     }
 
@@ -65,6 +66,8 @@ extension Reactive where Base: HomeSectionHeaderView {
             } else {
                 base.loadingView.stopAnimating()
             }
+
+            base.seeMoreButton.isHidden = value
         }
     }
 
