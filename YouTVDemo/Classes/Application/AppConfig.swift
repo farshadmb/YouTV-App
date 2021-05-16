@@ -14,7 +14,7 @@ import Alamofire
 struct AppConfig {
 
     // put your api code here, this api key would be fulfilled by CI/CD
-    static let APIKey = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOTRlNDNiNWM2ZDU2YzAxZWU1ZDQ3MWM3YjYwYzYyOSIsInN1YiI6IjYwN2Q2ZTdlMWIxZjNjMDAyOTQ4MmRlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xPaZ7-V1tmyy8GsrZZLQPTTmzP7LlWjrLMGXTrVSE3E"
+    static let APIKey = "YOUR-API-Key"
 
     // swiftlint:disable:next force_unwrapping
     static let baseURL = URL(string: "https://api.themoviedb.org/3")!
