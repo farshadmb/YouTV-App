@@ -55,7 +55,7 @@ class HomeViewController: UIViewController, BindableType,
 
     private func setupLayouts() {
         setupCollectionView()
-        self.tabBarItem = .init(title: "Home", image: UIImage.Symbols.home.image,
+        self.tabBarItem = .init(title: Strings.Home.title, image: UIImage.Symbols.home.image,
                                 selectedImage: UIImage.Symbols.homeFill.image)
         self.title = "Home"
     }
@@ -221,7 +221,7 @@ class HomeViewController: UIViewController, BindableType,
         viewModel.error.asDriver(onErrorDriveWith: .never())
             .asObservable()
             .bind {[weak self] error in
-                self?.presentAlert(withError: error, actionTitle: "Retry", actionHandler: {
+                self?.presentAlert(withError: error, actionTitle: Strings.Global.retry, actionHandler: {
                     self?.viewModel?.fetchContents()
                 })
             }
@@ -237,7 +237,7 @@ class HomeViewController: UIViewController, BindableType,
         viewModel.fetchDataIfNeeded()
             .asDriver {[weak self] (error) -> Driver<Bool> in
                 self?.presentAlert(message: "Opps \(viewModel.title) \n " + error.localizedDescription,
-                                   actionTitle: "Retry",
+                                   actionTitle: Strings.Global.retry,
                                    config: .error, actionHandler: {[weak self, weak sectionViewModel] in
                                     self?.fetchItems(forSection: sectionViewModel)
                                    })

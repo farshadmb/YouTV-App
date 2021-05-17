@@ -44,7 +44,7 @@ struct AlertableViewConfiguration {
      * `shadowColor` is `.black`
      * `buttonColor` is `.white.withAlphaComponent(0.6)`
      */
-    static let `default` = AlertableViewConfiguration(messageFont: alertAppearance.messageFont ?? .systemFont(ofSize: 72.0, weight: .medium),
+    static let `default` = AlertableViewConfiguration(messageFont: alertAppearance.messageFont ?? .systemFont(ofSize: 14.0, weight: .medium),
                                                       messageColor: alertAppearance.messageTextColor ?? .white,
                                                       backgroundColor: alertAppearance.snackbarMessageViewBackgroundColor ?? .gray,
                                                       shadowColor: alertAppearance.snackbarMessageViewShadowColor ?? .black,
@@ -94,7 +94,7 @@ extension AlertableView {
 
     func presentAlert(message: String, actionTitle: String?, config: AlertableViewConfiguration, actionHandler:@escaping () -> Void) {
         let alert = MDCSnackbarMessage(text: message)
-
+        
         // if actionTitle has a value, create snackbar action and assign to alert
         if let actionTitle = actionTitle {
             alert.action = MDCSnackbarMessageAction()
@@ -103,6 +103,7 @@ extension AlertableView {
         }
 
         alert.snackbarMessageWillPresentBlock = { _, view in
+            
             view.snackbarMessageViewBackgroundColor = config.backgroundColor
             view.snackbarMessageViewShadowColor = config.shadowColor
             view.messageFont = config.messageFont
@@ -110,6 +111,7 @@ extension AlertableView {
             view.setButtonTitleColor(config.buttonColor, for: .normal)
             view.setButtonTitleColor(config.buttonColor, for: .highlighted)
             view.setButtonTitleColor(config.buttonColor, for: .selected)
+            
         }
         
         MDCSnackbarManager.default.show(alert)

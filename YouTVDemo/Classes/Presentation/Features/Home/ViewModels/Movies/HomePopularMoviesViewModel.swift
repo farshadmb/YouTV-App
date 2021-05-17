@@ -21,7 +21,7 @@ final class HomePopularMoviesViewModel: HomeMoviesViewModel {
 
     convenience init(order: Int, useCase: PopularMoviesUseCases, factory: HomeViewModelsFactory) {
         self.init(type: .nowPlaying, order: order)
-        self.title = "Popular Movies"
+        self.title = Strings.Home.Section.movieTitle(Strings.Global.popular)
         self.useCase = useCase
         self.factory = factory
     }

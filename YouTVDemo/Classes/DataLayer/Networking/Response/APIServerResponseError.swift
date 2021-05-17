@@ -41,11 +41,11 @@ extension APIServerResponseError {
 
         switch self {
         case .code(let value):
-            return "Code: \(value)"
+            return Strings.Errors.APIResponse.code(value)
         case .message(let code , let msg):
-            return "Code: \(code)\nmessage:\(msg)"
+            return Strings.Errors.APIResponse.localizedDescription(code,msg)
         case .unknown :
-            return "Unknown Error Occured. Please Contact Support"
+            return Strings.Errors.APIResponse.unknown
         }
     }
 

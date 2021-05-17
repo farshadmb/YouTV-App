@@ -128,6 +128,7 @@
 		F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */; };
 		F8A96FF0265242D200F1C9E5 /* HomeTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */; };
 		F8A970032652673700F1C9E5 /* AppImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A970022652673700F1C9E5 /* AppImageAssets.swift */; };
+		F8A96FFB2652526A00F1C9E5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */; };
 		F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */; };
 		F8CF584B2645B52D00D80790 /* HomeSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */; };
 		F8CF58512645BF9000D80790 /* HomeMovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */; };
@@ -298,6 +299,7 @@
 		F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingsViewModel.swift; sourceTree = "<group>"; };
 		F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingViewModel.swift; sourceTree = "<group>"; };
 		F8A970022652673700F1C9E5 /* AppImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageAssets.swift; sourceTree = "<group>"; };
+		F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderView.xib; sourceTree = "<group>"; };
 		F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCollectionCell.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				F89D8F752636404E007A34CF /* AppDelegate.swift */,
 				F89CB1C4263B30E1009FA1AD /* AppConfig.swift */,
 				F87D9BD5264B0C320075DD47 /* AppDependencyContainer.swift */,
+				F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */,
 				F8A970022652673700F1C9E5 /* AppImageAssets.swift */,
 			);
 			path = Application;
@@ -1351,6 +1354,7 @@
 				F8410EFE2652177500F2CE35 /* TrendingRepository.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F8410F532652318F00F2CE35 /* HomeTrendingCollectionCell.swift in Sources */,
+				F8A96FFB2652526A00F1C9E5 /* AppStrings.swift in Sources */,
 				F89CB0A2263AD499009FA1AD /* APIParametersRequest.swift in Sources */,
 				F8108D34263F1BE300AFD73A /* ProductionCompany.swift in Sources */,
 				F86E993E2643235D00F89FF8 /* AppCoordinator.swift in Sources */,

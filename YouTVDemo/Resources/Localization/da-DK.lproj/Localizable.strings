@@ -5,3 +5,35 @@
   Created by Farshad Mousalou on 4/26/21.
   Copyright © 2021 iFarshad. All rights reserved.
 */
+
+// GLOBAL
+"global.apptitle" = "YouTV-Demo";
+"global.loading" = "Indlæser ...";
+"global.retry" = "Prøve igen";
+"global.ok" = "OK";
+"global.cancel" = "Ophæve";
+"global.close" = "Afspærre";
+"global.error" = "Fejl";
+"global.yes" = "Ja";
+"global.no" = "Ingen";
+"global.or" = "eller";
+"global.continue" = "Fortsætte";
+"global.popular" = "Folkelig";
+
+// Home
+"home.title" = "Hjem";
+"home.movies.playing" = "Spiller Nu";
+"home.movies.title" = "%@ Films";
+
+"home.tv.title" = "%@ TV";
+"home.tv.onAir" = "På Luft";
+
+"home.trends.title" = "Tendenser";
+
+"home.sections.seeMore.title" = "Se Mere";
+
+// Error
+"api.response.code" = "Kode: %d";
+"api.response.message" = "Detalje: %@";
+"api.response.localizableMessage" = "Kode: %d \n Detalje:%@";
+"api.response.unknown" = "Ukendt fejl opstået. Kontakt support.";

@@ -24,6 +24,8 @@ class HomeSectionHeaderView: UICollectionReusableView, BindableType {
     override func awakeFromNib() {
         super.awakeFromNib()
         loadingView.cycleColors = [.blue]
+        seeMoreButton.setTitle(Strings.Home.Section.seeMore,
+                               for: .normal)
         // Initialization code
     }
 
