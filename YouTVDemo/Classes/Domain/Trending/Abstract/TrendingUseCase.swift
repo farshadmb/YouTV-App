@@ -15,6 +15,9 @@ protocol TrendingUseCase {
     
     typealias DataType = Any
     
+    /**
+     Summery
+     */
     func fetchTrendings() -> Single<[DataType]>
     
 }
@@ -23,6 +26,9 @@ protocol TVTrendingUseCase {
     
     typealias DataType = TVSerialSummery
     
+    /**
+     Summery
+     */
     func fetchTVTrendings() -> Single<[DataType]>
     
 }
@@ -31,6 +37,8 @@ protocol MovieTrendingUseCase {
     
     typealias DataType = MovieSummery
     
+    /**
+     Summery
+     */
     func fetchMoviesTrendings() -> Single<[DataType]>
 }
-

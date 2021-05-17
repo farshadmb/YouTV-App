@@ -10,21 +10,19 @@ import Foundation
 import RxSwift
 import Combine
 
-
 /**
  <# Property Summery Here#>
  */
 protocol TrendingRepository: class {
     
     /**
-
      - Parameters:
        - forId: <#forId description#>
        - page: <#page description#>
        - withLanguage: <#withLanguage description#>
      - Returns:
      */
-    func fetchTredingsContent(at page: Int, withLanguage: String) -> Observable<Pagination<Any>>
+    func fetchTredingsContent(at page: Int, withLanguage: String) -> Observable<Pagination<String>>
 
     /**
      <# Property Summery Here#>
@@ -33,7 +31,7 @@ protocol TrendingRepository: class {
        - withLanguage: <#withLanguage description#>
      - Returns:
      */
-    func fetchTVTrendings(at page: Int, withLanguage: String) -> Observable<Pagination<TVSerial>>
+    func fetchTVTrendings(at page: Int, withLanguage: String) -> Observable<Pagination<TVSerialSummery>>
 
     /**
      <# Property Summery Here#>
