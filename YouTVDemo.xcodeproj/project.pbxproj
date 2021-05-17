@@ -129,6 +129,7 @@
 		F8A96FF0265242D200F1C9E5 /* HomeTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */; };
 		F8A970032652673700F1C9E5 /* AppImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A970022652673700F1C9E5 /* AppImageAssets.swift */; };
 		F8A96FFB2652526A00F1C9E5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */; };
+		F8AA312126529A9B00D136EC /* LaunchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA312026529A9B00D136EC /* LaunchingViewController.swift */; };
 		F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */; };
 		F8CF584B2645B52D00D80790 /* HomeSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */; };
 		F8CF58512645BF9000D80790 /* HomeMovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */; };
@@ -300,6 +301,7 @@
 		F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingViewModel.swift; sourceTree = "<group>"; };
 		F8A970022652673700F1C9E5 /* AppImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageAssets.swift; sourceTree = "<group>"; };
 		F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		F8AA312026529A9B00D136EC /* LaunchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingViewController.swift; sourceTree = "<group>"; };
 		F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderView.xib; sourceTree = "<group>"; };
 		F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCollectionCell.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		F8106D772636D12600653AF8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F8AA31192652982800D136EC /* Launching */,
 				F86E9954264340A300F89FF8 /* Home */,
 			);
 			path = Features;
@@ -1052,6 +1055,38 @@
 			path = Trending;
 			sourceTree = "<group>";
 		};
+		F8AA31192652982800D136EC /* Launching */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA311C2652985700D136EC /* Factory */,
+				F8AA311A2652983F00D136EC /* ViewControllers */,
+				F8AA311B2652984B00D136EC /* ViewModels */,
+			);
+			path = Launching;
+			sourceTree = "<group>";
+		};
+		F8AA311A2652983F00D136EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA312026529A9B00D136EC /* LaunchingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8AA311B2652984B00D136EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8AA311C2652985700D136EC /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		F8E7EE662641FB76008781E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1376,7 @@
 				F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F8AA312126529A9B00D136EC /* LaunchingViewController.swift in Sources */,
 				F87D9BBC264AFF3A0075DD47 /* HomeViewModelsFactory.swift in Sources */,
 				F86E995A264341B600F89FF8 /* HomeViewController.swift in Sources */,
 				F87D9BC7264AFFFE0075DD47 /* HomeDependencyContainer.swift in Sources */,
