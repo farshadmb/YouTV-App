@@ -29,14 +29,18 @@ jobs:
         - name: Generate Jazzy Docs
           id: generate
           run: |
+            echo "Fetching From Origin"
             git fetch -a -p
-            git branch -vv
+            echo "Reseting Changes"
             git status && git add . && git reset --hard
+            echo "Getting Current Branch"
             export currentBranch=$(git branch -vv | grep '*' | awk '{ print $2 }' | xargs)
-            git checkout docs
-            git pull origin
-            echo $currentBranch
+            echo "Checkout && Pulling Docs Branch "
+            git checkout docs && git pull origin
+            echo "Current Branch is ${currentBranch}"
+            echo "Merging from ${currentBranch}"
             git merge $currentBranch --verbose -X theirs -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')"
+            echo "Running Jazzy"
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git add ./Docs/* 
             echo "::set-output name=message::Updated Project Docs at $(date +'%Y-%m-%d')"
