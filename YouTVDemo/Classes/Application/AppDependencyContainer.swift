@@ -58,6 +58,12 @@ final class AppDependencyContainer {
     lazy var sharedShowRepository: TVRepository = {
         return TVRemoteRepository(service: networkService, baseURL: AppConfig.baseURL.absoluteString, validResponse: validation)
     }()
+    
+    lazy var sharedTrendingRepository: TrendingRepository = {
+        return TrendingRemoteRepository(service: networkService,
+                                        baseURL: AppConfig.baseURL.absoluteString,
+                                        validResponse: validation)
+    }()
 
     // MARK: - Misc
     var language: String {
