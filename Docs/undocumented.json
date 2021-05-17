@@ -2,15 +2,29 @@
   "warnings": [
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "AppConfig.APIKey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "AppConfig.baseURL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
+      "line": 23,
+      "symbol": "AppConfig.imageBaseURL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
+      "line": 25,
+      "symbol": "AppConfig.defaultImageConfig",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
@@ -26,6 +40,440 @@
       "line": 13,
       "symbol": "AppDelegate.window",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.container",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDelegate.swift",
+      "line": 18,
+      "symbol": "AppDelegate.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 12,
+      "symbol": "AppDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 14,
+      "symbol": "AppDependencyContainer.networkService",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 25,
+      "symbol": "AppDependencyContainer.dataDecoder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 36,
+      "symbol": "AppDependencyContainer.authenticator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 40,
+      "symbol": "AppDependencyContainer.validation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 53,
+      "symbol": "AppDependencyContainer.sharedMovieRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 58,
+      "symbol": "AppDependencyContainer.sharedShowRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 62,
+      "symbol": "AppDependencyContainer.sharedTrendingRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 69,
+      "symbol": "AppDependencyContainer.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 78,
+      "symbol": "AppDependencyContainer.remoteImageBuilder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 82,
+      "symbol": "AppDependencyContainer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 88,
+      "symbol": "AppDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 90,
+      "symbol": "AppDependencyContainer.makePopularShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 94,
+      "symbol": "AppDependencyContainer.makeTopRatedShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 98,
+      "symbol": "AppDependencyContainer.makeOnTheAirUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 104,
+      "symbol": "AppDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 106,
+      "symbol": "AppDependencyContainer.makePopularMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 110,
+      "symbol": "AppDependencyContainer.makeTopRatedMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 114,
+      "symbol": "AppDependencyContainer.makeNowPlayingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 120,
+      "symbol": "AppDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 14,
+      "symbol": "UIImage.Images",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 15,
+      "symbol": "UIImage.Images.placeHolder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 18,
+      "symbol": "UIImage.Icon",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 19,
+      "symbol": "UIImage.Icon.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 23,
+      "symbol": "UIImage.Symbols",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 25,
+      "symbol": "UIImage.Symbols.circle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 26,
+      "symbol": "UIImage.Symbols.startFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 27,
+      "symbol": "UIImage.Symbols.heartFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 28,
+      "symbol": "UIImage.Symbols.circleFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 29,
+      "symbol": "UIImage.Symbols.checkmarkCircle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 30,
+      "symbol": "UIImage.Symbols.xmarkCircle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 31,
+      "symbol": "UIImage.Symbols.home",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 32,
+      "symbol": "UIImage.Symbols.homeFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppImageAssets.swift",
+      "line": 33,
+      "symbol": "UIImage.Symbols.search",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 11,
+      "symbol": "Strings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 13,
+      "symbol": "Strings.Home",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 15,
+      "symbol": "Strings.Home.title",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 17,
+      "symbol": "Strings.Home.Section",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 19,
+      "symbol": "Strings.Home.Section.seeMore",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 20,
+      "symbol": "Strings.Home.Section.tvTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 24,
+      "symbol": "Strings.Home.Section.onAir",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 26,
+      "symbol": "Strings.Home.Section.movieTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 30,
+      "symbol": "Strings.Home.Section.nowPlayingTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 32,
+      "symbol": "Strings.Home.Section.trendsTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 39,
+      "symbol": "Strings",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 41,
+      "symbol": "Strings.Global",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 43,
+      "symbol": "Strings.Global.cancel",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 44,
+      "symbol": "Strings.Global.retry",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 45,
+      "symbol": "Strings.Global.continue",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 46,
+      "symbol": "Strings.Global.loading",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 47,
+      "symbol": "Strings.Global.popular",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 49,
+      "symbol": "Strings.Global.ok",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 50,
+      "symbol": "Strings.Global.error",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 51,
+      "symbol": "Strings.Global.appTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 54,
+      "symbol": "Strings.Errors",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 56,
+      "symbol": "Strings.Errors.APIResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 58,
+      "symbol": "Strings.Errors.APIResponse.code",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 62,
+      "symbol": "Strings.Errors.APIResponse.message",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 66,
+      "symbol": "Strings.Errors.APIResponse.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppStrings.swift",
+      "line": 70,
+      "symbol": "Strings.Errors.APIResponse.unknown",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -403,6 +851,104 @@
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
       "line": 37,
       "symbol": "APIConfigs.Images.CodingKeys.stillSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 43,
+      "symbol": "APIConfigs.Images",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 45,
+      "symbol": "APIConfigs.Images.Size",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 46,
+      "symbol": "APIConfigs.Images.Size.w45",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 47,
+      "symbol": "APIConfigs.Images.Size.w92",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 48,
+      "symbol": "APIConfigs.Images.Size.w98",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 49,
+      "symbol": "APIConfigs.Images.Size.w154",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 50,
+      "symbol": "APIConfigs.Images.Size.w185",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 51,
+      "symbol": "APIConfigs.Images.Size.w300",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 52,
+      "symbol": "APIConfigs.Images.Size.w342",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 53,
+      "symbol": "APIConfigs.Images.Size.w500",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 54,
+      "symbol": "APIConfigs.Images.Size.w780",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 55,
+      "symbol": "APIConfigs.Images.Size.w1280",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 56,
+      "symbol": "APIConfigs.Images.Size.h632",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 57,
+      "symbol": "APIConfigs.Images.Size.original",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -2222,7 +2768,42 @@
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
       "line": 19,
-      "symbol": "MoviesRemoteRepository.init(service:)",
+      "symbol": "MoviesRemoteRepository.baseURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 20,
+      "symbol": "MoviesRemoteRepository.responseValidation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 22,
+      "symbol": "MoviesRemoteRepository.init(service:baseURL:validResponse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 67,
+      "symbol": "MoviesRemoteRepository.map(response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 76,
+      "symbol": "MoviesRemoteRepository.createMovieListRequest(url:page:language:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 81,
+      "symbol": "MoviesRemoteRepository.validResponse()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -2264,50 +2845,232 @@
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
       "line": 18,
-      "symbol": "TVRemoteRepository.init(service:)",
+      "symbol": "TVRemoteRepository.baseURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 19,
+      "symbol": "TVRemoteRepository.responseValidation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 21,
+      "symbol": "TVRemoteRepository.init(service:baseURL:validResponse:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
-      "line": 12,
-      "symbol": "AnyCombineObserver",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 71,
+      "symbol": "TVRemoteRepository.map(response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 80,
+      "symbol": "TVRemoteRepository.createRequest(url:page:language:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 85,
+      "symbol": "TVRemoteRepository.validResponse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
       "line": 14,
-      "symbol": "AnyCombineObserver.onNext",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "symbol": "TrendingRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
-      "line": 15,
-      "symbol": "AnyCombineObserver.onError",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
       "line": 16,
-      "symbol": "AnyCombineObserver.onCompleted",
+      "symbol": "TrendingRemoteRepository.service",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
+      "line": 18,
+      "symbol": "TrendingRemoteRepository.baseURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
       "line": 19,
-      "symbol": "CombineDisposable",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrendingRemoteRepository.responseValidation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
       "line": 21,
-      "symbol": "CombineDisposable.dispose",
+      "symbol": "TrendingRemoteRepository.init(service:baseURL:validResponse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
+      "line": 49,
+      "symbol": "TrendingRemoteRepository.map(response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Trending/TrendingRemoteRepository.swift",
+      "line": 58,
+      "symbol": "TrendingRemoteRepository.createRequest(url:page:language:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Abstract/MoviesUseCases.swift",
+      "line": 40,
+      "symbol": "PopularMoviesUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Abstract/MoviesUseCases.swift",
+      "line": 55,
+      "symbol": "TopRatedMoviesUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Abstract/MoviesUseCases.swift",
+      "line": 70,
+      "symbol": "NowPlayingMoviesUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Implemention/MoviesUseCasesImp.swift",
+      "line": 24,
+      "symbol": "MoviesUseCasesImp.popularPaginator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Implemention/MoviesUseCasesImp.swift",
+      "line": 27,
+      "symbol": "MoviesUseCasesImp.topRatedPaginator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Movie/Implemention/MoviesUseCasesImp.swift",
+      "line": 30,
+      "symbol": "MoviesUseCasesImp.nowPlayingPaginator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Abstracts/TVUseCases.swift",
+      "line": 40,
+      "symbol": "PopularTVUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Abstracts/TVUseCases.swift",
+      "line": 55,
+      "symbol": "TopRatedTVUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Abstracts/TVUseCases.swift",
+      "line": 70,
+      "symbol": "OnAirTVUseCases",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Implemention/TVUseCasesImp.swift",
+      "line": 24,
+      "symbol": "TVUseCasesImp.popularPaginator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Implemention/TVUseCasesImp.swift",
+      "line": 27,
+      "symbol": "TVUseCasesImp.topRatedPaginator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/TVSerial/Implemention/TVUseCasesImp.swift",
+      "line": 30,
+      "symbol": "TVUseCasesImp.onAirPaginator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 14,
+      "symbol": "TrendingUseCase",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 16,
+      "symbol": "TrendingUseCase.DataType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 25,
+      "symbol": "TVTrendingUseCase",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 27,
+      "symbol": "TVTrendingUseCase.DataType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 36,
+      "symbol": "MovieTrendingUseCase",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Domain/Trending/Abstract/TrendingUseCase.swift",
+      "line": 38,
+      "symbol": "MovieTrendingUseCase.DataType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Foundation/DateFormatter+Extension.swift",
+      "line": 13,
+      "symbol": "DateFormatter.standardFormatter",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Foundation/DateFormatter+Extension.swift",
+      "line": 26,
+      "symbol": "DateFormatter.currentZoneFormatter",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -2315,6 +3078,27 @@
       "line": 16,
       "symbol": "DispatchQueue.QueueReference.queue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/RxSwift/Single+Additionals.swift",
+      "line": 16,
+      "symbol": "ObservableType.flatMapSingle(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/RxSwift/Single+Additionals.swift",
+      "line": 21,
+      "symbol": "ObservableType.compactFirst()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/RxSwift/Single+Additionals.swift",
+      "line": 29,
+      "symbol": "PrimitiveSequenceType.from(observable:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
@@ -2364,6 +3148,1896 @@
       "line": 34,
       "symbol": "UIImageContentMode.scaleToFill",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/MovieUseCaseFactory.swift",
+      "line": 11,
+      "symbol": "MovieUseCaseFactory",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/MovieUseCaseFactory.swift",
+      "line": 13,
+      "symbol": "MovieUseCaseFactory.makePopularMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/MovieUseCaseFactory.swift",
+      "line": 15,
+      "symbol": "MovieUseCaseFactory.makeTopRatedMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/MovieUseCaseFactory.swift",
+      "line": 17,
+      "symbol": "MovieUseCaseFactory.makeNowPlayingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TVUseCaseFactory.swift",
+      "line": 11,
+      "symbol": "TVUseCaseFactory",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TVUseCaseFactory.swift",
+      "line": 13,
+      "symbol": "TVUseCaseFactory.makePopularShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TVUseCaseFactory.swift",
+      "line": 15,
+      "symbol": "TVUseCaseFactory.makeTopRatedShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TVUseCaseFactory.swift",
+      "line": 17,
+      "symbol": "TVUseCaseFactory.makeOnTheAirUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TrendingUseCaseFactory.swift",
+      "line": 11,
+      "symbol": "TrendingUseCaseFactory",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TrendingUseCaseFactory.swift",
+      "line": 13,
+      "symbol": "TrendingUseCaseFactory.makeTVTrendingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Factories/TrendingUseCaseFactory.swift",
+      "line": 15,
+      "symbol": "TrendingUseCaseFactory.makeMovieTrendingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/AlertableView.swift",
+      "line": 35,
+      "symbol": "AlertableViewConfiguration.alertAppearance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 12,
+      "symbol": "LinearGradientLayer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 21,
+      "symbol": "LinearGradientLayer.Direction.vertical",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 22,
+      "symbol": "LinearGradientLayer.Direction.horizontal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 23,
+      "symbol": "LinearGradientLayer.Direction.custom(start:end:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 25,
+      "symbol": "LinearGradientLayer.Direction.points",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 37,
+      "symbol": "LinearGradientLayer.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 39,
+      "symbol": "LinearGradientLayer.colorSpace",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 40,
+      "symbol": "LinearGradientLayer.colors",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 41,
+      "symbol": "LinearGradientLayer.locations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 48,
+      "symbol": "LinearGradientLayer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 54,
+      "symbol": "LinearGradientLayer.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 65,
+      "symbol": "LinearGradientLayer.draw(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 119,
+      "symbol": "LinearGradientView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/LinearGradientView.swift",
+      "line": 124,
+      "symbol": "LinearGradientView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "MovieCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 16,
+      "symbol": "MovieCollectionViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "MovieCollectionViewCell.ratingLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 19,
+      "symbol": "MovieCollectionViewCell.popularityLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 20,
+      "symbol": "MovieCollectionViewCell.posterImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 22,
+      "symbol": "MovieCollectionViewCell.shadowImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "MovieCollectionViewCell.releaseDateLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 25,
+      "symbol": "MovieCollectionViewCell.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 27,
+      "symbol": "MovieCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Movies/MovieCollectionViewCell.swift",
+      "line": 32,
+      "symbol": "MovieCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 14,
+      "symbol": "ShowCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 16,
+      "symbol": "ShowCollectionViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 17,
+      "symbol": "ShowCollectionViewCell.ratingLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 19,
+      "symbol": "ShowCollectionViewCell.popularityLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 20,
+      "symbol": "ShowCollectionViewCell.posterImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 22,
+      "symbol": "ShowCollectionViewCell.shadowView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "ShowCollectionViewCell.networkLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 25,
+      "symbol": "ShowCollectionViewCell.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 27,
+      "symbol": "ShowCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 32,
+      "symbol": "ShowCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Commons/Views/Shows/ShowCollectionViewCell.swift",
+      "line": 37,
+      "symbol": "ShowCollectionViewCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 14,
+      "symbol": "AppRoot",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 15,
+      "symbol": "AppRoot.loading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 16,
+      "symbol": "AppRoot.main",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 19,
+      "symbol": "AppCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 21,
+      "symbol": "AppCoordinator.coordinatorFactory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 24,
+      "symbol": "AppCoordinator.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
+      "line": 26,
+      "symbol": "AppCoordinator.init(factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 14,
+      "symbol": "HomeRoute",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 15,
+      "symbol": "HomeRoute.initial",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 16,
+      "symbol": "HomeRoute.movieDetail",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 17,
+      "symbol": "HomeRoute.serialDetail",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 18,
+      "symbol": "HomeRoute.seeMovies",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 19,
+      "symbol": "HomeRoute.seeTVSerails",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 22,
+      "symbol": "HomeCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 24,
+      "symbol": "HomeCoordinator.FactoryType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 26,
+      "symbol": "HomeCoordinator.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/HomeCoordinator.swift",
+      "line": 28,
+      "symbol": "HomeCoordinator.init(factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 14,
+      "symbol": "MainRoute",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 15,
+      "symbol": "MainRoute.home",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 16,
+      "symbol": "MainRoute.search",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 17,
+      "symbol": "MainRoute.discover",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 20,
+      "symbol": "MainCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 22,
+      "symbol": "MainCoordinator.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 23,
+      "symbol": "MainCoordinator.homeCoordiantor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/MainCoordinator.swift",
+      "line": 25,
+      "symbol": "MainCoordinator.init(factory:initialRoute:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 12,
+      "symbol": "HomeDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 14,
+      "symbol": "HomeDependencyContainer.movieRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 15,
+      "symbol": "HomeDependencyContainer.tvRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 16,
+      "symbol": "HomeDependencyContainer.trendingRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 17,
+      "symbol": "HomeDependencyContainer.remoteImageBuilder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 18,
+      "symbol": "HomeDependencyContainer.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 20,
+      "symbol": "HomeDependencyContainer.init(appDependecyContainer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 77,
+      "symbol": "HomeDependencyContainer.instantiateViewController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 87,
+      "symbol": "HomeDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 89,
+      "symbol": "HomeDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 91,
+      "symbol": "HomeDependencyContainer.makePopularShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 95,
+      "symbol": "HomeDependencyContainer.makeTopRatedShowUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 99,
+      "symbol": "HomeDependencyContainer.makeOnTheAirUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 105,
+      "symbol": "HomeDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 107,
+      "symbol": "HomeDependencyContainer.makePopularMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 111,
+      "symbol": "HomeDependencyContainer.makeTopRatedMovieUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 115,
+      "symbol": "HomeDependencyContainer.makeNowPlayingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 121,
+      "symbol": "HomeDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 123,
+      "symbol": "HomeDependencyContainer.makeTVTrendingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Dependency/HomeDependencyContainer.swift",
+      "line": 127,
+      "symbol": "HomeDependencyContainer.makeMovieTrendingUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 16,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 20,
+      "symbol": "HomeViewController.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 22,
+      "symbol": "HomeViewController.refreshControl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 28,
+      "symbol": "HomeViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 30,
+      "symbol": "HomeViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 32,
+      "symbol": "HomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 40,
+      "symbol": "HomeViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 56,
+      "symbol": "HomeViewController.setupLayouts()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 63,
+      "symbol": "HomeViewController.setupCollectionView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 79,
+      "symbol": "HomeViewController.setupCollectionViewLayout()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 88,
+      "symbol": "HomeViewController.layoutSection(forAt:enviroment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 96,
+      "symbol": "HomeViewController.layoutSection(forAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 106,
+      "symbol": "HomeViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 110,
+      "symbol": "HomeViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 118,
+      "symbol": "HomeViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 159,
+      "symbol": "HomeViewController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 181,
+      "symbol": "HomeViewController.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 232,
+      "symbol": "HomeViewController.fetchItems(forSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 249,
+      "symbol": "HomeViewController.observeItems(forSection:atIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewControllers/HomeViewController.swift",
+      "line": 262,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 14,
+      "symbol": "HomeSectionBaseViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 16,
+      "symbol": "HomeSectionBaseViewModel.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 17,
+      "symbol": "HomeSectionBaseViewModel.order",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 19,
+      "symbol": "HomeSectionBaseViewModel.Item",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 21,
+      "symbol": "HomeSectionBaseViewModel.itemCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 25,
+      "symbol": "HomeSectionBaseViewModel.tapSeeMore",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 27,
+      "symbol": "HomeSectionBaseViewModel.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 28,
+      "symbol": "HomeSectionBaseViewModel.isLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 30,
+      "symbol": "HomeSectionBaseViewModel.didTapSeeMore",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 34,
+      "symbol": "HomeSectionBaseViewModel.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 36,
+      "symbol": "HomeSectionBaseViewModel.init(title:order:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 44,
+      "symbol": "HomeSectionBaseViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 48,
+      "symbol": "HomeSectionBaseViewModel.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 54,
+      "symbol": "HomeSectionItemViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 56,
+      "symbol": "HomeSectionItemViewModel.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 57,
+      "symbol": "HomeSectionItemViewModel.rating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 58,
+      "symbol": "HomeSectionItemViewModel.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 60,
+      "symbol": "HomeSectionItemViewModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 64,
+      "symbol": "HomeSectionItemViewModel.init(title:rating:image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 72,
+      "symbol": "HomeSectionItemViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 74,
+      "symbol": "HomeSectionItemViewModel.ItemType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 75,
+      "symbol": "HomeSectionItemViewModel.ItemType.movie",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 76,
+      "symbol": "HomeSectionItemViewModel.ItemType.show",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeSectionBaseViewModel.swift",
+      "line": 77,
+      "symbol": "HomeSectionItemViewModel.ItemType.trending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 13,
+      "symbol": "HomeViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 15,
+      "symbol": "HomeViewModel.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 18,
+      "symbol": "HomeViewModel.didAppear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 19,
+      "symbol": "HomeViewModel.refreshTriggle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 21,
+      "symbol": "HomeViewModel.count",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 26,
+      "symbol": "HomeViewModel.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 28,
+      "symbol": "HomeViewModel.isRefreshing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 30,
+      "symbol": "HomeViewModel.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 32,
+      "symbol": "HomeViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 34,
+      "symbol": "HomeViewModel.init(factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 56,
+      "symbol": "HomeViewModel.buildSections()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 70,
+      "symbol": "HomeViewModel.refreshContents()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 74,
+      "symbol": "HomeViewModel.fetchContents(shouldRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/HomeViewModel.swift",
+      "line": 100,
+      "symbol": "HomeViewModel.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 14,
+      "symbol": "HomeMovieViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 16,
+      "symbol": "HomeMovieViewModel.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 20,
+      "symbol": "HomeMovieViewModel.model",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 22,
+      "symbol": "HomeMovieViewModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 26,
+      "symbol": "HomeMovieViewModel.init(model:remoteImageBuilder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMovieViewModel.swift",
+      "line": 37,
+      "symbol": "HomeMovieViewModel.formatDate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 14,
+      "symbol": "HomeMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 16,
+      "symbol": "HomeMoviesViewModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 18,
+      "symbol": "HomeMoviesViewModel.init(title:order:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 23,
+      "symbol": "HomeMoviesViewModel.init(type:order:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 28,
+      "symbol": "HomeMoviesViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 58,
+      "symbol": "HomeMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 60,
+      "symbol": "HomeMoviesViewModel.SectionType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 61,
+      "symbol": "HomeMoviesViewModel.SectionType.popular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 62,
+      "symbol": "HomeMoviesViewModel.SectionType.nowPlaying",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 63,
+      "symbol": "HomeMoviesViewModel.SectionType.topRated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeMoviesViewModel.swift",
+      "line": 68,
+      "symbol": "HomeMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeNowPlayingMoviesViewModel.swift",
+      "line": 14,
+      "symbol": "HomeNowPlayingMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeNowPlayingMoviesViewModel.swift",
+      "line": 17,
+      "symbol": "HomeNowPlayingMoviesViewModel.useCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeNowPlayingMoviesViewModel.swift",
+      "line": 20,
+      "symbol": "HomeNowPlayingMoviesViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeNowPlayingMoviesViewModel.swift",
+      "line": 22,
+      "symbol": "HomeNowPlayingMoviesViewModel.init(order:useCase:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeNowPlayingMoviesViewModel.swift",
+      "line": 29,
+      "symbol": "HomeNowPlayingMoviesViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 14,
+      "symbol": "HomePopularMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 17,
+      "symbol": "HomePopularMoviesViewModel.useCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 20,
+      "symbol": "HomePopularMoviesViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 22,
+      "symbol": "HomePopularMoviesViewModel.init(order:useCase:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 29,
+      "symbol": "HomePopularMoviesViewModel.sectionLayout()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomePopularMoviesViewModel.swift",
+      "line": 53,
+      "symbol": "HomePopularMoviesViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeTopRatedMoviesViewModel.swift",
+      "line": 14,
+      "symbol": "HomeTopRatedMoviesViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeTopRatedMoviesViewModel.swift",
+      "line": 17,
+      "symbol": "HomeTopRatedMoviesViewModel.useCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeTopRatedMoviesViewModel.swift",
+      "line": 20,
+      "symbol": "HomeTopRatedMoviesViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeTopRatedMoviesViewModel.swift",
+      "line": 22,
+      "symbol": "HomeTopRatedMoviesViewModel.init(order:useCase:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Movies/HomeTopRatedMoviesViewModel.swift",
+      "line": 29,
+      "symbol": "HomeTopRatedMoviesViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 14,
+      "symbol": "HomeOnTheAirShowsViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 17,
+      "symbol": "HomeOnTheAirShowsViewModel.useCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 20,
+      "symbol": "HomeOnTheAirShowsViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 22,
+      "symbol": "HomeOnTheAirShowsViewModel.init(order:useCase:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 29,
+      "symbol": "HomeOnTheAirShowsViewModel.sectionLayout()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeOnTheAirShowsViewModel.swift",
+      "line": 49,
+      "symbol": "HomeOnTheAirShowsViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 14,
+      "symbol": "HomePopularShowsViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 17,
+      "symbol": "HomePopularShowsViewModel.useCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 20,
+      "symbol": "HomePopularShowsViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 22,
+      "symbol": "HomePopularShowsViewModel.init(order:useCase:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 29,
+      "symbol": "HomePopularShowsViewModel.sectionLayout()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomePopularShowsViewModel.swift",
+      "line": 47,
+      "symbol": "HomePopularShowsViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 14,
+      "symbol": "HomeShowViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 16,
+      "symbol": "HomeShowViewModel.model",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 17,
+      "symbol": "HomeShowViewModel.remoteBuilder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 19,
+      "symbol": "HomeShowViewModel.firstAirDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 23,
+      "symbol": "HomeShowViewModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 27,
+      "symbol": "HomeShowViewModel.init(model:remoteImageBuilder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowViewModel.swift",
+      "line": 38,
+      "symbol": "HomeShowViewModel.formatDate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 14,
+      "symbol": "HomeShowsViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 16,
+      "symbol": "HomeShowsViewModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 18,
+      "symbol": "HomeShowsViewModel.init(title:order:items:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 23,
+      "symbol": "HomeShowsViewModel.init(type:order:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 28,
+      "symbol": "HomeShowsViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 56,
+      "symbol": "HomeShowsViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 58,
+      "symbol": "HomeShowsViewModel.SectionType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 59,
+      "symbol": "HomeShowsViewModel.SectionType.popular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 60,
+      "symbol": "HomeShowsViewModel.SectionType.onTheAir",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 61,
+      "symbol": "HomeShowsViewModel.SectionType.topRated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/TVShows/HomeShowsViewModel.swift",
+      "line": 66,
+      "symbol": "HomeShowsViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingViewModel.swift",
+      "line": 11,
+      "symbol": "HomeTrendingViewModelWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingViewModel.swift",
+      "line": 13,
+      "symbol": "HomeTrendingViewModelWrapper.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingViewModel.swift",
+      "line": 17,
+      "symbol": "HomeTrendingViewModelWrapper.init(viewModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 14,
+      "symbol": "HomeTrendingsViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 17,
+      "symbol": "HomeTrendingsViewModel.tvTrendingUseCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 20,
+      "symbol": "HomeTrendingsViewModel.movieTrendingUseCase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 23,
+      "symbol": "HomeTrendingsViewModel.factory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 25,
+      "symbol": "HomeTrendingsViewModel.init(order:factory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 33,
+      "symbol": "HomeTrendingsViewModel.fetchDataIfNeeded(isRefresh:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 93,
+      "symbol": "HomeTrendingsViewModel.fetchMovieTrendings()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 100,
+      "symbol": "HomeTrendingsViewModel.fetchTVTrendings()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/ViewModels/Trending/HomeTrendingsViewModel.swift",
+      "line": 109,
+      "symbol": "HomeTrendingsViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 15,
+      "symbol": "HomeMovieCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 17,
+      "symbol": "HomeMovieCollectionCell.gradientView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 19,
+      "symbol": "HomeMovieCollectionCell.ratingStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 20,
+      "symbol": "HomeMovieCollectionCell.popularityStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 22,
+      "symbol": "HomeMovieCollectionCell.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 24,
+      "symbol": "HomeMovieCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 39,
+      "symbol": "HomeMovieCollectionCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeMovieCollectionCell.swift",
+      "line": 47,
+      "symbol": "HomeMovieCollectionCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 14,
+      "symbol": "HomeSectionHeaderView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 16,
+      "symbol": "HomeSectionHeaderView.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 18,
+      "symbol": "HomeSectionHeaderView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 19,
+      "symbol": "HomeSectionHeaderView.loadingView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 20,
+      "symbol": "HomeSectionHeaderView.seeMoreButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 22,
+      "symbol": "HomeSectionHeaderView.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 24,
+      "symbol": "HomeSectionHeaderView.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 32,
+      "symbol": "HomeSectionHeaderView.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 40,
+      "symbol": "HomeSectionHeaderView.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 55,
+      "symbol": "Reactive.seeMoreTap",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 59,
+      "symbol": "Reactive.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 63,
+      "symbol": "Reactive.isLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeSectionHeaderView.swift",
+      "line": 76,
+      "symbol": "Reactive.seeMoreTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeShowCollectionCell.swift",
+      "line": 11,
+      "symbol": "HomeShowCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeShowCollectionCell.swift",
+      "line": 13,
+      "symbol": "HomeShowCollectionCell.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeShowCollectionCell.swift",
+      "line": 15,
+      "symbol": "HomeShowCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeShowCollectionCell.swift",
+      "line": 22,
+      "symbol": "HomeShowCollectionCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeShowCollectionCell.swift",
+      "line": 30,
+      "symbol": "HomeShowCollectionCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 11,
+      "symbol": "HomeTrendingCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 13,
+      "symbol": "HomeTrendingCollectionCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 14,
+      "symbol": "HomeTrendingCollectionCell.posterImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 16,
+      "symbol": "HomeTrendingCollectionCell.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 18,
+      "symbol": "HomeTrendingCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 24,
+      "symbol": "HomeTrendingCollectionCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
+      "line": 30,
+      "symbol": "HomeTrendingCollectionCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 12,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 14,
+      "symbol": "BindableType.ViewModelType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 16,
+      "symbol": "BindableType.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 18,
+      "symbol": "BindableType.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 21,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 23,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 30,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 32,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 39,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 41,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 47,
+      "symbol": "BindableType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Bindable.swift",
+      "line": 49,
+      "symbol": "BindableType.bind(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2455,6 +5129,202 @@
       "line": 47,
       "symbol": "UnfairLock.unlock()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 34,
+      "symbol": "LateInit.storage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 36,
+      "symbol": "LateInit.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 40,
+      "symbol": "LateInit.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 52,
+      "symbol": "LateInit.projectedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 81,
+      "symbol": "AtomicLateInit.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 82,
+      "symbol": "AtomicLateInit.lock",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 84,
+      "symbol": "AtomicLateInit.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 88,
+      "symbol": "AtomicLateInit.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 92,
+      "symbol": "AtomicLateInit.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 105,
+      "symbol": "AtomicLateInit.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/LateInitWrapper.swift",
+      "line": 111,
+      "symbol": "AtomicLateInit.store(newValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 12,
+      "symbol": "RemoteImageAssetBuilder",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 14,
+      "symbol": "RemoteImageAssetBuilder.Size",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 16,
+      "symbol": "RemoteImageAssetBuilder.set(size:forType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 18,
+      "symbol": "RemoteImageAssetBuilder.build(imageName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 22,
+      "symbol": "DefaultImageAssetBuilder",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 24,
+      "symbol": "DefaultImageAssetBuilder.imageConfig",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 27,
+      "symbol": "DefaultImageAssetBuilder.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 29,
+      "symbol": "DefaultImageAssetBuilder.lookupArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 31,
+      "symbol": "DefaultImageAssetBuilder.init(imageConfig:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 35,
+      "symbol": "DefaultImageAssetBuilder.set(size:forType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/RemoteImageAssetBuilder.swift",
+      "line": 42,
+      "symbol": "DefaultImageAssetBuilder.build(imageName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 12,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 33,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 35,
+      "symbol": "Storyboarded.fileName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 39,
+      "symbol": "Storyboarded.className",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 51,
+      "symbol": "Storyboarded.instantiate(bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Storyboarded.swift",
+      "line": 70,
+      "symbol": "UIViewController.className",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
