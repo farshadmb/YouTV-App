@@ -58,142 +58,163 @@
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "AppDependencyContainer",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 14,
+      "line": 15,
+      "symbol": "AppDependencyContainer.DataDecoder",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 17,
       "symbol": "AppDependencyContainer.networkService",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 25,
+      "line": 28,
       "symbol": "AppDependencyContainer.dataDecoder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 36,
+      "line": 39,
       "symbol": "AppDependencyContainer.authenticator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 40,
+      "line": 43,
       "symbol": "AppDependencyContainer.validation",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 53,
+      "line": 56,
       "symbol": "AppDependencyContainer.sharedMovieRepository",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 58,
+      "line": 61,
       "symbol": "AppDependencyContainer.sharedShowRepository",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 62,
+      "line": 65,
       "symbol": "AppDependencyContainer.sharedTrendingRepository",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 69,
+      "line": 72,
       "symbol": "AppDependencyContainer.language",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 78,
+      "line": 81,
       "symbol": "AppDependencyContainer.remoteImageBuilder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 82,
+      "line": 85,
       "symbol": "AppDependencyContainer.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 88,
+      "line": 91,
       "symbol": "AppDependencyContainer",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 90,
+      "line": 93,
       "symbol": "AppDependencyContainer.makePopularShowUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 94,
+      "line": 97,
       "symbol": "AppDependencyContainer.makeTopRatedShowUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 98,
+      "line": 101,
       "symbol": "AppDependencyContainer.makeOnTheAirUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 104,
+      "line": 107,
       "symbol": "AppDependencyContainer",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 106,
+      "line": 109,
       "symbol": "AppDependencyContainer.makePopularMovieUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 110,
+      "line": 113,
       "symbol": "AppDependencyContainer.makeTopRatedMovieUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 114,
+      "line": 117,
       "symbol": "AppDependencyContainer.makeNowPlayingUseCase()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
-      "line": 120,
+      "line": 123,
       "symbol": "AppDependencyContainer",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 141,
+      "symbol": "AppDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDependencyContainer.swift",
+      "line": 143,
+      "symbol": "AppDependencyContainer.makeLaunchingViewController(withResponder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -3510,7 +3531,7 @@
     {
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Coordinator/AppCoordinator.swift",
       "line": 21,
-      "symbol": "AppCoordinator.coordinatorFactory",
+      "symbol": "AppCoordinator.factory",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -4953,6 +4974,223 @@
       "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Home/Views/HomeTrendingCollectionCell.swift",
       "line": 30,
       "symbol": "HomeTrendingCollectionCell.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 13,
+      "symbol": "LunchingDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 15,
+      "symbol": "LunchingDependencyContainer.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 16,
+      "symbol": "LunchingDependencyContainer.validResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 18,
+      "symbol": "LunchingDependencyContainer.init(appDependencyContainer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 23,
+      "symbol": "LunchingDependencyContainer.makeViewModel(responder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 27,
+      "symbol": "LunchingDependencyContainer.makeLaunchingViewController(withResponder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Dependency/LunchingDependencyContainer.swift",
+      "line": 37,
+      "symbol": "LunchingDependencyContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Factory/LaunchViewModelFactory.swift",
+      "line": 12,
+      "symbol": "LaunchViewModelFactory",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Factory/LaunchViewModelFactory.swift",
+      "line": 14,
+      "symbol": "LaunchViewModelFactory.makeViewModel(responder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Factory/LaunchingViewControllerFactory.swift",
+      "line": 12,
+      "symbol": "LaunchingViewControllerFactory",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/Factory/LaunchingViewControllerFactory.swift",
+      "line": 14,
+      "symbol": "LaunchingViewControllerFactory.makeLaunchingViewController(withResponder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 16,
+      "symbol": "LaunchingViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 18,
+      "symbol": "LaunchingViewController.loadingLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 27,
+      "symbol": "LaunchingViewController.loadingIndicatorView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 35,
+      "symbol": "LaunchingViewController.retryButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 46,
+      "symbol": "LaunchingViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 48,
+      "symbol": "LaunchingViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 50,
+      "symbol": "LaunchingViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 57,
+      "symbol": "LaunchingViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 62,
+      "symbol": "LaunchingViewController.setupLayouts()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 96,
+      "symbol": "LaunchingViewController.bindViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewControllers/LaunchingViewController.swift",
+      "line": 128,
+      "symbol": "LaunchingViewController.loadConfiguration()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 14,
+      "symbol": "LaunchViewModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 16,
+      "symbol": "LaunchViewModel.isLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 17,
+      "symbol": "LaunchViewModel.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 19,
+      "symbol": "LaunchViewModel.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 21,
+      "symbol": "LaunchViewModel.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 22,
+      "symbol": "LaunchViewModel.successResponder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 24,
+      "symbol": "LaunchViewModel.validResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 26,
+      "symbol": "LaunchViewModel.init(service:successResponder:validResponse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Presentation/Features/Launching/ViewModels/LaunchViewModel.swift",
+      "line": 32,
+      "symbol": "LaunchViewModel.loadConfiguration()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
