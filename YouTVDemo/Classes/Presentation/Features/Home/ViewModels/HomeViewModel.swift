@@ -56,7 +56,8 @@ class HomeViewModel {
     func buildSections() {
 
         var sections = [HomeSectionBaseViewModel]()
-
+        
+        sections.append(factory.makeHomeTrendingsViewModel())
         sections.append(factory.makeHomeMoviesViewModel(for: .nowPlaying))
         sections.append(factory.makeHomeMoviesViewModel(for: .popular))
 

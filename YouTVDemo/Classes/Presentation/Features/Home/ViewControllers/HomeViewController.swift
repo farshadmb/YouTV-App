@@ -63,6 +63,7 @@ class HomeViewController: UIViewController, BindableType,
         collectionView.refreshControl = refreshControl
         collectionView.registerCell(type: HomeShowCollectionCell.self)
         collectionView.registerCell(type: HomeMovieCollectionCell.self)
+        collectionView.registerCell(type: HomeTrendingCollectionCell.self)
         collectionView.registerCell(className: UICollectionViewCell.self)
         collectionView.registerSupplementaryView(type: HomeSectionHeaderView.self,
                                                  Ofkind: UICollectionView.elementKindSectionHeader)
@@ -140,7 +141,15 @@ class HomeViewController: UIViewController, BindableType,
             
             cell = showCell
         case .trending:
-            cell = .init()
+            let viewModelType = type(of: viewModel)
+            log.debug("\(viewModelType)")
+            let trendingCell = collectionView.dequeueReusableCell(type: HomeTrendingCollectionCell.self, forIndexPath: indexPath)
+            
+            if let viewModel = viewModel as? HomeTrendingViewModelWrapper {
+                trendingCell.bind(to: viewModel)
+            }
+            
+            cell = trendingCell
         }
         
         return cell
