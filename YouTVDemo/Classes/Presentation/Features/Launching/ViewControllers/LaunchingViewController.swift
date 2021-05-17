@@ -17,8 +17,10 @@ class LaunchingViewController: UIViewController, BindableType, AlertableView {
 
     lazy var loadingLabel: UILabel = {
         let label = UILabel(forAutoLayout: ())
-        label.font = .systemFont(ofSize: 17.0, weight: .medium)
+        label.font = .systemFont(ofSize: 25.0, weight: .medium)
         label.textColor = .systemBlue
+        label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
@@ -30,18 +32,38 @@ class LaunchingViewController: UIViewController, BindableType, AlertableView {
         return indicator
     }()
 
-    var viewModel: Any?
+    lazy var retryButton: MDCButton = {
+        let button = MDCButton(frame: .zero)
+        button.setTitle(Strings.Global.retry, for: .normal)
+        button.setTitle(Strings.Global.retry, for: .highlighted)
+        button.setTitle(Strings.Global.retry, for: .highlighted)
+        button.minimumSize = CGSize(width: 80, height: 44)
+        button.layer.cornerRadius = 22
+        button.isHidden = true
+        return button
+    }()
+
+    let disposeBag = DisposeBag()
+
+    var viewModel: LaunchViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupLayouts()
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadConfiguration()
     }
 
     func setupLayouts() {
 
         view.addSubview(loadingIndicatorView)
         view.addSubview(loadingLabel)
+        view.addSubview(retryButton)
 
         loadingLabel.text = Strings.Global.loading
         loadingIndicatorView.stopAnimating()
@@ -55,6 +77,9 @@ class LaunchingViewController: UIViewController, BindableType, AlertableView {
         loadingLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: 16)
 
         loadingLabel.autoPinEdge(.top, to: .bottom, of: loadingIndicatorView, withOffset: 8.0)
+
+        retryButton.autoAlignAxis(toSuperviewMarginAxis: .vertical)
+        retryButton.autoPinEdge(.top, to: .bottom, of: loadingLabel, withOffset: 19.0)
 
     }
 
@@ -72,6 +97,38 @@ class LaunchingViewController: UIViewController, BindableType, AlertableView {
         guard let viewModel = viewModel else {
             return
         }
+
+        viewModel.isLoading.asDriver()
+            .drive(onNext: {[weak self] (isLoading) in
+                if isLoading {
+                    self?.retryButton.isHidden = true
+                    self?.loadingLabel.text = Strings.Global.loading
+                    self?.loadingIndicatorView.startAnimating()
+                }else {
+                    self?.loadingIndicatorView.stopAnimating()
+                }
+            })
+            .disposed(by: disposeBag)
+
+        viewModel.error.bind(to: loadingLabel.rx.text).disposed(by: disposeBag)
+        viewModel.error.bind {[weak self] (error) in
+            self?.retryButton.isHidden = false
+            self?.presentAlert(message: error, actionTitle: Strings.Global.retry,
+                               config: .error, actionHandler: {
+                                self?.loadConfiguration()
+                               })
+        }
+        .disposed(by: disposeBag)
+
+        retryButton.rx.tap.bind(onNext: loadConfiguration)
+            .disposed(by: disposeBag)
+
+    }
+
+    func loadConfiguration() {
+        viewModel?.loadConfiguration()
+            .subscribe()
+            .disposed(by: disposeBag)
     }
 
 }

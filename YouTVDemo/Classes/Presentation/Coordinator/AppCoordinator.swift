@@ -18,13 +18,13 @@ enum AppRoot: Route {
 
 final class AppCoordinator: ViewCoordinator<AppRoot> {
 
-    let coordinatorFactory: CoordinatorFactory
+    let factory: CoordinatorFactory & LaunchingViewControllerFactory
 
     @LateInit
     var window: UIWindow
 
-    required init(factory: CoordinatorFactory) {
-        self.coordinatorFactory = factory
+    required init(factory: CoordinatorFactory & LaunchingViewControllerFactory) {
+        self.factory = factory
         super.init(rootViewController: .init())
     }
 
@@ -36,10 +36,18 @@ final class AppCoordinator: ViewCoordinator<AppRoot> {
 
         switch route {
         case .loading:
-            setRoot(for: window)
+            let responder = PublishSubject<Void>()
+            let loadingVC = factory.makeLaunchingViewController(withResponder: responder.asObserver())
+            responder.asObservable().bind {[weak self] _ in
+                self?.trigger(.main)
+            }
+            .disposed(by: loadingVC.disposeBag)
+
+            loadingVC.setRoot(for: window)
+
             return .none()
         case .main:
-            let mainCoordiantor = coordinatorFactory.makeMainCoordinator()
+            let mainCoordiantor = factory.makeMainCoordinator()
             addChild(mainCoordiantor)
             mainCoordiantor.setRoot(for: window)
             return .none()
