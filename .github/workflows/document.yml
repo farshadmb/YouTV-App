@@ -24,6 +24,7 @@ jobs:
           uses: actions/checkout@v2
         - name: Install Dependencies
           run: | 
+            pod -v
             pod install 
             bundle install --verbose
         - name: Generate Jazzy Docs
@@ -31,6 +32,7 @@ jobs:
           run: |
             git fetch -a -p
             git branch -vv
+            git status && git add . && git reset --hard
             export currentBranch=$(git branch -vv | grep '*' | awk '{ print $2 }' | xargs)
             git checkout docs
             git pull origin --force
