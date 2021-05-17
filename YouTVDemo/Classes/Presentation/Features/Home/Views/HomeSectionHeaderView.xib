@@ -28,7 +28,11 @@
                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                             <state key="normal" title="See More"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="normalLocalizedTitle" value="See More"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="normalLocalizedTitle" value="home.sections.seeMore.title"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="selectLocalizedTitle" value="home.sections.seeMore.title"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="disableLocalizedTitle" value="home.sections.seeMore.title"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="highlightLocalizedTitle" value="home.sections.seeMore.title"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="focusLocalizedTitle" value="home.sections.seeMore.title"/>
                             </userDefinedRuntimeAttributes>
                         </button>
                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-Rv-Hp2" userLabel="Loading" customClass="MDCActivityIndicator">

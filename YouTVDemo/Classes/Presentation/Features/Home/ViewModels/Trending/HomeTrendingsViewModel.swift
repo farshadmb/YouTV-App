@@ -27,7 +27,7 @@ class HomeTrendingsViewModel: HomeSectionBaseViewModel {
         self.factory = factory
         self.tvTrendingUseCase = factory.makeTVTrendingUseCase()
         self.movieTrendingUseCase = factory.makeMovieTrendingUseCase()
-        super.init(title: "Trends", order: order)
+        super.init(title: Strings.Home.Section.trendsTitle, order: order)
     }
     
     override func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {

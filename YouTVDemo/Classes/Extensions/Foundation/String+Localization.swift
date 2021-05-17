@@ -48,6 +48,6 @@ extension String {
      - Returns: The localized `String` value with injected arguments.
      */
     func localized(withFormat arguments: CVarArg...) -> String {
-        return String(format: localized, locale: nil, arguments: arguments)
+        return String(format: localized, arguments: arguments)
     }
 }

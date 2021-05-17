@@ -5,3 +5,35 @@
   Created by Farshad Mousalou on 4/26/21.
   Copyright © 2021 iFarshad. All rights reserved.
 */
+
+// GLOBAL
+"global.apptitle" = "YouTV-Demo";
+"global.loading" = "Loading ...";
+"global.retry" = "Retry";
+"global.ok" = "OK";
+"global.cancel" = "Cancel";
+"global.close" = "Close";
+"global.error" = "Error";
+"global.yes" = "Yes";
+"global.no" = "No";
+"global.or" = "or";
+"global.continue" = "Continue";
+"global.popular" = "Popular";
+
+// Home
+"home.title" = "Home";
+"home.movies.playing" = "Playing Now";
+"home.movies.title" = "%@ Movies";
+
+"home.tv.title" = "%@ TV";
+"home.tv.onAir" = "On The Air";
+
+"home.trends.title" = "Trends";
+
+"home.sections.seeMore.title" = "See More";
+
+// Error
+"api.response.code"= "Code: %d";
+"api.response.message"= "Info: %@";
+"api.response.localizableMessage" = "Code: %d \n %@";
+"api.response.unknown" = "Unknown Error Occured. Please Contact Support.";
