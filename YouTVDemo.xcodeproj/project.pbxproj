@@ -129,6 +129,11 @@
 		F8A96FF0265242D200F1C9E5 /* HomeTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */; };
 		F8A970032652673700F1C9E5 /* AppImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A970022652673700F1C9E5 /* AppImageAssets.swift */; };
 		F8A96FFB2652526A00F1C9E5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */; };
+		F8AA312126529A9B00D136EC /* LaunchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA312026529A9B00D136EC /* LaunchingViewController.swift */; };
+		F8B56E7C26529E55001910C0 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B56E7B26529E55001910C0 /* LaunchViewModel.swift */; };
+		F8B56E812652A3E2001910C0 /* LaunchViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B56E802652A3E2001910C0 /* LaunchViewModelFactory.swift */; };
+		F8B56E872652A428001910C0 /* LunchingDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B56E862652A428001910C0 /* LunchingDependencyContainer.swift */; };
+		F8B56E8F2652A440001910C0 /* LaunchingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B56E8E2652A440001910C0 /* LaunchingViewControllerFactory.swift */; };
 		F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */; };
 		F8CF584B2645B52D00D80790 /* HomeSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */; };
 		F8CF58512645BF9000D80790 /* HomeMovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */; };
@@ -300,6 +305,11 @@
 		F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingViewModel.swift; sourceTree = "<group>"; };
 		F8A970022652673700F1C9E5 /* AppImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageAssets.swift; sourceTree = "<group>"; };
 		F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		F8AA312026529A9B00D136EC /* LaunchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingViewController.swift; sourceTree = "<group>"; };
+		F8B56E7B26529E55001910C0 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		F8B56E802652A3E2001910C0 /* LaunchViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelFactory.swift; sourceTree = "<group>"; };
+		F8B56E862652A428001910C0 /* LunchingDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchingDependencyContainer.swift; sourceTree = "<group>"; };
+		F8B56E8E2652A440001910C0 /* LaunchingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingViewControllerFactory.swift; sourceTree = "<group>"; };
 		F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderView.xib; sourceTree = "<group>"; };
 		F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCollectionCell.swift; sourceTree = "<group>"; };
@@ -411,6 +421,7 @@
 		F8106D772636D12600653AF8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F8AA31192652982800D136EC /* Launching */,
 				F86E9954264340A300F89FF8 /* Home */,
 			);
 			path = Features;
@@ -1052,6 +1063,50 @@
 			path = Trending;
 			sourceTree = "<group>";
 		};
+		F8AA31192652982800D136EC /* Launching */ = {
+			isa = PBXGroup;
+			children = (
+				F8B56E852652A404001910C0 /* Dependency */,
+				F8AA311C2652985700D136EC /* Factory */,
+				F8AA311A2652983F00D136EC /* ViewControllers */,
+				F8AA311B2652984B00D136EC /* ViewModels */,
+			);
+			path = Launching;
+			sourceTree = "<group>";
+		};
+		F8AA311A2652983F00D136EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA312026529A9B00D136EC /* LaunchingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8AA311B2652984B00D136EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8B56E7B26529E55001910C0 /* LaunchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8AA311C2652985700D136EC /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F8B56E802652A3E2001910C0 /* LaunchViewModelFactory.swift */,
+				F8B56E8E2652A440001910C0 /* LaunchingViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F8B56E852652A404001910C0 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				F8B56E862652A428001910C0 /* LunchingDependencyContainer.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
 		F8E7EE662641FB76008781E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1396,7 @@
 				F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
+				F8AA312126529A9B00D136EC /* LaunchingViewController.swift in Sources */,
 				F87D9BBC264AFF3A0075DD47 /* HomeViewModelsFactory.swift in Sources */,
 				F86E995A264341B600F89FF8 /* HomeViewController.swift in Sources */,
 				F87D9BC7264AFFFE0075DD47 /* HomeDependencyContainer.swift in Sources */,
@@ -1368,6 +1424,7 @@
 				F86E98A52642F6A500F89FF8 /* TVRepository.swift in Sources */,
 				F89D8F762636404E007A34CF /* AppDelegate.swift in Sources */,
 				F8108D16263F17AC00AFD73A /* MovieSummery.swift in Sources */,
+				F8B56E872652A428001910C0 /* LunchingDependencyContainer.swift in Sources */,
 				F8106E6A26371F0500653AF8 /* UIView+Animation.swift in Sources */,
 				F8108D39263F1C1800AFD73A /* ProductionCountry.swift in Sources */,
 				F86E989A2642EF0D00F89FF8 /* MoviesUseCasesImp.swift in Sources */,
@@ -1405,15 +1462,18 @@
 				F8108CF1263F011100AFD73A /* AnyPublisher+Helper.swift in Sources */,
 				F8108D3E263F1C6200AFD73A /* Video.swift in Sources */,
 				F87D9BD1264B01E40075DD47 /* HomeViewControllerFactory.swift in Sources */,
+				F8B56E7C26529E55001910C0 /* LaunchViewModel.swift in Sources */,
 				F8108D26263F195600AFD73A /* SpokenLanguage.swift in Sources */,
 				F8106DCD2636E1CE00653AF8 /* Logger.swift in Sources */,
 				F8893F8B2646474100EC72FD /* HomePopularMoviesViewModel.swift in Sources */,
 				F8106E6026371DE800653AF8 /* UIButton+Localization.swift in Sources */,
+				F8B56E8F2652A440001910C0 /* LaunchingViewControllerFactory.swift in Sources */,
 				F8106E842637322600653AF8 /* NibWrapper.swift in Sources */,
 				F8106DE62637068600653AF8 /* String+EmptyChecker.swift in Sources */,
 				F87D9B93264AE60C0075DD47 /* HomePopularShowsViewModel.swift in Sources */,
 				F86E98942642ED8700F89FF8 /* MoviesUseCases.swift in Sources */,
 				F876E9252641D87F00DCC255 /* MoviesRepository.swift in Sources */,
+				F8B56E812652A3E2001910C0 /* LaunchViewModelFactory.swift in Sources */,
 				F87D9BD6264B0C320075DD47 /* AppDependencyContainer.swift in Sources */,
 				F8F15456264479BE005A26A0 /* ShowCollectionViewCell.swift in Sources */,
 				F8893F902646475A00EC72FD /* HomeNowPlayingMoviesViewModel.swift in Sources */,

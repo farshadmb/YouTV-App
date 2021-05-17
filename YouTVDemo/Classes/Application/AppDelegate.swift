@@ -26,11 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator = container.makeAppCoordinator()
         coordinator.window = window
         coordinator.trigger(.loading)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.coordinator.trigger(.main)
-        }
-
+        
         return true
     }
 

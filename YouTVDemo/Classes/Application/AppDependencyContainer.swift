@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import RxSwift
 import Alamofire
 
 final class AppDependencyContainer {
+
+    typealias DataDecoder = Alamofire.DataDecoder
 
     lazy var networkService: NetworkService = {
         let configuration = URLSessionConfiguration.default
@@ -133,4 +136,12 @@ extension AppDependencyContainer: CoordinatorFactory {
         return HomeCoordinator(factory: dependecy)
     }
 
+}
+
+extension AppDependencyContainer: LaunchingViewControllerFactory {
+
+    func makeLaunchingViewController(withResponder responder: AnyObserver<Void>) -> LaunchingViewController {
+        let dependecy = LunchingDependencyContainer(appDependencyContainer: self)
+        return dependecy.makeLaunchingViewController(withResponder: responder)
+    }
 }
