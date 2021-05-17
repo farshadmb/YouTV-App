@@ -580,8 +580,10 @@
             
             <h1 id='youtv-app' class='heading'>YouTV-App</h1>
 
+<p>### <strong>Table Of Content</strong></p>
+
 <ul>
-<li><a href="#youtv-app">YouTV-App</a>
+<li><a href="#youtv-app">YouTV-App</a> 
 
 <ul>
 <li><a href="#summery">Summery</a></li>
@@ -589,12 +591,18 @@
 <li><a href="#installation">Installation</a></li>
 <li><a href="#technology-use-in-this-project">Technology use in this project</a></li>
 <li><a href="#gitwokflow">Gitwokflow</a></li>
+<li><a href="#extra-information">Extra Information</a>
+
+<ul>
+<li><a href="#challenges">Challenges:</a></li>
+<li><a href="#time-efforts">Time Efforts</a></li>
+</ul></li>
 </ul></li>
 </ul>
 <h2 id='summery' class='heading'>Summery</h2>
 
 <p>The Application was written in a Swift 5.3. The App represent Headlines API and Authentication.
-Application contains the three layers which are the <code>Data Layer</code>, <code>Domain Layer</code> or <code>Business Layer</code> and <code>Presentation Layer</code> in MVVM. </p>
+Application contains the three layers which are the <code>Data Layer</code>, <code>Domain Layer</code> or <code>Business Layer</code> and <code>Presentation Layer</code>. The Presnetation layer was architected in MVVM Coordinator. </p>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
@@ -605,36 +613,31 @@ Application contains the three layers which are the <code>Data Layer</code>, <co
 <h2 id='installation' class='heading'>Installation</h2>
 
 <ul>
-<li>Step 1: 
-Download or clone the project github repository</li>
+<li>Step 1: Download or clone the project github repository</li>
 </ul>
 <pre class="highlight plaintext"><code>    $ git clone https://github.com/farshadmb/YouTV-App
 </code></pre>
 
 <ul>
-<li>Step 2:
-Install Bundler via Running the below command 
-<code>Bash 
-$ gem install bundler 
-</code>
-Install Cocoapods via 
-<code>Bash 
-$ gem install cocoapods --user-install
-</code></li>
+<li>Step 2: Install Bundler via Running the below command.</li>
 </ul>
+<pre class="highlight plaintext"><code>    $ gem install bundler 
+</code></pre>
+
+<p>Install Cocoapods via </p>
+<pre class="highlight plaintext"><code>    $ gem install cocoapods --user-install
+</code></pre>
 
 <p>then run <code>$ pods install</code> command.</p>
 
 <ul>
-<li><p>Step 3: 
-Open <code>YouTVDemo.xcworkspace</code> file.</p></li>
-<li><p>Step 4: 
-Run and enjoy the app.</p></li>
+<li><p>Step 3: Open <code>YouTVDemo.xcworkspace</code> file.</p></li>
+<li><p>Step 4: Run and enjoy the app.</p></li>
 </ul>
 <h2 id='technology-use-in-this-project' class='heading'>Technology use in this project</h2>
 
 <ul>
-<li>Reactive Functional Programming<br></li>
+<li>Reactive Functional Programming</li>
 <li>RxSwift</li>
 <li>Clean Code</li>
 <li>Clean Arch <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">Reference</a></li>
@@ -644,8 +647,25 @@ Run and enjoy the app.</p></li>
 <li>Swiftlint</li>
 <li>Jazzy for documentation.</li>
 <li>Github Actions workflow.</li>
+<li>SOLID Principles.</li>
+<li>Dependency Injection based on Factory Strategy.</li>
 </ul>
 <h2 id='gitwokflow' class='heading'>Gitwokflow</h2>
+
+<p>Please see the Pull Requests in this Repository.</p>
+<h2 id='extra-information' class='heading'>Extra Information</h2>
+<h4 id='challenges' class='heading'>Challenges:</h4>
+
+<ul>
+<li>Dealing With <code>UICollectionViewCompositionalLayout</code> to implement Custom Home Layout.</li>
+<li>Finding and exploring the best approach to handle multiple section and item view Model.</li>
+<li>Implementing ViewModel for each specific section and item in Home Presentation Layer.</li>
+<li>Building the Swiftlint Checker and Documents Generator with GitHub Action.</li>
+<li>Following the SOLID Principles.</li>
+</ul>
+<h4 id='time-efforts' class='heading'>Time Efforts</h4>
+
+<p>The project took two weeks to develop and deploy.</p>
 
           </section>
         </section>
