@@ -78,7 +78,7 @@ extension UICollectionView {
      */
     func dequeueReusableSupplementaryView <T: UICollectionReusableView>(type: T.Type,
                                                                         kind: String, forIndexPath indexPath: IndexPath,
-                                                                        reuseIdentifer identifer: String = String(describing: T.self)) -> T? {
+                                                                        reuseIdentifer identifer: String = String(describing: T.self)) -> T {
         guard let view = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifer, for: indexPath) as? T else {
             preconditionFailure("Couldn't find nib file for \(String(describing: T.self))")
         }

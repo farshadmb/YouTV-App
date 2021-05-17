@@ -21,11 +21,11 @@ extension APIConfigs {
 
         let baseUrl: URL?
         let secureBaseUrl: URL?
-        let backdropSizes: [String]?
-        let logoSizes: [String]?
-        let posterSizes: [String]?
-        let profileSizes: [String]?
-        let stillSizes: [String]?
+        let backdropSizes: [Size]?
+        let logoSizes: [Size]?
+        let posterSizes: [Size]?
+        let profileSizes: [Size]?
+        let stillSizes: [Size]?
 
         enum CodingKeys: String, CodingKey {
             case baseUrl
@@ -37,4 +37,24 @@ extension APIConfigs {
             case stillSizes
         }
     }
+    
+}
+
+extension APIConfigs.Images {
+
+    enum Size: String, Codable {
+        case w45
+        case w92
+        case w98
+        case w154
+        case w185
+        case w300
+        case w342
+        case w500
+        case w780
+        case w1280
+        case h632
+        case original
+    }
+
 }

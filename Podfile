@@ -29,6 +29,7 @@ target 'YouTVDemo' do
   pod 'SwiftLint'
   pod 'CryptoSwift', '1.1.2'
   pod 'SDWebImage'
+  pod 'XCoordinator'
   
   #Logger Framework
   pod 'CocoaLumberjack/Swift'

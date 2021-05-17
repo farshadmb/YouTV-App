@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- The `APIJSONValidation` to determind HTTP response fields validation. 
+ The `HTTPResponseValidation` to determind HTTP response fields validation.
  */
 struct HTTPResponseValidation: NetworkResponseValidation {
 
