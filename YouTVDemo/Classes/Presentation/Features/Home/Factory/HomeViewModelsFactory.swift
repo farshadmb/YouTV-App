@@ -37,5 +37,10 @@ protocol HomeViewModelsFactory {
      <# Property Summery Here#>
      */
     func makeHomeShowViewModel(with model: TVSerialSummery) -> HomeShowViewModel
+    
+    /**
+     <# Property Summery Here#>
+     */
+    func makeHomeTrendingsViewModel() -> HomeTrendingsViewModel
 
 }

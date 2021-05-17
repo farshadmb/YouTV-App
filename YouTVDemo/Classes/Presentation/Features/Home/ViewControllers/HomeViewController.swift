@@ -142,6 +142,7 @@ class HomeViewController: UIViewController, BindableType,
             cell = showCell
         case .trending:
             let viewModelType = type(of: viewModel)
+            log.debug("\(viewModelType)")
             let trendingCell = collectionView.dequeueReusableCell(type: HomeTrendingCollectionCell.self, forIndexPath: indexPath)
             
             trendingCell.bind(to: viewModel)

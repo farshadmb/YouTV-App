@@ -12,6 +12,6 @@ protocol TrendingUseCaseFactory {
     
     func makeTVTrendingUseCase() -> TVTrendingUseCase
 
-    func makeMovieTrendingShowUseCase() -> MovieTrendingUseCase
+    func makeMovieTrendingUseCase() -> MovieTrendingUseCase
      
 }

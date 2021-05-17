@@ -125,6 +125,7 @@
 		F89D8F7D26364052007A34CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89D8F7B26364052007A34CF /* LaunchScreen.storyboard */; };
 		F89D8F8826364052007A34CF /* YouTVDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F8726364052007A34CF /* YouTVDemoTests.swift */; };
 		F89D8F9326364053007A34CF /* YouTVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */; };
+		F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */; };
 		F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */; };
 		F8CF584B2645B52D00D80790 /* HomeSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */; };
 		F8CF58512645BF9000D80790 /* HomeMovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */; };
@@ -292,6 +293,7 @@
 		F89D8F8E26364052007A34CF /* YouTVDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTVDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTVDemoUITests.swift; sourceTree = "<group>"; };
 		F89D8F9426364053007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingsViewModel.swift; sourceTree = "<group>"; };
 		F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderView.xib; sourceTree = "<group>"; };
 		F8CF584F2645BF9000D80790 /* HomeMovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCollectionCell.swift; sourceTree = "<group>"; };
@@ -734,6 +736,7 @@
 		F86E9955264340AB00F89FF8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F8A96FE9265235DC00F1C9E5 /* Trending */,
 				F86E99922643488500F89FF8 /* TVShows */,
 				F86E99912643487F00F89FF8 /* Movies */,
 				F86E996C2643468700F89FF8 /* HomeViewModel.swift */,
@@ -1032,6 +1035,14 @@
 			path = YouTVDemoUITests;
 			sourceTree = "<group>";
 		};
+		F8A96FE9265235DC00F1C9E5 /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
 		F8E7EE662641FB76008781E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1318,6 +1329,7 @@
 				F89CB0F6263B0343009FA1AD /* APIClientService.swift in Sources */,
 				F89CB0EE263B0313009FA1AD /* AtomicWrapper.swift in Sources */,
 				F8108D49263F21CB00AFD73A /* TVSerialSummery.swift in Sources */,
+				F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */,
 				F8106E7E26372C9900653AF8 /* Storyboard+Casting.swift in Sources */,
 				F8106DD82637026300653AF8 /* UIImage+Additionals.swift in Sources */,
 				F87D9BBC264AFF3A0075DD47 /* HomeViewModelsFactory.swift in Sources */,

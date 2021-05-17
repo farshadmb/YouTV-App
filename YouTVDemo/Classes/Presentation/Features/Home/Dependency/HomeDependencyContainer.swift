@@ -61,6 +61,9 @@ final class HomeDependencyContainer {
         return HomeMovieViewModel(model: model, remoteImageBuilder: remoteImageBuilder)
     }
 
+    func makeHomeTrendingsViewModel() -> HomeTrendingsViewModel {
+        return HomeTrendingsViewModel(order: 0, factory: self)
+    }
     // MARK: - SectionHomeViewControllerFactory
     
     func makeHomeViewController() -> HomeViewController {
@@ -121,7 +124,7 @@ extension HomeDependencyContainer: TrendingUseCaseFactory {
         return TrendingUseCasesImp(repository: trendingRepository, language: language)
     }
     
-    func makeMovieTrendingShowUseCase() -> MovieTrendingUseCase {
+    func makeMovieTrendingUseCase() -> MovieTrendingUseCase {
         return TrendingUseCasesImp(repository: trendingRepository, language: language)
     }
     
