@@ -1,0 +1,2462 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
+      "line": 16,
+      "symbol": "AppConfig.APIKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppConfig.swift",
+      "line": 19,
+      "symbol": "AppConfig.baseURL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDelegate.swift",
+      "line": 11,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Application/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Dates.swift",
+      "line": 11,
+      "symbol": "Dates",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Dates.swift",
+      "line": 13,
+      "symbol": "Dates.maximum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Dates.swift",
+      "line": 14,
+      "symbol": "Dates.minimum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Genre.swift",
+      "line": 11,
+      "symbol": "Genre",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Genre.swift",
+      "line": 13,
+      "symbol": "Genre.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Genre.swift",
+      "line": 14,
+      "symbol": "Genre.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 11,
+      "symbol": "Images",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 13,
+      "symbol": "Images.backdrops",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 14,
+      "symbol": "Images.posters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 18,
+      "symbol": "Images",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 20,
+      "symbol": "Images.Poster",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 22,
+      "symbol": "Images.Backdrop",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 24,
+      "symbol": "Images.Backdrop.aspectRatio",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 25,
+      "symbol": "Images.Backdrop.filePath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 26,
+      "symbol": "Images.Backdrop.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 29,
+      "symbol": "Images.Backdrop.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 30,
+      "symbol": "Images.Backdrop.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 31,
+      "symbol": "Images.Backdrop.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 32,
+      "symbol": "Images.Backdrop.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 34,
+      "symbol": "Images.Backdrop.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 35,
+      "symbol": "Images.Backdrop.CodingKeys.aspectRatio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 36,
+      "symbol": "Images.Backdrop.CodingKeys.filePath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 37,
+      "symbol": "Images.Backdrop.CodingKeys.height",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 40,
+      "symbol": "Images.Backdrop.CodingKeys.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 41,
+      "symbol": "Images.Backdrop.CodingKeys.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 42,
+      "symbol": "Images.Backdrop.CodingKeys.voteCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Image.swift",
+      "line": 43,
+      "symbol": "Images.Backdrop.CodingKeys.width",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 11,
+      "symbol": "SpokenLanguage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 13,
+      "symbol": "SpokenLanguage.englishName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 16,
+      "symbol": "SpokenLanguage.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 17,
+      "symbol": "SpokenLanguage.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 19,
+      "symbol": "SpokenLanguage.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 20,
+      "symbol": "SpokenLanguage.CodingKeys.englishName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 22,
+      "symbol": "SpokenLanguage.CodingKeys.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Language/SpokenLanguage.swift",
+      "line": 23,
+      "symbol": "SpokenLanguage.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 11,
+      "symbol": "APIConfigs",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 13,
+      "symbol": "APIConfigs.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 17,
+      "symbol": "APIConfigs",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 20,
+      "symbol": "APIConfigs.Images",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 22,
+      "symbol": "APIConfigs.Images.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 23,
+      "symbol": "APIConfigs.Images.secureBaseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 24,
+      "symbol": "APIConfigs.Images.backdropSizes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 25,
+      "symbol": "APIConfigs.Images.logoSizes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 26,
+      "symbol": "APIConfigs.Images.posterSizes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 27,
+      "symbol": "APIConfigs.Images.profileSizes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 28,
+      "symbol": "APIConfigs.Images.stillSizes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 30,
+      "symbol": "APIConfigs.Images.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 31,
+      "symbol": "APIConfigs.Images.CodingKeys.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 32,
+      "symbol": "APIConfigs.Images.CodingKeys.secureBaseUrl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 33,
+      "symbol": "APIConfigs.Images.CodingKeys.backdropSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 34,
+      "symbol": "APIConfigs.Images.CodingKeys.logoSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 35,
+      "symbol": "APIConfigs.Images.CodingKeys.posterSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 36,
+      "symbol": "APIConfigs.Images.CodingKeys.profileSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Misc/APIConfigs.swift",
+      "line": 37,
+      "symbol": "APIConfigs.Images.CodingKeys.stillSizes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 11,
+      "symbol": "MovieDetail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 13,
+      "symbol": "MovieDetail.adult",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 14,
+      "symbol": "MovieDetail.backdropPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 15,
+      "symbol": "MovieDetail.budget",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 16,
+      "symbol": "MovieDetail.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 17,
+      "symbol": "MovieDetail.homepage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 18,
+      "symbol": "MovieDetail.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 19,
+      "symbol": "MovieDetail.imdbId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 20,
+      "symbol": "MovieDetail.originalLanguage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 21,
+      "symbol": "MovieDetail.originalTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 22,
+      "symbol": "MovieDetail.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 23,
+      "symbol": "MovieDetail.popularity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 24,
+      "symbol": "MovieDetail.posterPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 25,
+      "symbol": "MovieDetail.productionCompanies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 26,
+      "symbol": "MovieDetail.productionCountries",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 27,
+      "symbol": "MovieDetail.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 28,
+      "symbol": "MovieDetail.revenue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 29,
+      "symbol": "MovieDetail.runtime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 30,
+      "symbol": "MovieDetail.spokenLanguages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 31,
+      "symbol": "MovieDetail.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 32,
+      "symbol": "MovieDetail.tagline",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 33,
+      "symbol": "MovieDetail.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 34,
+      "symbol": "MovieDetail.video",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 35,
+      "symbol": "MovieDetail.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 36,
+      "symbol": "MovieDetail.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 37,
+      "symbol": "MovieDetail.videos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Movies/MovieDetail.swift",
+      "line": 38,
+      "symbol": "MovieDetail.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCompany.swift",
+      "line": 11,
+      "symbol": "ProductionCompany",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCompany.swift",
+      "line": 13,
+      "symbol": "ProductionCompany.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCompany.swift",
+      "line": 14,
+      "symbol": "ProductionCompany.logoPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCompany.swift",
+      "line": 15,
+      "symbol": "ProductionCompany.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCompany.swift",
+      "line": 16,
+      "symbol": "ProductionCompany.originCountry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 11,
+      "symbol": "ProductionCountry",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 14,
+      "symbol": "ProductionCountry.iso3166_1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 15,
+      "symbol": "ProductionCountry.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 17,
+      "symbol": "ProductionCountry.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 20,
+      "symbol": "ProductionCountry.CodingKeys.iso3166_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Production/ProductionCountry.swift",
+      "line": 21,
+      "symbol": "ProductionCountry.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 12,
+      "symbol": "TVSerialDetail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 14,
+      "symbol": "TVSerialDetail.backdropPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 15,
+      "symbol": "TVSerialDetail.createdBy",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 16,
+      "symbol": "TVSerialDetail.episodeRunTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 17,
+      "symbol": "TVSerialDetail.firstAirDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 18,
+      "symbol": "TVSerialDetail.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 19,
+      "symbol": "TVSerialDetail.homepage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 20,
+      "symbol": "TVSerialDetail.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 21,
+      "symbol": "TVSerialDetail.inProduction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 22,
+      "symbol": "TVSerialDetail.languages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 23,
+      "symbol": "TVSerialDetail.lastAirDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 24,
+      "symbol": "TVSerialDetail.lastEpisodeToAir",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 25,
+      "symbol": "TVSerialDetail.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 26,
+      "symbol": "TVSerialDetail.nextEpisodeToAir",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 27,
+      "symbol": "TVSerialDetail.networks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 28,
+      "symbol": "TVSerialDetail.numberOfEpisodes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 29,
+      "symbol": "TVSerialDetail.numberOfSeasons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 30,
+      "symbol": "TVSerialDetail.originCountry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 31,
+      "symbol": "TVSerialDetail.originalLanguage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 32,
+      "symbol": "TVSerialDetail.originalName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 33,
+      "symbol": "TVSerialDetail.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 34,
+      "symbol": "TVSerialDetail.popularity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 35,
+      "symbol": "TVSerialDetail.posterPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 36,
+      "symbol": "TVSerialDetail.productionCompanies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 37,
+      "symbol": "TVSerialDetail.productionCountries",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 38,
+      "symbol": "TVSerialDetail.seasons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 39,
+      "symbol": "TVSerialDetail.spokenLanguages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 40,
+      "symbol": "TVSerialDetail.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 41,
+      "symbol": "TVSerialDetail.tagline",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 42,
+      "symbol": "TVSerialDetail.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 43,
+      "symbol": "TVSerialDetail.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 44,
+      "symbol": "TVSerialDetail.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 45,
+      "symbol": "TVSerialDetail.videos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 46,
+      "symbol": "TVSerialDetail.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 48,
+      "symbol": "TVSerialDetail.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 49,
+      "symbol": "TVSerialDetail.CodingKeys.backdropPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 50,
+      "symbol": "TVSerialDetail.CodingKeys.createdBy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 51,
+      "symbol": "TVSerialDetail.CodingKeys.episodeRunTime",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 52,
+      "symbol": "TVSerialDetail.CodingKeys.firstAirDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 53,
+      "symbol": "TVSerialDetail.CodingKeys.genres",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 54,
+      "symbol": "TVSerialDetail.CodingKeys.homepage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 55,
+      "symbol": "TVSerialDetail.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 56,
+      "symbol": "TVSerialDetail.CodingKeys.inProduction",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 57,
+      "symbol": "TVSerialDetail.CodingKeys.languages",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 58,
+      "symbol": "TVSerialDetail.CodingKeys.lastAirDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 59,
+      "symbol": "TVSerialDetail.CodingKeys.lastEpisodeToAir",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 60,
+      "symbol": "TVSerialDetail.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 61,
+      "symbol": "TVSerialDetail.CodingKeys.nextEpisodeToAir",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 62,
+      "symbol": "TVSerialDetail.CodingKeys.networks",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 63,
+      "symbol": "TVSerialDetail.CodingKeys.numberOfEpisodes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 64,
+      "symbol": "TVSerialDetail.CodingKeys.numberOfSeasons",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 65,
+      "symbol": "TVSerialDetail.CodingKeys.originCountry",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 66,
+      "symbol": "TVSerialDetail.CodingKeys.originalLanguage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 67,
+      "symbol": "TVSerialDetail.CodingKeys.originalName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 68,
+      "symbol": "TVSerialDetail.CodingKeys.overview",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 69,
+      "symbol": "TVSerialDetail.CodingKeys.popularity",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 70,
+      "symbol": "TVSerialDetail.CodingKeys.posterPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 71,
+      "symbol": "TVSerialDetail.CodingKeys.productionCompanies",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 72,
+      "symbol": "TVSerialDetail.CodingKeys.productionCountries",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 73,
+      "symbol": "TVSerialDetail.CodingKeys.seasons",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 74,
+      "symbol": "TVSerialDetail.CodingKeys.spokenLanguages",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 75,
+      "symbol": "TVSerialDetail.CodingKeys.status",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 76,
+      "symbol": "TVSerialDetail.CodingKeys.tagline",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 77,
+      "symbol": "TVSerialDetail.CodingKeys.type",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 78,
+      "symbol": "TVSerialDetail.CodingKeys.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 79,
+      "symbol": "TVSerialDetail.CodingKeys.voteCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 80,
+      "symbol": "TVSerialDetail.CodingKeys.videos",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 81,
+      "symbol": "TVSerialDetail.CodingKeys.images",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 85,
+      "symbol": "TVSerialDetail",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 88,
+      "symbol": "TVSerialDetail.CreatedPerson",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 90,
+      "symbol": "TVSerialDetail.CreatedPerson.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 91,
+      "symbol": "TVSerialDetail.CreatedPerson.creditId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 92,
+      "symbol": "TVSerialDetail.CreatedPerson.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 93,
+      "symbol": "TVSerialDetail.CreatedPerson.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 94,
+      "symbol": "TVSerialDetail.CreatedPerson.profilePath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 96,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 97,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 98,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys.creditId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 99,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 100,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys.gender",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 101,
+      "symbol": "TVSerialDetail.CreatedPerson.CodingKeys.profilePath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 106,
+      "symbol": "TVSerialDetail.Episode",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 108,
+      "symbol": "TVSerialDetail.Episode.airDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 109,
+      "symbol": "TVSerialDetail.Episode.episodeNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 110,
+      "symbol": "TVSerialDetail.Episode.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 111,
+      "symbol": "TVSerialDetail.Episode.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 112,
+      "symbol": "TVSerialDetail.Episode.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 113,
+      "symbol": "TVSerialDetail.Episode.productionCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 114,
+      "symbol": "TVSerialDetail.Episode.seasonNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 115,
+      "symbol": "TVSerialDetail.Episode.stillPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 116,
+      "symbol": "TVSerialDetail.Episode.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 117,
+      "symbol": "TVSerialDetail.Episode.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 119,
+      "symbol": "TVSerialDetail.Episode.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 120,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.airDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 121,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.episodeNumber",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 122,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 123,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 124,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.overview",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 125,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.productionCode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 126,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.seasonNumber",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 127,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.stillPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 128,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 129,
+      "symbol": "TVSerialDetail.Episode.CodingKeys.voteCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 134,
+      "symbol": "TVSerialDetail.Network",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 136,
+      "symbol": "TVSerialDetail.Network.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 137,
+      "symbol": "TVSerialDetail.Network.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 138,
+      "symbol": "TVSerialDetail.Network.logoPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 139,
+      "symbol": "TVSerialDetail.Network.originCountry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 141,
+      "symbol": "TVSerialDetail.Network.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 142,
+      "symbol": "TVSerialDetail.Network.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 143,
+      "symbol": "TVSerialDetail.Network.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 144,
+      "symbol": "TVSerialDetail.Network.CodingKeys.logoPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 145,
+      "symbol": "TVSerialDetail.Network.CodingKeys.originCountry",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 150,
+      "symbol": "TVSerialDetail.Season",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 152,
+      "symbol": "TVSerialDetail.Season.airDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 153,
+      "symbol": "TVSerialDetail.Season.episodeCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 154,
+      "symbol": "TVSerialDetail.Season.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 155,
+      "symbol": "TVSerialDetail.Season.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 156,
+      "symbol": "TVSerialDetail.Season.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 157,
+      "symbol": "TVSerialDetail.Season.posterPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 158,
+      "symbol": "TVSerialDetail.Season.seasonNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 159,
+      "symbol": "TVSerialDetail.Season.episodes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 161,
+      "symbol": "TVSerialDetail.Season.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 162,
+      "symbol": "TVSerialDetail.Season.CodingKeys.airDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 163,
+      "symbol": "TVSerialDetail.Season.CodingKeys.episodeCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 164,
+      "symbol": "TVSerialDetail.Season.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 165,
+      "symbol": "TVSerialDetail.Season.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 166,
+      "symbol": "TVSerialDetail.Season.CodingKeys.overview",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 167,
+      "symbol": "TVSerialDetail.Season.CodingKeys.posterPath",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 168,
+      "symbol": "TVSerialDetail.Season.CodingKeys.seasonNumber",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 169,
+      "symbol": "TVSerialDetail.Season.CodingKeys.episodes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 174,
+      "symbol": "TVSerialDetail.EpisodeGroups",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 176,
+      "symbol": "TVSerialDetail.EpisodeGroups.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 177,
+      "symbol": "TVSerialDetail.EpisodeGroups.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 180,
+      "symbol": "TVSerialDetail.EpisodeGroup",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 182,
+      "symbol": "TVSerialDetail.EpisodeGroup.resultDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 183,
+      "symbol": "TVSerialDetail.EpisodeGroup.episodeCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 184,
+      "symbol": "TVSerialDetail.EpisodeGroup.groupCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 185,
+      "symbol": "TVSerialDetail.EpisodeGroup.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 186,
+      "symbol": "TVSerialDetail.EpisodeGroup.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 187,
+      "symbol": "TVSerialDetail.EpisodeGroup.network",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 188,
+      "symbol": "TVSerialDetail.EpisodeGroup.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 190,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 191,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.resultDescription",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 192,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.episodeCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 193,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.groupCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 194,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 195,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 196,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.network",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialDetail.swift",
+      "line": 197,
+      "symbol": "TVSerialDetail.EpisodeGroup.CodingKeys.type",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 11,
+      "symbol": "TVSerialSummery",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 13,
+      "symbol": "TVSerialSummery.posterPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 14,
+      "symbol": "TVSerialSummery.popularity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 15,
+      "symbol": "TVSerialSummery.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 16,
+      "symbol": "TVSerialSummery.backdropPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 17,
+      "symbol": "TVSerialSummery.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 18,
+      "symbol": "TVSerialSummery.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 19,
+      "symbol": "TVSerialSummery.firstAirDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 20,
+      "symbol": "TVSerialSummery.originCountry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 21,
+      "symbol": "TVSerialSummery.genreIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 22,
+      "symbol": "TVSerialSummery.originalLanguage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 23,
+      "symbol": "TVSerialSummery.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 24,
+      "symbol": "TVSerialSummery.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/TV/TVSerialSummery.swift",
+      "line": 25,
+      "symbol": "TVSerialSummery.originalName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 11,
+      "symbol": "Video",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 13,
+      "symbol": "Video.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 16,
+      "symbol": "Video.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 19,
+      "symbol": "Video.iso3166_1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 21,
+      "symbol": "Video.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 22,
+      "symbol": "Video.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 23,
+      "symbol": "Video.site",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 24,
+      "symbol": "Video.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 25,
+      "symbol": "Video.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 27,
+      "symbol": "Video.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 28,
+      "symbol": "Video.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 31,
+      "symbol": "Video.CodingKeys.iso639_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 34,
+      "symbol": "Video.CodingKeys.iso3166_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 35,
+      "symbol": "Video.CodingKeys.key",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 36,
+      "symbol": "Video.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 37,
+      "symbol": "Video.CodingKeys.site",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 38,
+      "symbol": "Video.CodingKeys.size",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 39,
+      "symbol": "Video.CodingKeys.type",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 44,
+      "symbol": "Video",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 46,
+      "symbol": "Video.Type",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 47,
+      "symbol": "Video.Type.featurette",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 48,
+      "symbol": "Video.Type.teaser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 49,
+      "symbol": "Video.Type.trailer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 50,
+      "symbol": "Video.Type.clip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 51,
+      "symbol": "Video.Type.openingCredits",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 52,
+      "symbol": "Video.Type.behindetheScenes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 53,
+      "symbol": "Video.Type.recap",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 54,
+      "symbol": "Video.Type.bloopers",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 59,
+      "symbol": "Videos",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Models/Video.swift",
+      "line": 61,
+      "symbol": "Videos.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Abstract/NetworkRequest.swift",
+      "line": 12,
+      "symbol": "NetworkRequest",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Abstract/NetworkRequest.swift",
+      "line": 14,
+      "symbol": "NetworkRequest.validResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Abstract/NetworkService.swift",
+      "line": 29,
+      "symbol": "NetworkService.DataDecoder",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Implementation/APIAuthenticatior.swift",
+      "line": 12,
+      "symbol": "APIAuthenticator",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Implementation/APIClientService.swift",
+      "line": 107,
+      "symbol": "queueName",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Request/APIEncodableRequest.swift",
+      "line": 78,
+      "symbol": "APIEncodableRequest.validResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Request/APIParametersRequest.swift",
+      "line": 74,
+      "symbol": "APIParametersRequest.validResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponse.swift",
+      "line": 31,
+      "symbol": "APIServerResponse.CodingKeys.status",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponse.swift",
+      "line": 32,
+      "symbol": "APIServerResponse.CodingKeys.code",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponse.swift",
+      "line": 33,
+      "symbol": "APIServerResponse.CodingKeys.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 11,
+      "symbol": "APIServerResponseError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 12,
+      "symbol": "APIServerResponseError.code(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 13,
+      "symbol": "APIServerResponseError.message(code:message:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 14,
+      "symbol": "APIServerResponseError.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 17,
+      "symbol": "APIServerResponseError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 23,
+      "symbol": "APIServerResponseError.errorDes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 28,
+      "symbol": "APIServerResponseError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 30,
+      "symbol": "APIServerResponseError.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseError.swift",
+      "line": 40,
+      "symbol": "APIServerResponseError.message",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseStatus.swift",
+      "line": 11,
+      "symbol": "APIServerResponseStatus",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseStatus.swift",
+      "line": 24,
+      "symbol": "APIServerResponseStatus.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Networking/Response/APIServerResponseStatus.swift",
+      "line": 25,
+      "symbol": "APIServerResponseStatus.failure",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Discover/DiscoverRemoteRepository.swift",
+      "line": 14,
+      "symbol": "DiscoverRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Discover/DiscoverRemoteRepository.swift",
+      "line": 16,
+      "symbol": "DiscoverRemoteRepository.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Discover/DiscoverRemoteRepository.swift",
+      "line": 18,
+      "symbol": "DiscoverRemoteRepository.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 14,
+      "symbol": "MoviesRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 16,
+      "symbol": "MoviesRemoteRepository.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Movies/MoviesRemoteRepository.swift",
+      "line": 19,
+      "symbol": "MoviesRemoteRepository.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Search/SearchRemoteRepository.swift",
+      "line": 14,
+      "symbol": "SearchRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Search/SearchRemoteRepository.swift",
+      "line": 16,
+      "symbol": "SearchRemoteRepository.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/Search/SearchRemoteRepository.swift",
+      "line": 18,
+      "symbol": "SearchRemoteRepository.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 14,
+      "symbol": "TVRemoteRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 16,
+      "symbol": "TVRemoteRepository.service",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/DataLayer/Repositories/TV/TVRemoteRepository.swift",
+      "line": 18,
+      "symbol": "TVRemoteRepository.init(service:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 12,
+      "symbol": "AnyCombineObserver",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 14,
+      "symbol": "AnyCombineObserver.onNext",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 15,
+      "symbol": "AnyCombineObserver.onError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 16,
+      "symbol": "AnyCombineObserver.onCompleted",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 19,
+      "symbol": "CombineDisposable",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Combine/AnyPublisher+Helper.swift",
+      "line": 21,
+      "symbol": "CombineDisposable.dispose",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/Foundation/DispatchQueue+Additional.swift",
+      "line": 16,
+      "symbol": "DispatchQueue.QueueReference.queue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/Localization/UILabel+Localization.swift",
+      "line": 15,
+      "symbol": "UILabel.AssociatedKey",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/Localization/UILabel+Localization.swift",
+      "line": 16,
+      "symbol": "UILabel.AssociatedKey.localizedStringKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/Localization/UITextField+Localization.swift",
+      "line": 15,
+      "symbol": "UITextField.AssociatedKey",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/Localization/UITextField+Localization.swift",
+      "line": 16,
+      "symbol": "UITextField.AssociatedKey.placeHolderLocalizedStringKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/UIImage+Additionals.swift",
+      "line": 34,
+      "symbol": "UIImageContentMode.scaleAspectFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/UIImage+Additionals.swift",
+      "line": 34,
+      "symbol": "UIImageContentMode.scaleAspectFit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Extensions/UI/UIImage+Additionals.swift",
+      "line": 34,
+      "symbol": "UIImageContentMode.scaleToFill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/Logger.swift",
+      "line": 119,
+      "symbol": "log",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 13,
+      "symbol": "Atomic",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 15,
+      "symbol": "Atomic.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 16,
+      "symbol": "Atomic.lock",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 18,
+      "symbol": "Atomic.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 22,
+      "symbol": "Atomic.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 27,
+      "symbol": "Atomic.load()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 33,
+      "symbol": "Atomic.store(newValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 41,
+      "symbol": "UnfairLock",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 43,
+      "symbol": "UnfairLock._lock",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 45,
+      "symbol": "UnfairLock.lock()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 46,
+      "symbol": "UnfairLock.locked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/YouTV-App/YouTV-App/YouTVDemo/Classes/Utilites/PropertyWrapper/AtomicWrapper.swift",
+      "line": 47,
+      "symbol": "UnfairLock.unlock()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/YouTV-App/YouTV-App"
+}

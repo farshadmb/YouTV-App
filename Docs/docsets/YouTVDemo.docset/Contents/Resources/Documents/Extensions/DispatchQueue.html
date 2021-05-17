@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DispatchQueue Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/DispatchQueue" class="dashAnchor"></a>
+    <a title="DispatchQueue Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">YouTVDemo Docs</a> (36% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">YouTVDemo Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DispatchQueue Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIClientService.html">APIClientService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Atomic.html">Atomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiscoverRemoteRepository.html">DiscoverRemoteRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LazyNibWrapper.html">LazyNibWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MoviesRemoteRepository.html">MoviesRemoteRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NibWrapper.html">NibWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchRemoteRepository.html">SearchRemoteRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVRemoteRepository.html">TVRemoteRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnfairLock.html">UnfairLock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:9YouTVDemo3logAA6LoggerVmvp">log</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:9YouTVDemo6logger028_0A83FBC939020F1BE5D1B020304H3C44LLAA6LoggerVvp">logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:9YouTVDemo9queueName33_D585823258944F44B8A1A41F979E853DLLSSvp">queueName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIServerResponseError.html">APIServerResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/APIServerResponseStatus.html">APIServerResponseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UIImageContentMode.html">UIImageContentMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AnyPublisher.html">AnyPublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue/QueueReference.html">– QueueReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift.html">Swift</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Swift/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel/AssociatedKey.html">– AssociatedKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIStoryboard.html">UIStoryboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextField.html">UITextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextField/AssociatedKey.html">– AssociatedKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9YouTVDemo1poiySDyxq_GAC_ACtSHRzr0_lF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9YouTVDemo2peoiyySDyxq_Gz_ACtSHRzr0_lF">+=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ImageAssets.html">ImageAssets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkRequest.html">NetworkRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkResponseValidation.html">NetworkResponseValidation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkService.html">NetworkService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkServiceInterceptable.html">NetworkServiceInterceptable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9YouTVDemo13OptionalImageP">OptionalImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIAuthenticator.html">APIAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIConfigs.html">APIConfigs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIConfigs/Images.html">– Images</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIEncodableRequest.html">APIEncodableRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIParametersRequest.html">APIParametersRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIServerResponse.html">APIServerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIServerResponse/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCombineObserver.html">AnyCombineObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppConfig.html">AppConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CombineDisposable.html">CombineDisposable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Dates.html">Dates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Genre.html">Genre</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTTPResponseValidation.html">HTTPResponseValidation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Images.html">Images</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Images/Backdrop.html">– Backdrop</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MovieDetail.html">MovieDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Pagination.html">Pagination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProductionCompany.html">ProductionCompany</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProductionCountry.html">ProductionCountry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProductionCountry/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpokenLanguage.html">SpokenLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpokenLanguage/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail.html">TVSerialDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/CreatedPerson.html">– CreatedPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/Episode.html">– Episode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/Network.html">– Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/Season.html">– Season</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/EpisodeGroups.html">– EpisodeGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialDetail/EpisodeGroup.html">– EpisodeGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TVSerialSummery.html">TVSerialSummery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Video.html">Video</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Video/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Video/Type.html">– Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Videos.html">Videos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9YouTVDemo25NetworkRequestInterceptora">NetworkRequestInterceptor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DispatchQueue</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">extension</span> <span class="kt">DispatchQueue</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE20networkResponseQueue33_D585823258944F44B8A1A41F979E853DLLABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/networkResponseQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE20networkResponseQueue33_D585823258944F44B8A1A41F979E853DLLABvpZ">networkResponseQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default queue for handling response</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">networkResponseQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/private%20functionality"></a>
+                <a name="//apple_ref/swift/Section/private functionality" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/private%20functionality"></a>
+                  <h3 class="section-name"><p>private functionality</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE14QueueReference33_B138AF7C3B76C1AA49821817BBC65575LLV"></a>
+                    <a name="//apple_ref/swift/Struct/QueueReference" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE14QueueReference33_B138AF7C3B76C1AA49821817BBC65575LLV">QueueReference</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>&lt;#Description#&gt;</p>
+
+                        <a href="../Extensions/DispatchQueue/QueueReference.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">struct</span> <span class="kt">QueueReference</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE3key33_B138AF7C3B76C1AA49821817BBC65575LL8Dispatch0N11SpecificKeyCyAbCE14QueueReferenceAELLVGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/key" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE3key33_B138AF7C3B76C1AA49821817BBC65575LL8Dispatch0N11SpecificKeyCyAbCE14QueueReferenceAELLVGvpZ">key</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>&lt;#Description#&gt;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">DispatchSpecificKey</span><span class="o">&lt;</span><span class="kt"><a href="../Extensions/DispatchQueue/QueueReference.html">QueueReference</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE18_registerDetection33_B138AF7C3B76C1AA49821817BBC65575LL2of3keyySayABG_8Dispatch0Q11SpecificKeyCyAbCE14QueueReferenceAELLVGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/_registerDetection(of:key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE18_registerDetection33_B138AF7C3B76C1AA49821817BBC65575LL2of3keyySayABG_8Dispatch0Q11SpecificKeyCyAbCE14QueueReferenceAELLVGtFZ">_registerDetection(of:<wbr>key:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register and set specific the given <code>DispatchQueue</code>s object by its <code>DispatchSpecificKey&lt;QueueReference&gt;</code> value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">_registerDetection</span><span class="p">(</span><span class="n">of</span> <span class="nv">queues</span><span class="p">:</span> <span class="p">[</span><span class="kt">DispatchQueue</span><span class="p">],</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">DispatchSpecificKey</span><span class="o">&lt;</span><span class="kt"><a href="../Extensions/DispatchQueue/QueueReference.html">QueueReference</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queues</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DispatchQueue</code>s want to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key value is used in <code>DispatchQueue.setSpecific</code> method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE26setupSystemQueuesDetection33_B138AF7C3B76C1AA49821817BBC65575LL3keyy8Dispatch0R11SpecificKeyCyAbCE14QueueReferenceAELLVG_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/setupSystemQueuesDetection(key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE26setupSystemQueuesDetection33_B138AF7C3B76C1AA49821817BBC65575LL3keyy8Dispatch0R11SpecificKeyCyAbCE14QueueReferenceAELLVG_tFZ">setupSystemQueuesDetection(key:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup and Register the System <code>DispatchQueue</code> for detections</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setupSystemQueuesDetection</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">DispatchSpecificKey</span><span class="o">&lt;</span><span class="kt"><a href="../Extensions/DispatchQueue/QueueReference.html">QueueReference</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>DispatchSpecificKey&lt;QueueReference&gt;</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20functionality"></a>
+                <a name="//apple_ref/swift/Section/public functionality" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/public%20functionality"></a>
+                  <h3 class="section-name"><p>public functionality</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE17registerDetection2ofyAB_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/registerDetection(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE17registerDetection2ofyAB_tFZ">registerDetection(of:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register and set specific the given <code>DispatchQueue</code> value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">registerDetection</span><span class="p">(</span><span class="n">of</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DispatchQueue</code> that we want to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE17currentQueueLabelSSSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/currentQueueLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE17currentQueueLabelSSSgvpZ">currentQueueLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Current Queue Label value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">currentQueueLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE7currentABSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/current" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE7currentABSgvpZ">current</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current queue that the code block perform on.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">current</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So17OS_dispatch_queueC9YouTVDemoE11performSafeyyyycF"></a>
+                    <a name="//apple_ref/swift/Method/performSafe(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17OS_dispatch_queueC9YouTVDemoE11performSafeyyyycF">performSafe(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Perform safe the given block code on the current queue</p>
+
+<p>This method execute the block on the current queue synchronously if current queue equal to self. otherwise the block is executed asynchronously.</p>
+<pre class="highlight swift"><code> <span class="kd">private</span> <span class="kd">func</span> <span class="nf">unregisterRemoteNotification</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ensure that method is executed on main thread.</span>
+  <span class="c1">// whether the caller called this method on non-main thread or not.</span>
+  <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">performSafe</span> <span class="p">{</span>
+     <span class="k">let</span> <span class="nv">application</span> <span class="o">=</span> <span class="kt">UIApplication</span><span class="o">.</span><span class="n">shared</span>
+     <span class="n">application</span><span class="o">.</span><span class="nf">unregisterForRemoteNotifications</span><span class="p">()</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">performSafe</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The program code block that you want to perform on current thread safely.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Farshad Mousalou</a>. All rights reserved. (Last updated: 2021-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
