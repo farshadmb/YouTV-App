@@ -56,7 +56,7 @@ final class TrendingRemoteRepository: TrendingRepository {
     }
 
     private func createRequest(url: String, page: Int, language: String) -> APIParametersRequest {
-        return APIParametersRequest(url: url, parameters: ["page": page, "language": language],
+        return APIParametersRequest(url: baseURL + url, parameters: ["page": page, "language": language],
                                     validResponse: responseValidation)
     }
     
