@@ -39,7 +39,7 @@ jobs:
             git checkout docs && git pull origin
             echo "Current Branch is ${currentBranch}"
             echo "Merging from ${currentBranch}"
-            git merge -X theirs -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')" $currentBranch
+            git merge -X theirs -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')" --allow-unrelated-histories $currentBranch
             echo "Running Jazzy"
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git add ./Docs/* 
