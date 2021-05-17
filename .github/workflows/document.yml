@@ -24,9 +24,10 @@ jobs:
           uses: actions/checkout@v2
         - name: Install Dependencies
           run: | 
-            pod -v
-            pod install 
+            pod --version
+            pod install --verbose
             bundle install --verbose
+            cat Podfile.lock
         - name: Generate Jazzy Docs
           id: generate
           run: |
