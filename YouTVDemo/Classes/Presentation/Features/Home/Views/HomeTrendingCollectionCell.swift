@@ -8,12 +8,12 @@
 
 import UIKit
 
-class HomeTrendingCollectionCell<T: HomeSectionItemViewModel>: UICollectionViewCell, BindableType {
+class HomeTrendingCollectionCell: UICollectionViewCell, BindableType {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
     
-    var viewModel: T?
+    var viewModel: HomeTrendingViewModelWrapper?
     
     override func awakeFromNib() {
         super.awakeFromNib()

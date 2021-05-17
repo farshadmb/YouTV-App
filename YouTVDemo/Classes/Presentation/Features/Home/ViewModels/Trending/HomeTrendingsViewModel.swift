@@ -27,7 +27,7 @@ class HomeTrendingsViewModel: HomeSectionBaseViewModel {
         self.factory = factory
         self.tvTrendingUseCase = factory.makeTVTrendingUseCase()
         self.movieTrendingUseCase = factory.makeMovieTrendingUseCase()
-        super.init(title: "", order: order)
+        super.init(title: "Trends", order: order)
     }
     
     override func fetchDataIfNeeded(isRefresh: Bool = false) -> Single<Bool> {
@@ -58,6 +58,7 @@ class HomeTrendingsViewModel: HomeSectionBaseViewModel {
         
         viewModelsObs.asDriver(onErrorJustReturn: .init())
             .asObservable()
+            .map { $0.compactMap { HomeTrendingViewModelWrapper(viewModel: $0) } }
             .bind(to: items)
             .disposed(by: disposeBag)
         
@@ -69,22 +70,22 @@ class HomeTrendingsViewModel: HomeSectionBaseViewModel {
 
     func sectionLayout() -> NSCollectionLayoutSection {
 
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25),
-                                              heightDimension: .fractionalHeight(1.5))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                              heightDimension: .fractionalWidth(0.75))
+        
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .fractionalHeight(0.5))
-
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let groupSize = self.groupSize(width: .fractionalWidth(2 / 3), height: .estimated(1))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item, item])
+        
         let section = NSCollectionLayoutSection(group: group)
-
-        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader,
-                                                                        alignment: .topLeading)
-
+        section.interGroupSpacing = 8.0
+        section.contentInsets = .init(top: 8, leading: 8, bottom: 8, trailing: 8)
+        
+        let headerElement = self.headerElement()
+        
         section.boundarySupplementaryItems = [headerElement]
-        section.orthogonalScrollingBehavior = .groupPagingCentered
+        section.orthogonalScrollingBehavior = .groupPaging
 
         return section
     }
