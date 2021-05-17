@@ -1,18 +1,19 @@
 # YouTV-App
- ### **Table Of Content**
-- [YouTV-App](#youtv-app) 
-  - [Summery](#summery)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Technology use in this project](#technology-use-in-this-project)
-  - [Gitwokflow](#gitwokflow)
-  - [Extra Information](#extra-information)
-      - [Challenges:](#challenges)
-      - [Time Efforts](#time-efforts)
+
+ ### **Table Of Contents**
+- [Summery](#summery)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Technology use in this project](#technology-use-in-this-project)
+- [Gitwokflow](#gitwokflow)
+- [Documentation](#documentation)
+- [Extra Information](#extra-information)
+    - [Challenges](#challenges)
+    - [Time Efforts](#time-efforts)
 
 ## Summery
 
-The Application was written in a Swift 5.3. The App represent Headlines API and Authentication.
+The Application was written in a Swift 5.3. The App represent The MovieDB.org API and Authentication as Client.
 Application contains the three layers which are the `Data Layer`, `Domain Layer` or `Business Layer` and `Presentation Layer`. The Presnetation layer was architected in MVVM Coordinator. 
 
 
@@ -52,9 +53,12 @@ Application contains the three layers which are the `Data Layer`, `Domain Layer`
 
 - Reactive Functional Programming
 - RxSwift
+- Combine
 - Clean Code
 - Clean Arch [Reference](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - Modern MVVM  
+- Coordinator
+- SwiftUI
 - Localization
 - CI Testing
 - Swiftlint
@@ -63,12 +67,21 @@ Application contains the three layers which are the `Data Layer`, `Domain Layer`
 - SOLID Principles.
 - Dependency Injection based on Factory Strategy.
 
+## Documentation
+
+open `Docs` folder at root folder on `master` branch.
+
+> Note: The latest Documentation is placed on `docs` branch. 
+> if you want to see it please checkout `docs` then open Docs folder.
+
 ## Gitwokflow
 
 Please see the Pull Requests in this Repository.
+[Pull Requests](https://github.com/farshadmb/YouTV-App/pulls?q=is%3Apr+is%3Aclosed)
+
 ## Extra Information
 
-#### Challenges:
+#### Challenges
 
 - Dealing With `UICollectionViewCompositionalLayout` to implement Custom Home Layout.
 - Finding and exploring the best approach to handle multiple section and item view Model.
@@ -78,4 +91,4 @@ Please see the Pull Requests in this Repository.
   
 #### Time Efforts
 
-The project took two weeks to develop and deploy.
+*The project took around two weeks to develop and deploy.*
