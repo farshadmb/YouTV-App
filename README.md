@@ -13,7 +13,7 @@
 
 ## Summery
 
-The Application was written in a Swift 5.3. The App represent Headlines API and Authentication.
+The Application was written in a Swift 5.3. The App represent The MovieDB.org API and Authentication as Client.
 Application contains the three layers which are the `Data Layer`, `Domain Layer` or `Business Layer` and `Presentation Layer`. The Presnetation layer was architected in MVVM Coordinator. 
 
 
