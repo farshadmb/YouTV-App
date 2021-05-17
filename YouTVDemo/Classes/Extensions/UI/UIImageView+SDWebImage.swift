@@ -23,7 +23,7 @@ extension UIImageView {
 
      - Parameters:
        - url: The `URL` for the image.
-       - placeHolderImage: The `UIImage` to be set initially until the image request finishes.
+       - placeHolderImage: The `ImageAssets` to be set initially until the image request finishes.
        - contentMode: The `UIView.ContentMode` to be used in contentMode. default is `UIView.ContentMode.scaleAspectFill`
        - options: The `SDWebImageOptions` options to use when downloading the image. The default is `UIImageView.defaultSDWebImageOptions`
        - completed: A `SDExternalCompletionBlock` block called when operation has been completed.
@@ -32,7 +32,7 @@ extension UIImageView {
                     The third parameter is a Boolean indicating if the image was retrieved from the local cache or from the network. The fourth parameter is the original image url.
      - Seealso: `SDWebImageOptions`
      */
-    func setImage(url: URL?, placeHolderImage: UIImage? = nil,
+    func setImage(url: URL?, placeHolderImage: ImageAssets? = UIImage.Images.placeHolder,
                   contentMode: UIView.ContentMode? = .scaleAspectFill,
                   options: SDWebImageOptions = UIImageView.defaultSDWebImageOptions,
                   completed: SDExternalCompletionBlock? = nil) {
@@ -42,7 +42,7 @@ extension UIImageView {
             self.setNeedsDisplay()
         }
 
-        self.sd_setImage(with: url, placeholderImage: placeHolderImage,
+        self.sd_setImage(with: url, placeholderImage: placeHolderImage?.image,
                          options: options, completed: completed)
     }
 
