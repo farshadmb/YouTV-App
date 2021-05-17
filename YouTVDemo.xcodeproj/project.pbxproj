@@ -127,6 +127,7 @@
 		F89D8F9326364053007A34CF /* YouTVDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D8F9226364053007A34CF /* YouTVDemoUITests.swift */; };
 		F8A96FEB265235F000F1C9E5 /* HomeTrendingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */; };
 		F8A96FF0265242D200F1C9E5 /* HomeTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */; };
+		F8A970032652673700F1C9E5 /* AppImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A970022652673700F1C9E5 /* AppImageAssets.swift */; };
 		F8A96FFB2652526A00F1C9E5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */; };
 		F8CF584A2645B52D00D80790 /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */; };
 		F8CF584B2645B52D00D80790 /* HomeSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */; };
@@ -297,6 +298,7 @@
 		F89D8F9426364053007A34CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A96FEA265235F000F1C9E5 /* HomeTrendingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingsViewModel.swift; sourceTree = "<group>"; };
 		F8A96FEF265242D200F1C9E5 /* HomeTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingViewModel.swift; sourceTree = "<group>"; };
+		F8A970022652673700F1C9E5 /* AppImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageAssets.swift; sourceTree = "<group>"; };
 		F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		F8CF58482645B52D00D80790 /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		F8CF58492645B52D00D80790 /* HomeSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderView.xib; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				F89CB1C4263B30E1009FA1AD /* AppConfig.swift */,
 				F87D9BD5264B0C320075DD47 /* AppDependencyContainer.swift */,
 				F8A96FFA2652526A00F1C9E5 /* AppStrings.swift */,
+				F8A970022652673700F1C9E5 /* AppImageAssets.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -1347,6 +1350,7 @@
 				F8106E6F263723E100653AF8 /* Bundle+Extension.swift in Sources */,
 				F8108D77263F33AE00AFD73A /* DiscoverRemoteRepository.swift in Sources */,
 				F8CF58512645BF9000D80790 /* HomeMovieCollectionCell.swift in Sources */,
+				F8A970032652673700F1C9E5 /* AppImageAssets.swift in Sources */,
 				F8410EFE2652177500F2CE35 /* TrendingRepository.swift in Sources */,
 				F8106E6526371DF900653AF8 /* UITextField+Localization.swift in Sources */,
 				F8410F532652318F00F2CE35 /* HomeTrendingCollectionCell.swift in Sources */,
