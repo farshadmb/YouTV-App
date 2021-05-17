@@ -36,7 +36,7 @@ jobs:
             git checkout docs
             git pull origin
             echo $currentBranch
-            git merge $currentBranch --verbose -X theirs --ff -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')"
+            git merge $currentBranch --verbose -X theirs -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')"
             jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git add ./Docs/* 
             echo "::set-output name=message::Updated Project Docs at $(date +'%Y-%m-%d')"
