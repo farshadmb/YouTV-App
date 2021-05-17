@@ -17,7 +17,7 @@ enum APIServerResponseStatus: String, Codable {
     }
 
     func encode(to encoder: Encoder) throws {
-        var container = try encoder.singleValueContainer()
+        var container = encoder.singleValueContainer()
         try container.encode((self.rawValue as NSString).boolValue)
     }
 

@@ -673,6 +673,9 @@ PODS:
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
   - SwiftLint (0.42.0)
+  - XCoordinator (2.0.7):
+    - XCoordinator/Core (= 2.0.7)
+  - XCoordinator/Core (2.0.7)
 
 DEPENDENCIES:
   - Alamofire
@@ -692,6 +695,7 @@ DEPENDENCIES:
   - RxTest
   - SDWebImage
   - SwiftLint
+  - XCoordinator
 
 SPEC REPOS:
   trunk:
@@ -718,6 +722,7 @@ SPEC REPOS:
     - RxTest
     - SDWebImage
     - SwiftLint
+    - XCoordinator
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -743,7 +748,8 @@ SPEC CHECKSUMS:
   RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+  XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 269954bdd1eb7856850477f08bd0655ff69438df
+PODFILE CHECKSUM: dcf975f8290981e48db30691ae7d8314b4366834
 
 COCOAPODS: 1.10.0

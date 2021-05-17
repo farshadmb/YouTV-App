@@ -29,8 +29,8 @@ struct APIServerResponse <T> where T: Decodable {
     /// The `CodingKey`s to be used in decoding process
     enum CodingKeys: String, CodingKey {
         case status = "success"
-        case code = "status_code"
-        case message = "status_message"
+        case code = "statusCode"
+        case message = "statusMessage"
     }
 
     /// Default initializer
@@ -66,9 +66,9 @@ extension APIServerResponse: Decodable {
 
                     if let message = try? valuesContainer.decodeIfPresent(String.self, forKey: .message) {
                         self.message = message
-                        throw APIServerResponseError.message(code: "\(errorType)",message: message)
+                        throw APIServerResponseError.message(code: errorType, message: message)
                     }else {
-                        throw APIServerResponseError.code("\(errorType)")
+                        throw APIServerResponseError.code(errorType)
                     }
 
                 } else {
@@ -84,7 +84,7 @@ extension APIServerResponse: Decodable {
             self.data = try T(from: decoder)
         }catch {
             self.data = nil
-            throw APIServerResponseError.message(code: "Decoding", message: "\(error.localizedDescription)")
+            throw APIServerResponseError.message(code: -1, message: "\(error.localizedDescription)")
         }
 
     }
@@ -96,6 +96,10 @@ extension APIServerResponse: CustomDebugStringConvertible {
     /// :nodoc:
     var debugDescription: String {
         let message = self.message ?? "no message"
-        return "[Server-Response] status = \(status) message= \(message) error = empty data = \(data)"
+        var dataValue = "No Data"
+        if let data = self.data {
+            dataValue = "\(data)"
+        }
+        return "[Server-Response] status = \(status) message= \(message) error = empty data = \(dataValue)"
     }
 }
