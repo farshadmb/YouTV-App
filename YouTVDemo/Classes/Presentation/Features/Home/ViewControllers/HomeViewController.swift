@@ -57,7 +57,7 @@ class HomeViewController: UIViewController, BindableType,
         setupCollectionView()
         self.tabBarItem = .init(title: Strings.Home.title, image: UIImage.Symbols.home.image,
                                 selectedImage: UIImage.Symbols.homeFill.image)
-        self.title = "Home"
+        self.title = Strings.Home.title
     }
 
     private func setupCollectionView() {
