@@ -28,7 +28,7 @@ extension PrimitiveSequenceType where Trait == SingleTrait {
 
     public static func from<T: ObservableType>(observable: T) -> Single<T.Element> where Element == T.Element {
         return .create { single in
-
+            
             var hasElement = false
             let observer = observable.subscribe { event in
                 switch event {
@@ -47,11 +47,11 @@ extension PrimitiveSequenceType where Trait == SingleTrait {
                     }
                 }
             }
-
-           return Disposables.create {
-            observer.dispose()
-           }
-       }
+            
+            return Disposables.create {
+                observer.dispose()
+            }
+        }
     }
 
 }
