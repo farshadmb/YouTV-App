@@ -10,7 +10,6 @@ on:
   push:
     branches:
       - develop
-      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,10 +29,12 @@ jobs:
         - name: Generate Jazzy Docs
           id: generate
           run: |
-            jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git fetch -a -p
+            export currentBranch=$(git branch -vv | grep '*' | awk '{ print $2 }' | xargs)
             git checkout docs
             git pull origin --force
+            git merge $currentBranch --verbose -X theirs --ff -m "- Merge ${currentBranch} into docs at $(date +'%Y-%m-%d')"
+            jazzy --author 'Farshad Mousalou' --min-acl private --build-tool-arguments -workspace,YouTVDemo.xcworkspace,-scheme,YouTVDemo --module YouTVDemo --clean --output Docs/
             git add ./Docs/* 
             echo "::set-output name=message::Updated Project Docs at $(date +'%Y-%m-%d')"
         - name: Publish Jazzy Docs
