@@ -13,6 +13,7 @@ final class HomeDependencyContainer {
 
     let movieRepository: MoviesRepository
     let tvRepository: TVRepository
+    let trendingRepository: TrendingRepository
     let remoteImageBuilder: RemoteImageAssetBuilder
     let language: String
 
@@ -20,6 +21,7 @@ final class HomeDependencyContainer {
         movieRepository = appDependecyContainer.sharedMovieRepository
         tvRepository = appDependecyContainer.sharedShowRepository
         language = appDependecyContainer.language
+        trendingRepository = appDependecyContainer.sharedTrendingRepository
         remoteImageBuilder = appDependecyContainer.remoteImageBuilder
     }
 
@@ -111,4 +113,16 @@ extension HomeDependencyContainer: MovieUseCaseFactory {
         return MoviesUseCasesImp(repository: movieRepository, language: language)
     }
 
+}
+
+extension HomeDependencyContainer: TrendingUseCaseFactory {
+    
+    func makeTVTrendingUseCase() -> TVTrendingUseCase {
+        return TrendingUseCasesImp(repository: trendingRepository, language: language)
+    }
+    
+    func makeMovieTrendingShowUseCase() -> MovieTrendingUseCase {
+        return TrendingUseCasesImp(repository: trendingRepository, language: language)
+    }
+    
 }
